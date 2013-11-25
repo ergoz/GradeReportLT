@@ -13,6 +13,7 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnLayoutChangeListener;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.OnGroupExpandListener;
@@ -46,7 +47,7 @@ public class LessonsExpListFragment extends Fragment implements
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
-		View rootView = inflater.inflate(R.layout.fragment_exp_list, container, false);
+		final View rootView = inflater.inflate(R.layout.fragment_exp_list, container, false);
 		mExpListView = (ExpandableListView) rootView.findViewById(R.id.section_label);
 		
 		int width = (int) (getResources().getDisplayMetrics().widthPixels - TypedValue
@@ -72,12 +73,33 @@ public class LessonsExpListFragment extends Fragment implements
 				R.layout.lessons_header, null);
 		mExpListView.addHeaderView(header);
 		
-		AdView mAdView = (AdView) rootView.findViewById(R.id.ad);
+		final AdView mAdView = (AdView) rootView.findViewById(R.id.ad);
 		
 		AdRequest adRequest = new AdRequest();
 	    adRequest.addKeyword("education");
 	    adRequest.addKeyword("games");
 	    mAdView.loadAd(adRequest);
+
+		mAdView.addOnLayoutChangeListener(new OnLayoutChangeListener() {
+
+			@Override
+			public void onLayoutChange(final View pV, final int pLeft,
+					final int pTop, final int pRight, final int pBottom,
+					final int pOldLeft, final int pOldTop, final int pOldRight,
+					final int pOldBottom) {
+				
+				if (BuildConfig.DEBUG)
+					Log.d(this.toString(), TS.get() + "ZZZ1"); 
+				
+				final float lAdHeight = mAdView.getHeight();
+				if (lAdHeight != 0) {
+					
+					if (BuildConfig.DEBUG)
+						Log.d(this.toString(), TS.get() + "ZZZ2");
+					rootView.requestLayout();
+				}
+			}
+		});
 
 		Date day = GshisLoader.getInstance().getCurrWeekStart();
 		int wantDoW = getArguments().getInt(ARG_SECTION_NUMBER);

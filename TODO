@@ -1,6 +1,6 @@
 
-+ start updates on system boot - DONE?
-+ select proper week day in DiaryActivity.onCreate() - DONE
++ !!! correct view height on ads load !!!
++ lessons parse fix
 + remember list selection ???
 + ignore non-fatal network errors
 + pass current user between activities ???
