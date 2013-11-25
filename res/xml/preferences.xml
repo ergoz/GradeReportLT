@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Информация о пользователе" >
+        <EditTextPreference
+            android:key="@string/pref_login_key"
+            android:summary="Пожалуйста, введите ваш логин"
+            android:title="Логин" >
+        </EditTextPreference>
+        <EditTextPreference
+            android:inputType="textPassword"
+            android:key="@string/pref_password_key"
+            android:summary="Пожалуйста, введите ваш пароль"
+            android:title="Пароль" >
+        </EditTextPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Синхронизация" >
+        <ListPreference
+            android:defaultValue="15"
+            android:entries="@array/syncArray"
+            android:entryValues="@array/syncValues"
+            android:key="@string/pref_sync_key"
+            android:summary="Интервал синхронизации данных дневника"
+            android:title="Интервал" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

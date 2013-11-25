@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Дневник ГШИС FREE</string>
+    <string name="admob_id">a152769931c83f5</string>
+    <string name="diary_name">Дневник</string>
+    <string name="grades_name">Оценки</string>
+    <string name="pref_name">Настройки</string>
+    <string name="pref_login_key">login</string>
+    <string name="pref_password_key">password</string>
+    <string name="pref_sync_key">syncInterval</string>
+    <string name="shiny_metal">ShinyMetal</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_select_pupil">Ученик</string>
+    <string name="action_select_date">Выбор даты</string>
+    <string name="action_previous_week">Пред. неделя</string>
+    <string name="action_next_week">След. неделя</string>
+    <string name="action_reload">Обновить</string>
+    <string name="action_grades">Оценки</string>
+    <string name="action_diary">Дневник</string>
+    <string name="label_theme">Тема</string>
+    <string name="label_homework">Дом. задание</string>
+    <string name="label_marks">Оценки</string>
+    <string name="label_comment">Комментарий</string>
+    <string name="label_loading_data">Загрузка данных</string>
+    <string name="label_submit">Выбрать</string>
+    <string name="label_cancel">Отмена</string>
+    <string name="label_ok">Ок</string>
+    <string name="label_absent">Н</string>
+    <string name="label_released">ОСВ</string>
+    <string name="label_sick">Б</string>
+    <string name="label_average">Ср</string>
+    <string name="label_total">Итог</string>
+    <string name="title_error">Ошибка</string>
+    <string name="title_section1">Понедельник</string>
+    <string name="title_section2">Вторник</string>
+    <string name="title_section3">Среда</string>
+    <string name="title_section4">Четверг</string>
+    <string name="title_section5">Пятница</string>
+    <string name="title_section6">Суббота</string>
+    <string name="title_section_gr1">Четверть I</string>
+    <string name="title_section_gr2">Четверть II</string>
+    <string name="title_section_gr3">Четверть III</string>
+    <string name="title_section_gr4">Четверть IV</string>
+    <string name="error_cannot_fetch">Невозможно получить данные с сервера</string>
+    <string name="error_cannot_login">Неверный логин или пароль</string>
+    <string name="label_retry">Повторить</string>
+    <string name="label_buy">Купить</string>
+    <string name="label_quit">Выход</string>
+
+</resources>

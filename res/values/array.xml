@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="syncArray">
+   <item>15 минут</item>
+   <item>30 минут</item>
+   <item>1 час</item>
+   <item>12 часов</item>
+   <item>24 часа</item>
+</string-array>
+ 
+<string-array name="syncValues">
+   <item>15</item>
+   <item>30</item>
+   <item>60</item>
+   <item>720</item>
+   <item>1440</item>
+</string-array>
+</resources>

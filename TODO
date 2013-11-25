@@ -1,0 +1,9 @@
+
++ start updates on system boot - DONE?
++ select proper week day in DiaryActivity.onCreate() - DONE
++ remember list selection ???
++ ignore non-fatal network errors
++ pass current user between activities ???
++ footer with last update status
++ grade reports - issues:
+  * bigger fonts?
