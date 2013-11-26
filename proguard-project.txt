@@ -23,6 +23,9 @@
 -keep class org.**  { *; }
 -keep class com.admob.android.ads.**  { *; }
 
+-libraryjars libs/GoogleAdMobAdsSdk-6.2.1.jar
+-dontwarn com.google.ads.**
+
 # For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
 -keepclasseswithmembernames class * {
     native <methods>;

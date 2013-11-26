@@ -1737,409 +1737,1106 @@ android.support.v4.widget.ViewDragHelper$Callback -> android.support.v4.widget.a
     boolean tryCaptureView(android.view.View,int) -> a
     int clampViewPositionHorizontal(android.view.View,int,int) -> a
     int clampViewPositionVertical(android.view.View,int,int) -> b
-com.google.android.vending.licensing.AESObfuscator -> com.a.a.a.a.a:
-    byte[] IV -> a
-    javax.crypto.Cipher mEncryptor -> b
-    javax.crypto.Cipher mDecryptor -> c
-    java.lang.String obfuscate(java.lang.String,java.lang.String) -> a
-    java.lang.String unobfuscate(java.lang.String,java.lang.String) -> b
-com.google.android.vending.licensing.DeviceLimiter -> com.a.a.a.a.b:
-    int isDeviceAllowed(java.lang.String) -> a
-com.google.android.vending.licensing.ILicenseResultListener -> com.a.a.a.a.c:
-    void verifyLicense(int,java.lang.String,java.lang.String) -> a
-com.google.android.vending.licensing.ILicenseResultListener$Stub -> com.a.a.a.a.d:
-    com.google.android.vending.licensing.ILicenseResultListener asInterface(android.os.IBinder) -> a
-    android.os.IBinder asBinder() -> asBinder
-    boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
-com.google.android.vending.licensing.ILicenseResultListener$Stub$Proxy -> com.a.a.a.a.e:
-    android.os.IBinder mRemote -> a
-    android.os.IBinder asBinder() -> asBinder
-    void verifyLicense(int,java.lang.String,java.lang.String) -> a
-com.google.android.vending.licensing.ILicensingService -> com.a.a.a.a.f:
-    void checkLicense(long,java.lang.String,com.google.android.vending.licensing.ILicenseResultListener) -> a
-com.google.android.vending.licensing.ILicensingService$Stub -> com.a.a.a.a.g:
-    com.google.android.vending.licensing.ILicensingService asInterface(android.os.IBinder) -> a
-    boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
-com.google.android.vending.licensing.ILicensingService$Stub$Proxy -> com.a.a.a.a.h:
-    android.os.IBinder mRemote -> a
-    android.os.IBinder asBinder() -> asBinder
-    void checkLicense(long,java.lang.String,com.google.android.vending.licensing.ILicenseResultListener) -> a
-com.google.android.vending.licensing.LicenseChecker -> com.a.a.a.a.i:
-    java.security.SecureRandom RANDOM -> a
-    com.google.android.vending.licensing.ILicensingService mService -> b
-    java.security.PublicKey mPublicKey -> c
-    android.content.Context mContext -> d
-    com.google.android.vending.licensing.Policy mPolicy -> e
-    android.os.Handler mHandler -> f
-    java.lang.String mPackageName -> g
-    java.lang.String mVersionCode -> h
-    java.util.Set mChecksInProgress -> i
-    java.util.Queue mPendingChecks -> j
-    java.security.PublicKey generatePublicKey(java.lang.String) -> a
-    void checkAccess(com.google.android.vending.licensing.LicenseCheckerCallback) -> a
-    void runChecks() -> a
-    void finishCheck(com.google.android.vending.licensing.LicenseValidator) -> a
-    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
-    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
-    void handleServiceConnectionError(com.google.android.vending.licensing.LicenseValidator) -> b
-    void cleanupService() -> b
-    int generateNonce() -> c
-    java.lang.String getVersionCode(android.content.Context,java.lang.String) -> a
-    void access$0(com.google.android.vending.licensing.LicenseChecker,com.google.android.vending.licensing.LicenseValidator) -> a
-    void access$1(com.google.android.vending.licensing.LicenseChecker,com.google.android.vending.licensing.LicenseValidator) -> b
-    android.os.Handler access$2(com.google.android.vending.licensing.LicenseChecker) -> a
-    java.util.Set access$3(com.google.android.vending.licensing.LicenseChecker) -> b
-    java.security.PublicKey access$4(com.google.android.vending.licensing.LicenseChecker) -> c
-com.google.android.vending.licensing.LicenseChecker$ResultListener -> com.a.a.a.a.j:
-    com.google.android.vending.licensing.LicenseValidator mValidator -> b
-    java.lang.Runnable mOnTimeout -> c
-    com.google.android.vending.licensing.LicenseChecker this$0 -> a
-    void verifyLicense(int,java.lang.String,java.lang.String) -> a
-    void startTimeout() -> a
-    void clearTimeout() -> b
-    com.google.android.vending.licensing.LicenseValidator access$0(com.google.android.vending.licensing.LicenseChecker$ResultListener) -> a
-    void access$1(com.google.android.vending.licensing.LicenseChecker$ResultListener) -> b
-    com.google.android.vending.licensing.LicenseChecker access$2(com.google.android.vending.licensing.LicenseChecker$ResultListener) -> c
-com.google.android.vending.licensing.LicenseChecker$ResultListener$1 -> com.a.a.a.a.k:
-    com.google.android.vending.licensing.LicenseChecker$ResultListener this$1 -> a
-    void run() -> run
-com.google.android.vending.licensing.LicenseChecker$ResultListener$2 -> com.a.a.a.a.l:
-    com.google.android.vending.licensing.LicenseChecker$ResultListener this$1 -> a
-    int val$responseCode -> b
-    java.lang.String val$signedData -> c
-    java.lang.String val$signature -> d
-    void run() -> run
-com.google.android.vending.licensing.LicenseCheckerCallback -> com.a.a.a.a.m:
-    void allow(int) -> a
-    void dontAllow(int) -> b
-    void applicationError(int) -> c
-com.google.android.vending.licensing.LicenseValidator -> com.a.a.a.a.n:
-    com.google.android.vending.licensing.Policy mPolicy -> a
-    com.google.android.vending.licensing.LicenseCheckerCallback mCallback -> b
-    int mNonce -> c
-    java.lang.String mPackageName -> d
-    java.lang.String mVersionCode -> e
-    com.google.android.vending.licensing.DeviceLimiter mDeviceLimiter -> f
-    com.google.android.vending.licensing.LicenseCheckerCallback getCallback() -> a
-    int getNonce() -> b
-    java.lang.String getPackageName() -> c
-    void verify(java.security.PublicKey,int,java.lang.String,java.lang.String) -> a
-    void handleResponse(int,com.google.android.vending.licensing.ResponseData) -> a
-    void handleApplicationError(int) -> a
-    void handleInvalidResponse() -> d
-com.google.android.vending.licensing.NullDeviceLimiter -> com.a.a.a.a.o:
-    int isDeviceAllowed(java.lang.String) -> a
-com.google.android.vending.licensing.Obfuscator -> com.a.a.a.a.p:
-    java.lang.String obfuscate(java.lang.String,java.lang.String) -> a
-    java.lang.String unobfuscate(java.lang.String,java.lang.String) -> b
-com.google.android.vending.licensing.Policy -> com.a.a.a.a.q:
-    void processServerResponse(int,com.google.android.vending.licensing.ResponseData) -> a
-    boolean allowAccess() -> a
-com.google.android.vending.licensing.PreferenceObfuscator -> com.a.a.a.a.r:
-    android.content.SharedPreferences mPreferences -> a
-    com.google.android.vending.licensing.Obfuscator mObfuscator -> b
-    android.content.SharedPreferences$Editor mEditor -> c
-    void putString(java.lang.String,java.lang.String) -> a
-    java.lang.String getString(java.lang.String,java.lang.String) -> b
-    void commit() -> a
-com.google.android.vending.licensing.ResponseData -> com.a.a.a.a.s:
-    int responseCode -> a
-    int nonce -> b
-    java.lang.String packageName -> c
-    java.lang.String versionCode -> d
-    java.lang.String userId -> e
-    long timestamp -> f
-    java.lang.String extra -> g
-    com.google.android.vending.licensing.ResponseData parse(java.lang.String) -> a
+com.google.ads.Ad -> com.google.ads.a:
+com.google.ads.AdActivity -> com.google.ads.AdActivity:
+    com.google.ads.internal.a a -> a
+    java.lang.Object b -> b
+    com.google.ads.AdActivity c -> c
+    com.google.ads.internal.d d -> d
+    com.google.ads.AdActivity e -> e
+    com.google.ads.AdActivity f -> f
+    com.google.ads.AdActivity$StaticMethodWrapper g -> g
+    com.google.ads.internal.AdWebView h -> h
+    android.widget.FrameLayout i -> i
+    int j -> j
+    android.view.ViewGroup k -> k
+    boolean l -> l
+    long m -> m
+    android.widget.RelativeLayout n -> n
+    com.google.ads.AdActivity o -> o
+    boolean p -> p
+    boolean q -> q
+    boolean r -> r
+    boolean s -> s
+    com.google.ads.internal.AdVideoView t -> t
+    android.view.View a(int,boolean) -> a
+    void a(java.lang.String) -> a
+    void a(java.lang.String,java.lang.Throwable) -> a
+    com.google.ads.internal.AdVideoView getAdVideoView() -> a
+    com.google.ads.internal.AdWebView getOpeningAdWebView() -> b
+    boolean isShowing() -> c
+    void launchAdActivity(com.google.ads.internal.d,com.google.ads.internal.e) -> a
+    void a(java.util.HashMap,com.google.ads.internal.d) -> a
+    void b(java.util.HashMap,com.google.ads.internal.d) -> b
+    void a(com.google.ads.internal.d) -> a
+    com.google.ads.internal.AdVideoView a(android.app.Activity) -> a
+    void moveAdVideoView(int,int,int,int) -> a
+    void newAdVideoView(int,int,int,int) -> b
+    android.widget.RelativeLayout$LayoutParams a(int,int,int,int) -> c
+    void onClick(android.view.View) -> onClick
+    void onCreate(android.os.Bundle) -> onCreate
+    void a(com.google.ads.internal.AdWebView,boolean,int,boolean,boolean) -> a
+    void onDestroy() -> onDestroy
+    void onPause() -> onPause
+    void d() -> g
+    void onWindowFocusChanged(boolean) -> onWindowFocusChanged
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void setCustomClose(boolean) -> a
+    java.lang.Object a() -> d
+    com.google.ads.AdActivity b() -> e
+    com.google.ads.internal.d c() -> f
+    com.google.ads.internal.d b(com.google.ads.internal.d) -> b
+com.google.ads.AdActivity$StaticMethodWrapper -> com.google.ads.b:
+    boolean isShowing() -> a
+    void launchAdActivity(com.google.ads.internal.d,com.google.ads.internal.e) -> a
+com.google.ads.AdListener -> com.google.ads.c:
+    void onReceiveAd(com.google.ads.Ad) -> a
+    void onFailedToReceiveAd(com.google.ads.Ad,com.google.ads.AdRequest$ErrorCode) -> a
+    void onPresentScreen(com.google.ads.Ad) -> b
+    void onDismissScreen(com.google.ads.Ad) -> c
+    void onLeaveApplication(com.google.ads.Ad) -> d
+com.google.ads.AdRequest -> com.google.ads.d:
+    java.text.SimpleDateFormat a -> b
+    java.lang.reflect.Method b -> c
+    java.lang.reflect.Method c -> d
+    com.google.ads.AdRequest$Gender d -> e
+    java.util.Date e -> f
+    java.util.Set f -> g
+    java.util.Map g -> h
+    java.util.Map h -> i
+    android.location.Location i -> j
+    boolean j -> k
+    boolean k -> l
+    java.lang.String TEST_EMULATOR -> a
+    java.util.Set l -> m
+    com.google.ads.AdRequest setKeywords(java.util.Set) -> a
+    com.google.ads.AdRequest addKeyword(java.lang.String) -> a
+    com.google.ads.AdRequest setNetworkExtras(com.google.ads.mediation.NetworkExtras) -> a
+    java.lang.Object getNetworkExtras(java.lang.Class) -> a
+    java.util.Map getRequestMap(android.content.Context) -> a
+    com.google.ads.AdRequest addTestDevice(java.lang.String) -> b
+    com.google.ads.AdRequest setTestDevices(java.util.Set) -> b
+    boolean isTestDevice(android.content.Context) -> b
+com.google.ads.AdRequest$ErrorCode -> com.google.ads.e:
+    com.google.ads.AdRequest$ErrorCode INVALID_REQUEST -> a
+    com.google.ads.AdRequest$ErrorCode NO_FILL -> b
+    com.google.ads.AdRequest$ErrorCode NETWORK_ERROR -> c
+    com.google.ads.AdRequest$ErrorCode INTERNAL_ERROR -> d
+    java.lang.String a -> e
+    com.google.ads.AdRequest$ErrorCode[] b -> f
+    com.google.ads.AdRequest$ErrorCode[] values() -> values
+    com.google.ads.AdRequest$ErrorCode valueOf(java.lang.String) -> valueOf
     java.lang.String toString() -> toString
-com.google.android.vending.licensing.ServerManagedPolicy -> com.a.a.a.a.t:
-    long mValidityTimestamp -> a
-    long mRetryUntil -> b
-    long mMaxRetries -> c
-    long mRetryCount -> d
-    long mLastResponseTime -> e
-    int mLastResponse -> f
-    com.google.android.vending.licensing.PreferenceObfuscator mPreferences -> g
-    void processServerResponse(int,com.google.android.vending.licensing.ResponseData) -> a
-    void setLastResponse(int) -> a
-    void setRetryCount(long) -> a
-    void setValidityTimestamp(java.lang.String) -> a
-    void setRetryUntil(java.lang.String) -> b
-    void setMaxRetries(java.lang.String) -> c
-    boolean allowAccess() -> a
-    java.util.Map decodeExtras(java.lang.String) -> d
-com.google.android.vending.licensing.ValidationException -> com.a.a.a.a.u:
-com.google.android.vending.licensing.util.Base64 -> com.a.a.a.a.a.a:
-    byte[] ALPHABET -> b
-    byte[] WEBSAFE_ALPHABET -> c
-    byte[] DECODABET -> d
-    byte[] WEBSAFE_DECODABET -> e
-    boolean $assertionsDisabled -> a
-    byte[] encode3to4(byte[],int,int,byte[],int,byte[]) -> a
-    java.lang.String encode(byte[]) -> a
-    java.lang.String encode(byte[],int,int,byte[],boolean) -> a
-    byte[] encode(byte[],int,int,byte[],int) -> a
-    int decode4to3(byte[],int,byte[],int,byte[]) -> a
-    byte[] decode(java.lang.String) -> a
-    byte[] decode(byte[],int,int) -> a
-    byte[] decode(byte[],int,int,byte[]) -> a
-com.google.android.vending.licensing.util.Base64DecoderException -> com.a.a.a.a.a.b:
-com.shinymetal.gradereport.AbstractActivity -> com.shinymetal.gradereport.a:
-    com.shinymetal.gradereport.AbstractActivity instance -> n
-    com.shinymetal.gradereport.utils.GshisLoader mGshisLoader -> o
-    com.shinymetal.gradereport.LicenseValidatorHelper mLicValidator -> q
-    com.shinymetal.gradereport.AbstractActivity$IncomingHandler mHandler -> r
-    com.shinymetal.gradereport.DiaryUpdateService mUpdateService -> s
-    android.content.ServiceConnection mConnection -> p
-    android.os.Handler getHandler() -> f
-    void dontAllow(int) -> a
-    void doBindService() -> g
-    void showAlertDialog(java.lang.String) -> b
-    void setRecurringAlarm(android.content.Context,boolean) -> a
-    void onCreate(android.os.Bundle) -> onCreate
-    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
-    void onPause() -> onPause
-    void onResume() -> onResume
-    void access$0(com.shinymetal.gradereport.AbstractActivity,com.shinymetal.gradereport.DiaryUpdateService) -> a
-    com.shinymetal.gradereport.LicenseValidatorHelper access$1(com.shinymetal.gradereport.AbstractActivity) -> a
-    void access$2(com.shinymetal.gradereport.AbstractActivity,com.shinymetal.gradereport.LicenseValidatorHelper) -> a
-com.shinymetal.gradereport.AbstractActivity$1 -> com.shinymetal.gradereport.b:
-    com.shinymetal.gradereport.AbstractActivity this$0 -> a
-    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
-    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
-com.shinymetal.gradereport.AbstractActivity$2 -> com.shinymetal.gradereport.c:
-    boolean mRetry -> a
-    com.shinymetal.gradereport.AbstractActivity this$0 -> b
+com.google.ads.AdRequest$Gender -> com.google.ads.f:
+    com.google.ads.AdRequest$Gender UNKNOWN -> a
+    com.google.ads.AdRequest$Gender MALE -> b
+    com.google.ads.AdRequest$Gender FEMALE -> c
+    com.google.ads.AdRequest$Gender[] a -> d
+    com.google.ads.AdRequest$Gender[] values() -> values
+    com.google.ads.AdRequest$Gender valueOf(java.lang.String) -> valueOf
+com.google.ads.AdSize -> com.google.ads.g:
+    com.google.ads.AdSize SMART_BANNER -> a
+    com.google.ads.AdSize BANNER -> b
+    com.google.ads.AdSize IAB_MRECT -> c
+    com.google.ads.AdSize IAB_BANNER -> d
+    com.google.ads.AdSize IAB_LEADERBOARD -> e
+    com.google.ads.AdSize IAB_WIDE_SKYSCRAPER -> f
+    int a -> g
+    int b -> h
+    boolean c -> i
+    boolean d -> j
+    boolean e -> k
+    java.lang.String f -> l
+    com.google.ads.AdSize createAdSize(com.google.ads.AdSize,android.content.Context) -> a
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    int getWidth() -> a
+    int getHeight() -> b
+    boolean a() -> f
+    boolean isFullWidth() -> c
+    boolean isAutoHeight() -> d
+    boolean isCustomAdSize() -> e
+    java.lang.String toString() -> toString
+    int a(android.content.Context) -> a
+    int b(android.content.Context) -> b
+com.google.ads.AdView -> com.google.ads.AdView:
+    com.google.ads.internal.d a -> a
+    void a(android.content.Context,java.lang.String,int,com.google.ads.AdSize,android.util.AttributeSet) -> a
+    int a(android.content.Context,int) -> a
+    boolean a(android.content.Context,com.google.ads.AdSize,android.util.AttributeSet) -> a
+    boolean b(android.content.Context,com.google.ads.AdSize,android.util.AttributeSet) -> b
+    void a(android.content.Context,java.lang.String,com.google.ads.AdSize,android.util.AttributeSet) -> a
+    com.google.ads.AdSize[] a(java.lang.String) -> a
+    void a(android.content.Context,android.util.AttributeSet) -> a
+    boolean a(java.lang.String,android.content.Context,android.util.AttributeSet,boolean) -> a
+    java.lang.String b(java.lang.String,android.content.Context,android.util.AttributeSet,boolean) -> b
+    java.util.Set c(java.lang.String,android.content.Context,android.util.AttributeSet,boolean) -> c
+    boolean a(java.lang.String,android.util.AttributeSet) -> a
+    void a(android.app.Activity,com.google.ads.AdSize,java.lang.String) -> a
+    boolean isRefreshing() -> a
+    void loadAd(com.google.ads.AdRequest) -> a
+    void setAdListener(com.google.ads.AdListener) -> setAdListener
+    void setAppEventListener(com.google.ads.AppEventListener) -> setAppEventListener
+    void setSupportedAdSizes(com.google.ads.AdSize[]) -> setSupportedAdSizes
+    void a(com.google.ads.AdSize[]) -> a
+    void onMeasure(int,int) -> onMeasure
+com.google.ads.AppEventListener -> com.google.ads.h:
+    void onAppEvent(com.google.ads.Ad,java.lang.String,java.lang.String) -> a
+com.google.ads.InterstitialAd -> com.google.ads.i:
+com.google.ads.a -> com.google.ads.j:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.util.List c -> c
+    java.util.List d -> d
+    java.util.HashMap e -> e
+    java.lang.String a() -> a
+    java.lang.String b() -> b
+    java.util.List c() -> c
+    java.util.List d() -> d
+    java.util.HashMap e() -> e
+com.google.ads.aa -> com.google.ads.k:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.ab -> com.google.ads.l:
+    com.google.ads.internal.a a -> a
+    int a(java.util.HashMap,java.lang.String,int,android.util.DisplayMetrics) -> a
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.ac -> com.google.ads.m:
+    android.content.Context a -> a
+    java.lang.String b -> b
+    java.net.HttpURLConnection a(java.net.URL) -> a
+    void run() -> run
+com.google.ads.ae -> com.google.ads.n:
+    java.lang.ref.WeakReference a -> a
+    void run() -> run
+com.google.ads.af -> com.google.ads.o:
+    android.net.Uri a -> a
+    android.net.Uri b -> b
+    java.lang.String[] c -> c
+    java.lang.String[] d -> d
+com.google.ads.ag -> com.google.ads.p:
+    com.google.ads.internal.a a -> a
+    void a(android.webkit.WebView,boolean) -> a
+    void a(android.webkit.WebView,java.lang.String) -> a
+    void a(android.app.Activity,android.webkit.WebView,java.lang.String) -> a
+    boolean a(android.content.Context,long) -> a
+    boolean a(android.content.Context,long,android.content.SharedPreferences) -> a
+    void a(android.app.Activity) -> a
+com.google.ads.ag$a -> com.google.ads.q:
+    java.lang.ref.WeakReference a -> a
+    android.content.SharedPreferences$Editor b -> b
+    android.content.SharedPreferences$Editor a(android.app.Activity) -> a
+    void run() -> run
+com.google.ads.ag$b -> com.google.ads.r:
+    java.lang.ref.WeakReference a -> a
+    android.webkit.WebView b -> b
+    java.lang.String c -> c
+    void run() -> run
+com.google.ads.ag$c -> com.google.ads.s:
+    boolean a -> a
+    android.webkit.WebView b -> b
+    void run() -> run
+com.google.ads.ah -> com.google.ads.t:
+    boolean a(android.content.Context) -> a
+    boolean a(android.content.Intent,android.content.Context) -> a
+com.google.ads.ai -> com.google.ads.u:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.ai$a -> com.google.ads.v:
     void onClick(android.content.DialogInterface,int) -> onClick
-com.shinymetal.gradereport.AbstractActivity$3 -> com.shinymetal.gradereport.d:
-    com.shinymetal.gradereport.AbstractActivity this$0 -> a
+com.google.ads.ai$b -> com.google.ads.w:
+    com.google.ads.ai$b a -> a
+    com.google.ads.ai$b b -> b
+    java.lang.String c -> c
+    com.google.ads.ai$b[] d -> d
+    com.google.ads.ai$b[] values() -> values
+    com.google.ads.ai$b valueOf(java.lang.String) -> valueOf
+com.google.ads.ai$c -> com.google.ads.x:
+    com.google.ads.internal.d a -> a
     void onClick(android.content.DialogInterface,int) -> onClick
-com.shinymetal.gradereport.AbstractActivity$4 -> com.shinymetal.gradereport.e:
-    com.shinymetal.gradereport.AbstractActivity this$0 -> a
+com.google.ads.b -> com.google.ads.y:
+    java.math.BigInteger a -> a
+    java.math.BigInteger b -> b
+    com.google.ads.b c -> c
+    com.google.ads.b a() -> a
+    java.math.BigInteger b() -> b
+    java.math.BigInteger c() -> c
+    java.math.BigInteger d() -> d
+    byte[] a(long) -> a
+com.google.ads.c -> com.google.ads.z:
+    java.util.Map a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.util.List d -> d
+    java.lang.Integer e -> e
+    java.lang.Integer f -> f
+    java.util.List g -> g
+    java.util.List h -> h
+    java.util.List i -> i
+    com.google.ads.c a(java.lang.String) -> a
+    boolean a() -> a
+    int b() -> b
+    java.lang.String c() -> c
+    boolean d() -> d
+    int e() -> e
+    java.util.List f() -> f
+    java.util.List g() -> g
+    java.util.List h() -> h
+    java.util.List i() -> i
+    com.google.ads.a a(org.json.JSONObject) -> a
+    com.google.ads.internal.h j() -> j
+    java.util.List a(org.json.JSONObject,java.lang.String) -> a
+com.google.ads.c$1 -> com.google.ads.aa:
+com.google.ads.d -> com.google.ads.ab:
+    com.google.ads.c a -> a
+    long b -> b
+    boolean a() -> a
+    void a(com.google.ads.c,int) -> a
+    com.google.ads.c b() -> b
+com.google.ads.doubleclick.DfpExtras -> com.google.ads.a.a:
+    java.lang.String a -> a
+    java.lang.String getPublisherProvidedId() -> a
+    com.google.ads.doubleclick.DfpExtras clearExtras() -> b
+    com.google.ads.mediation.admob.AdMobAdapterExtras clearExtras() -> c
+com.google.ads.e -> com.google.ads.ac:
+    com.google.ads.internal.d a -> a
+    com.google.ads.h b -> b
+    java.lang.Object c -> c
+    java.lang.Thread d -> d
+    java.lang.Object e -> e
+    boolean f -> f
+    java.lang.Object g -> g
+    boolean a() -> a
+    void a(com.google.ads.c,com.google.ads.AdRequest) -> a
+    boolean a(com.google.ads.c,com.google.ads.internal.d) -> a
+    boolean d() -> b
+    void b(com.google.ads.c,com.google.ads.AdRequest) -> b
+    boolean a(java.lang.String,android.app.Activity,com.google.ads.AdRequest,com.google.ads.f,java.util.HashMap,long) -> a
+    boolean e(com.google.ads.h) -> b
+    void d(com.google.ads.h) -> a
+    void a(com.google.ads.e,com.google.ads.c,com.google.ads.AdRequest) -> a
+    java.lang.Object a(com.google.ads.e) -> a
+    java.lang.Thread a(com.google.ads.e,java.lang.Thread) -> a
+    com.google.ads.internal.d b(com.google.ads.e) -> b
+    boolean a(com.google.ads.e,com.google.ads.h) -> a
+com.google.ads.e$1 -> com.google.ads.ad:
+    com.google.ads.c a -> a
+    com.google.ads.AdRequest b -> b
+    com.google.ads.e c -> c
+    void run() -> run
+com.google.ads.e$7 -> com.google.ads.ae:
+    com.google.ads.c a -> a
+    com.google.ads.e b -> b
+    void run() -> run
+com.google.ads.e$8 -> com.google.ads.af:
+    com.google.ads.h a -> a
+    android.view.View b -> b
+    com.google.ads.f c -> c
+    com.google.ads.e d -> d
+    void run() -> run
+com.google.ads.f -> com.google.ads.ag:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.util.List d -> d
+    java.util.List e -> e
+    java.util.List f -> f
+    java.lang.String a() -> a
+    java.lang.String b() -> b
+    java.lang.String c() -> c
+    java.util.List d() -> d
+com.google.ads.g -> com.google.ads.ah:
+    java.lang.String a(java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    java.lang.Object a(java.lang.String,java.lang.Class) -> a
+com.google.ads.g$a -> com.google.ads.ai:
+    com.google.ads.g$a a -> a
+    com.google.ads.g$a b -> b
+    com.google.ads.g$a c -> c
+    com.google.ads.g$a d -> d
+    com.google.ads.g$a e -> e
+    com.google.ads.g$a f -> f
+    com.google.ads.g$a[] g -> g
+    com.google.ads.g$a[] values() -> values
+    com.google.ads.g$a valueOf(java.lang.String) -> valueOf
+com.google.ads.h -> com.google.ads.aj:
+    com.google.ads.internal.h a -> a
+    com.google.ads.f b -> b
+    boolean c -> c
+    boolean d -> d
+    com.google.ads.g$a e -> e
+    com.google.ads.e f -> f
+    com.google.ads.mediation.MediationAdapter g -> g
+    boolean h -> h
+    boolean i -> i
+    android.view.View j -> j
+    android.os.Handler k -> k
+    java.lang.String l -> l
+    com.google.ads.AdRequest m -> m
+    java.util.HashMap n -> n
+    void a(android.app.Activity) -> a
+    void b() -> a
+    boolean c() -> b
+    boolean d() -> c
+    com.google.ads.g$a e() -> d
+    android.view.View f() -> e
+    java.lang.String h() -> f
+    void a(boolean,com.google.ads.g$a) -> a
+    void a(com.google.ads.mediation.MediationAdapter) -> a
+    void k() -> g
+    boolean l() -> h
+    com.google.ads.mediation.MediationAdapter a(com.google.ads.h) -> a
+com.google.ads.h$1 -> com.google.ads.ak:
+    com.google.ads.h a -> a
+    void run() -> run
+com.google.ads.i -> com.google.ads.al:
+    com.google.ads.h a -> a
+    java.lang.String b -> b
+    com.google.ads.AdRequest c -> c
+    java.util.HashMap d -> d
+    boolean e -> e
+    java.lang.ref.WeakReference f -> f
+    boolean a(java.util.Map) -> a
+    void run() -> run
+    void a(java.lang.String,java.lang.Throwable,com.google.ads.g$a) -> a
+    void a(com.google.ads.mediation.MediationAdapter) -> a
+com.google.ads.i$a -> com.google.ads.am:
+com.google.ads.internal.AdVideoView -> com.google.ads.b.a:
+    com.google.ads.internal.a b -> b
+    java.lang.ref.WeakReference c -> c
+    com.google.ads.internal.AdWebView d -> d
+    android.widget.MediaController a -> a
+    long e -> e
+    android.widget.VideoView f -> f
+    java.lang.String g -> g
+    void a() -> a
+    void b() -> b
+    void setMediaControllerEnabled(boolean) -> setMediaControllerEnabled
+    void setSrc(java.lang.String) -> setSrc
+    void onCompletion(android.media.MediaPlayer) -> onCompletion
+    boolean onError(android.media.MediaPlayer,int,int) -> onError
+    void onPrepared(android.media.MediaPlayer) -> onPrepared
+    void c() -> c
+    void d() -> d
+    void a(int) -> a
+    void a(android.view.MotionEvent) -> a
+    void e() -> e
+    void f() -> f
+com.google.ads.internal.AdVideoView$a -> com.google.ads.b.b:
+    java.lang.ref.WeakReference a -> a
+    android.os.Handler b -> b
+    void run() -> run
+    void a() -> a
+com.google.ads.internal.AdWebView -> com.google.ads.b.c:
+    java.lang.ref.WeakReference a -> a
+    com.google.ads.AdSize b -> b
+    boolean c -> c
+    boolean d -> d
+    boolean e -> e
+    void a() -> a
+    void b() -> b
+    void c() -> c
+    com.google.ads.AdActivity d() -> d
+    boolean e() -> e
+    boolean f() -> f
+    void setAdActivity(com.google.ads.AdActivity) -> setAdActivity
+    void loadDataWithBaseURL(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> loadDataWithBaseURL
+    void loadUrl(java.lang.String) -> loadUrl
+    void stopLoading() -> stopLoading
+    void destroy() -> destroy
+    void setAdSize(com.google.ads.AdSize) -> setAdSize
+    void onMeasure(int,int) -> onMeasure
+    void setCustomClose(boolean) -> setCustomClose
+    void setIsExpandedMraid(boolean) -> setIsExpandedMraid
+com.google.ads.internal.AdWebView$1 -> com.google.ads.b.d:
+    com.google.ads.internal.AdWebView a -> a
+    void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long) -> onDownloadStart
+com.google.ads.internal.a -> com.google.ads.b.e:
+    com.google.ads.internal.a d -> d
+    com.google.ads.util.f a -> a
+    java.util.Map b -> b
+    java.util.Map c -> c
+    java.lang.String a(android.net.Uri,java.util.HashMap) -> a
+    void a(com.google.ads.internal.d,java.util.Map,android.net.Uri,android.webkit.WebView) -> a
+    boolean a(android.net.Uri) -> a
+    boolean b(android.net.Uri) -> b
+    boolean c(android.net.Uri) -> c
+    void a(android.webkit.WebView,java.lang.String,java.lang.String) -> a
+    void a(android.webkit.WebView,java.lang.String) -> a
+    void a(android.webkit.WebView,java.util.Map) -> a
+    void a(android.webkit.WebView) -> a
+    void b(android.webkit.WebView) -> b
+    com.google.ads.internal.a a() -> a
+com.google.ads.internal.a$1 -> com.google.ads.b.f:
+com.google.ads.internal.a$2 -> com.google.ads.b.g:
+    com.google.ads.internal.a a() -> a
+    java.lang.Object b() -> b
+com.google.ads.internal.a$3 -> com.google.ads.b.h:
+com.google.ads.internal.b -> com.google.ads.b.i:
+    boolean a -> a
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+    java.lang.String c(java.lang.String) -> c
+com.google.ads.internal.c -> com.google.ads.b.j:
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    boolean f -> f
+    com.google.ads.internal.f g -> g
+    com.google.ads.internal.d h -> h
+    com.google.ads.AdRequest i -> i
+    android.webkit.WebView j -> j
+    java.lang.String k -> k
+    java.util.LinkedList l -> l
+    java.lang.String m -> m
+    com.google.ads.AdSize n -> n
+    boolean o -> o
+    boolean p -> p
+    com.google.ads.AdRequest$ErrorCode q -> q
+    boolean r -> r
+    int s -> s
+    java.lang.Thread t -> t
+    boolean u -> u
+    com.google.ads.internal.c$d v -> v
+    boolean a -> a
+    void a(java.lang.String) -> a
+    void a(com.google.ads.AdRequest) -> a
+    void run() -> run
+    void b() -> a
+    void a(java.lang.String,com.google.ads.c,com.google.ads.d) -> a
+    java.lang.String a(java.util.Map,android.app.Activity) -> a
+    java.lang.String d() -> c
+    java.lang.String e() -> d
+    java.lang.String f() -> e
+    java.lang.String g() -> f
+    java.lang.String h() -> g
+    void a(com.google.ads.AdRequest$ErrorCode,boolean) -> a
+    void b(java.lang.String,java.lang.String) -> b
+    void i() -> h
+    void j() -> i
+    void a(boolean) -> a
+    void b(java.lang.String) -> b
+    void a(java.lang.String,java.lang.String) -> a
+    void c(java.lang.String) -> c
+    void d(java.lang.String) -> d
+    void e(java.lang.String) -> e
+    void a(com.google.ads.AdSize) -> a
+    void a(com.google.ads.AdRequest$ErrorCode) -> a
+    void c() -> b
+    void b(boolean) -> b
+    void a(int) -> a
+    void c(boolean) -> c
+    void a(com.google.ads.internal.c$d) -> a
+    void d(boolean) -> d
+    android.webkit.WebView a(com.google.ads.internal.c) -> a
+    java.lang.String b(com.google.ads.internal.c) -> b
+    com.google.ads.internal.d c(com.google.ads.internal.c) -> c
+    com.google.ads.AdSize d(com.google.ads.internal.c) -> d
+com.google.ads.internal.c$1 -> com.google.ads.b.k:
+    com.google.ads.c a -> a
+    com.google.ads.internal.c b -> b
+    void run() -> run
+com.google.ads.internal.c$2 -> com.google.ads.b.l:
+    int[] a -> a
+com.google.ads.internal.c$a -> com.google.ads.b.m:
+    com.google.ads.internal.d a -> a
+    android.webkit.WebView b -> b
+    com.google.ads.internal.f c -> c
+    com.google.ads.AdRequest$ErrorCode d -> d
+    boolean e -> e
+    void run() -> run
+com.google.ads.internal.c$b -> com.google.ads.b.n:
+    com.google.ads.internal.c a -> a
+com.google.ads.internal.c$c -> com.google.ads.b.o:
+    java.lang.String b -> b
+    java.lang.String c -> c
+    android.webkit.WebView d -> d
+    com.google.ads.internal.c a -> a
+    void run() -> run
+com.google.ads.internal.c$d -> com.google.ads.b.p:
+    com.google.ads.internal.c$d a -> a
+    com.google.ads.internal.c$d b -> b
+    com.google.ads.internal.c$d c -> c
+    com.google.ads.internal.c$d d -> d
+    java.lang.String e -> e
+    com.google.ads.internal.c$d[] f -> f
+    com.google.ads.internal.c$d[] values() -> values
+    com.google.ads.internal.c$d valueOf(java.lang.String) -> valueOf
+com.google.ads.internal.c$e -> com.google.ads.b.q:
+    com.google.ads.internal.d a -> a
+    android.webkit.WebView b -> b
+    java.util.LinkedList c -> c
+    int d -> d
+    boolean e -> e
+    java.lang.String f -> f
+    com.google.ads.AdSize g -> g
+    void run() -> run
+com.google.ads.internal.d -> com.google.ads.b.r:
+    java.lang.Object a -> a
+    com.google.ads.m b -> b
+    com.google.ads.internal.c c -> c
+    com.google.ads.AdRequest d -> d
+    com.google.ads.internal.g e -> e
+    com.google.ads.internal.AdWebView f -> f
+    com.google.ads.internal.i g -> g
+    android.os.Handler h -> h
+    long i -> i
+    boolean j -> j
+    boolean k -> k
+    boolean l -> l
+    boolean m -> m
+    boolean n -> n
+    android.content.SharedPreferences o -> o
+    long p -> p
+    com.google.ads.ae q -> q
+    boolean r -> r
+    java.util.LinkedList s -> s
+    java.util.LinkedList t -> t
+    int u -> u
+    java.lang.Boolean v -> v
+    com.google.ads.d w -> w
+    com.google.ads.e x -> x
+    com.google.ads.f y -> y
+    java.lang.String z -> z
+    void a() -> a
+    void a(java.lang.String) -> a
+    java.lang.String c() -> b
+    void d() -> c
+    void e() -> d
+    void f() -> e
+    void g() -> f
+    com.google.ads.m h() -> g
+    com.google.ads.d i() -> h
+    com.google.ads.internal.c j() -> i
+    com.google.ads.internal.AdWebView k() -> j
+    com.google.ads.internal.i l() -> k
+    com.google.ads.internal.g m() -> l
+    void a(int) -> a
+    int n() -> m
+    long o() -> n
+    boolean p() -> o
+    boolean q() -> p
+    boolean s() -> q
+    void a(com.google.ads.AdRequest) -> a
+    void a(com.google.ads.AdRequest$ErrorCode) -> a
+    void a(com.google.ads.c) -> a
+    void a(android.view.View,com.google.ads.h,com.google.ads.f,boolean) -> a
+    void b(com.google.ads.c) -> b
+    void t() -> r
+    void u() -> s
+    void v() -> t
+    void a(java.lang.String,java.lang.String) -> a
+    void w() -> u
+    void a(com.google.ads.f,java.lang.Boolean) -> a
+    void a(java.util.List,java.lang.String) -> a
+    void a(java.util.List,java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String,java.lang.String) -> a
+    void x() -> v
+    void a(java.lang.Runnable) -> a
+    void y() -> w
+    void a(long) -> a
+    void a(boolean) -> a
+    void a(android.view.View) -> a
+    void a(float) -> a
+    void b(long) -> b
+    void B() -> x
+    void C() -> y
+    void b(java.lang.String) -> b
+    void a(java.util.LinkedList) -> a
+    void b(boolean) -> b
+com.google.ads.internal.e -> com.google.ads.b.s:
+    java.lang.String a -> a
+    java.util.HashMap b -> b
+    java.util.HashMap a(java.io.Serializable) -> a
+    android.os.Bundle a() -> a
+    java.lang.String b() -> b
+    java.util.HashMap c() -> c
+com.google.ads.internal.f -> com.google.ads.b.t:
+    com.google.ads.internal.c a -> a
+    com.google.ads.internal.d b -> b
+    com.google.ads.internal.f$a c -> c
+    boolean d -> d
+    boolean e -> e
+    java.lang.String f -> f
+    java.lang.Thread g -> g
+    void a() -> a
+    void a(java.net.HttpURLConnection) -> a
+    void b(java.net.HttpURLConnection) -> b
+    void c(java.net.HttpURLConnection) -> c
+    void d(java.net.HttpURLConnection) -> d
+    void e(java.net.HttpURLConnection) -> e
+    void f(java.net.HttpURLConnection) -> f
+    void g(java.net.HttpURLConnection) -> g
+    void h(java.net.HttpURLConnection) -> h
+    void i(java.net.HttpURLConnection) -> i
+    void j(java.net.HttpURLConnection) -> j
+    void a(boolean) -> a
+    void k(java.net.HttpURLConnection) -> k
+    void l(java.net.HttpURLConnection) -> l
+    void a(java.lang.String) -> a
+    void a(java.net.HttpURLConnection,int) -> a
+    void run() -> run
+    void b() -> b
+    void a(android.content.Context,java.net.HttpURLConnection) -> a
+com.google.ads.internal.f$1 -> com.google.ads.b.u:
+    java.net.HttpURLConnection a(java.net.URL) -> a
+com.google.ads.internal.f$a -> com.google.ads.b.v:
+    java.net.HttpURLConnection a(java.net.URL) -> a
+com.google.ads.internal.g -> com.google.ads.b.w:
+    java.util.LinkedList a -> a
+    long b -> b
+    long c -> c
+    long d -> d
+    java.util.LinkedList e -> e
+    long f -> f
+    long g -> g
+    long h -> h
+    long i -> i
+    long j -> j
+    boolean k -> k
+    boolean l -> l
+    java.lang.String m -> m
+    long n -> n
+    java.util.LinkedList o -> o
+    java.util.LinkedList p -> p
+    void a() -> a
+    void b() -> b
+    void c() -> c
+    void a(com.google.ads.g$a) -> a
+    java.lang.String d() -> d
+    java.lang.String e() -> e
+    void f() -> f
+    void g() -> g
+    void h() -> h
+    void i() -> i
+    long j() -> j
+    java.lang.String k() -> k
+    java.lang.String l() -> l
+    long m() -> m
+    long n() -> n
+    long o() -> o
+    long p() -> p
+    void q() -> q
+    void r() -> r
+    long s() -> s
+    void t() -> t
+    void u() -> u
+    long v() -> v
+    void w() -> w
+    void x() -> x
+    boolean y() -> y
+    void z() -> z
+    boolean A() -> A
+    void B() -> B
+    void C() -> C
+    java.lang.String D() -> D
+    void a(java.lang.String) -> a
+    long E() -> E
+com.google.ads.internal.h -> com.google.ads.b.x:
+    com.google.ads.AdSize b -> b
+    boolean c -> c
+    com.google.ads.internal.h a -> a
+    com.google.ads.internal.h a(com.google.ads.AdSize,android.content.Context) -> a
+    com.google.ads.internal.h a(com.google.ads.AdSize) -> a
+    boolean a() -> a
+    com.google.ads.AdSize b() -> b
+    void b(com.google.ads.AdSize) -> b
+com.google.ads.internal.i -> com.google.ads.b.y:
+    com.google.ads.internal.a c -> c
+    com.google.ads.internal.d a -> a
+    java.util.Map d -> d
+    boolean b -> b
+    boolean e -> e
+    boolean f -> f
+    boolean g -> g
+    boolean h -> h
+    com.google.ads.internal.i a(com.google.ads.internal.d,java.util.Map,boolean,boolean) -> a
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    void a(boolean) -> a
+    void b(boolean) -> b
+    void c(boolean) -> c
+    void d(boolean) -> d
+com.google.ads.internal.j -> com.google.ads.b.z:
+    byte[] a -> a
+    android.view.ViewGroup a(android.app.Activity,com.google.ads.internal.d) -> a
+com.google.ads.internal.j$a -> com.google.ads.b.aa:
+    android.gesture.GestureStore a -> a
+    android.app.Activity b -> b
+    com.google.ads.internal.d c -> c
+    void onGesturePerformed(android.gesture.GestureOverlayView,android.gesture.Gesture) -> onGesturePerformed
+    android.app.Activity a(com.google.ads.internal.j$a) -> a
+com.google.ads.internal.j$a$1 -> com.google.ads.b.ab:
+    com.google.ads.internal.j$a a -> a
     void onClick(android.content.DialogInterface,int) -> onClick
-com.shinymetal.gradereport.AbstractActivity$IncomingHandler -> com.shinymetal.gradereport.f:
-    void handleMessage(android.os.Message) -> handleMessage
-com.shinymetal.gradereport.AlarmReceiver -> com.shinymetal.gradereport.AlarmReceiver:
+com.google.ads.internal.j$a$2 -> com.google.ads.b.ac:
+    java.lang.String a -> a
+    com.google.ads.internal.j$a b -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.google.ads.j -> com.google.ads.an:
+    com.google.ads.h a -> a
+com.google.ads.k -> com.google.ads.ao:
+    com.google.ads.h a -> a
+com.google.ads.l -> com.google.ads.ap:
+    com.google.ads.l b -> b
+    com.google.ads.util.i$b a -> a
+    com.google.ads.l a() -> a
+com.google.ads.l$a -> com.google.ads.aq:
+    com.google.ads.util.i$c a -> a
+    com.google.ads.util.i$c b -> b
+    com.google.ads.util.i$c c -> c
+    com.google.ads.util.i$c d -> d
+    com.google.ads.util.i$c e -> e
+    com.google.ads.util.i$c f -> f
+    com.google.ads.util.i$c g -> g
+    com.google.ads.util.i$c h -> h
+    com.google.ads.util.i$c i -> i
+    com.google.ads.util.i$c j -> j
+    com.google.ads.util.i$c k -> k
+    com.google.ads.util.i$c l -> l
+com.google.ads.m -> com.google.ads.ar:
+    com.google.ads.util.i$b a -> a
+    com.google.ads.util.i$c b -> b
+    com.google.ads.util.i$c c -> c
+    com.google.ads.util.i$b d -> d
+    com.google.ads.util.i$d e -> e
+    com.google.ads.util.i$b f -> f
+    com.google.ads.util.i$b g -> g
+    com.google.ads.util.i$b h -> h
+    com.google.ads.util.i$b i -> i
+    com.google.ads.util.i$b j -> j
+    com.google.ads.util.i$b k -> k
+    com.google.ads.util.i$c l -> l
+    com.google.ads.util.i$c m -> m
+    com.google.ads.util.i$c n -> n
+    boolean a() -> a
+    boolean b() -> b
+com.google.ads.mediation.MediationAdRequest -> com.google.ads.c.a:
+    com.google.ads.AdRequest a -> a
+    boolean b -> b
+    boolean c -> c
+com.google.ads.mediation.MediationAdapter -> com.google.ads.c.b:
+    void destroy() -> a
+    java.lang.Class getAdditionalParametersType() -> b
+    java.lang.Class getServerParametersType() -> c
+com.google.ads.mediation.MediationBannerAdapter -> com.google.ads.c.c:
+    void requestBannerAd(com.google.ads.mediation.MediationBannerListener,android.app.Activity,com.google.ads.mediation.MediationServerParameters,com.google.ads.AdSize,com.google.ads.mediation.MediationAdRequest,com.google.ads.mediation.NetworkExtras) -> a
+com.google.ads.mediation.MediationBannerListener -> com.google.ads.c.d:
+com.google.ads.mediation.MediationInterstitialAdapter -> com.google.ads.c.e:
+    void requestInterstitialAd(com.google.ads.mediation.MediationInterstitialListener,android.app.Activity,com.google.ads.mediation.MediationServerParameters,com.google.ads.mediation.MediationAdRequest,com.google.ads.mediation.NetworkExtras) -> a
+com.google.ads.mediation.MediationInterstitialListener -> com.google.ads.c.f:
+com.google.ads.mediation.MediationServerParameters -> com.google.ads.c.g:
+    void load(java.util.Map) -> a
+    void a() -> a
+com.google.ads.mediation.MediationServerParameters$MappingException -> com.google.ads.c.h:
+com.google.ads.mediation.MediationServerParameters$Parameter -> com.google.ads.c.i:
+    java.lang.String name() -> a
+    boolean required() -> b
+com.google.ads.mediation.NetworkExtras -> com.google.ads.c.j:
+com.google.ads.mediation.admob.AdMobAdapterExtras -> com.google.ads.c.a.a:
+    boolean a -> a
+    boolean b -> b
+    java.util.Map c -> c
+    boolean getPlusOneOptOut() -> d
+    java.util.Map getExtras() -> e
+    com.google.ads.mediation.admob.AdMobAdapterExtras clearExtras() -> c
+com.google.ads.n -> com.google.ads.as:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.o -> com.google.ads.at:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.p -> com.google.ads.au:
+    com.google.ads.internal.a a -> a
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.q -> com.google.ads.av:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.r -> com.google.ads.aw:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.s -> com.google.ads.ax:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.searchads.SearchAdRequest -> com.google.ads.d.a:
+    java.lang.String a -> b
+    int b -> c
+    int c -> d
+    int d -> e
+    int e -> f
+    int f -> g
+    int g -> h
+    java.lang.String h -> i
+    int i -> j
+    int j -> k
+    com.google.ads.searchads.SearchAdRequest$BorderType k -> l
+    int l -> m
+    java.lang.String m -> n
+    java.util.Map getRequestMap(android.content.Context) -> a
+    java.lang.String a(int) -> a
+com.google.ads.searchads.SearchAdRequest$BorderType -> com.google.ads.d.b:
+    com.google.ads.searchads.SearchAdRequest$BorderType NONE -> a
+    com.google.ads.searchads.SearchAdRequest$BorderType DASHED -> b
+    com.google.ads.searchads.SearchAdRequest$BorderType DOTTED -> c
+    com.google.ads.searchads.SearchAdRequest$BorderType SOLID -> d
+    java.lang.String a -> e
+    com.google.ads.searchads.SearchAdRequest$BorderType[] b -> f
+    com.google.ads.searchads.SearchAdRequest$BorderType[] values() -> values
+    com.google.ads.searchads.SearchAdRequest$BorderType valueOf(java.lang.String) -> valueOf
+    java.lang.String toString() -> toString
+com.google.ads.t -> com.google.ads.ay:
+    com.google.ads.internal.a a -> a
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.u -> com.google.ads.az:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+    java.lang.Runnable a(java.lang.String,android.webkit.WebView) -> a
+com.google.ads.util.AdUtil -> com.google.ads.e.a:
+    int a -> a
+    java.lang.Boolean b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    android.media.AudioManager f -> f
+    boolean g -> g
+    boolean h -> h
+    java.lang.String i -> i
+    boolean a(android.content.Intent,android.content.Context) -> a
+    java.lang.String a(java.lang.Readable) -> a
+    int a(java.lang.String) -> a
+    java.lang.String a(android.content.Context) -> a
+    int a() -> a
+    int b() -> b
+    int a(android.content.Context,android.util.DisplayMetrics) -> a
+    int b(android.content.Context,android.util.DisplayMetrics) -> b
+    boolean b(android.content.Context) -> b
+    boolean a(int,int,java.lang.String) -> a
+    boolean c(android.content.Context) -> c
+    boolean c() -> c
+    boolean a(com.google.ads.util.d) -> a
+    boolean a(android.net.Uri) -> a
+    java.lang.String b(java.lang.String) -> b
+    java.lang.String d(android.content.Context) -> d
+    java.lang.String e(android.content.Context) -> e
+    java.lang.String f(android.content.Context) -> f
+    com.google.ads.util.AdUtil$a g(android.content.Context) -> g
+    android.util.DisplayMetrics a(android.app.Activity) -> a
+    java.lang.String a(android.location.Location) -> a
+    java.lang.String b(android.location.Location) -> b
+    java.lang.String c(java.lang.String) -> c
+    java.util.HashMap b(android.net.Uri) -> b
+    boolean d() -> d
+    void a(boolean) -> a
+    void h(android.content.Context) -> h
+    java.lang.String i(android.content.Context) -> i
+    void a(android.webkit.WebView) -> a
+    void a(java.net.HttpURLConnection,android.content.Context) -> a
+    java.lang.String a(java.util.Map) -> a
+    org.json.JSONObject b(java.util.Map) -> b
+    org.json.JSONArray a(java.util.Set) -> a
+com.google.ads.util.AdUtil$UserActivityReceiver -> com.google.ads.e.b:
     void onReceive(android.content.Context,android.content.Intent) -> onReceive
-com.shinymetal.gradereport.BootEventReceiver -> com.shinymetal.gradereport.BootEventReceiver:
-    void onReceive(android.content.Context,android.content.Intent) -> onReceive
-com.shinymetal.gradereport.DiaryActivity -> com.shinymetal.gradereport.DiaryActivity:
-    com.shinymetal.gradereport.DiaryActivity$LessonsPagerAdapter mSectionsPagerAdapter -> q
-    android.support.v4.view.ViewPager mViewPager -> r
-    com.shinymetal.gradereport.DiaryActivity$DatePickerFragment mDateSetFragment -> s
-    android.widget.Spinner mPupilSpinner -> t
-    java.lang.String mPupilName -> u
-    com.shinymetal.gradereport.DiaryActivity instance -> v
-    int mCurPage -> w
-    void onCreate(android.os.Bundle) -> onCreate
-    java.lang.String getPupilName() -> h
-    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
-    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
-    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
-    android.support.v4.view.ViewPager access$0(com.shinymetal.gradereport.DiaryActivity) -> a
-    com.shinymetal.gradereport.DiaryActivity access$1() -> i
-    android.widget.Spinner access$2(com.shinymetal.gradereport.DiaryActivity) -> b
-    void access$3(com.shinymetal.gradereport.DiaryActivity,java.lang.String) -> a
-com.shinymetal.gradereport.DiaryActivity$1 -> com.shinymetal.gradereport.g:
-    com.shinymetal.gradereport.DiaryActivity this$0 -> a
+com.google.ads.util.AdUtil$a -> com.google.ads.e.c:
+    com.google.ads.util.AdUtil$a a -> a
+    com.google.ads.util.AdUtil$a b -> b
+    com.google.ads.util.AdUtil$a c -> c
+    com.google.ads.util.AdUtil$a d -> d
+    com.google.ads.util.AdUtil$a e -> e
+    com.google.ads.util.AdUtil$a f -> f
+    com.google.ads.util.AdUtil$a[] g -> g
+    com.google.ads.util.AdUtil$a[] values() -> values
+    com.google.ads.util.AdUtil$a valueOf(java.lang.String) -> valueOf
+com.google.ads.util.a -> com.google.ads.e.d:
+    boolean a -> a
+    void a(boolean,java.lang.String) -> a
+    void b(boolean) -> a
+    void b(boolean,java.lang.String) -> b
+    void b(java.lang.Object) -> a
+    void a(java.lang.Object,java.lang.Object) -> a
+    void a(java.lang.String) -> a
+    void c(boolean,java.lang.String) -> c
+com.google.ads.util.a$a -> com.google.ads.e.e:
+com.google.ads.util.b -> com.google.ads.e.f:
+    com.google.ads.util.b$b a -> a
+    int b -> b
+    void a(com.google.ads.util.b$a,java.lang.String) -> a
+    void a(com.google.ads.util.b$a,java.lang.String,java.lang.Throwable) -> a
+    void a(java.lang.String) -> a
+    void a(java.lang.String,java.lang.Throwable) -> a
+    void b(java.lang.String) -> b
+    void b(java.lang.String,java.lang.Throwable) -> b
+    void c(java.lang.String) -> c
+    void c(java.lang.String,java.lang.Throwable) -> c
+    void d(java.lang.String) -> d
+    void e(java.lang.String) -> e
+    void d(java.lang.String,java.lang.Throwable) -> d
+    boolean a(java.lang.String,int) -> a
+    boolean a(int) -> a
+com.google.ads.util.b$a -> com.google.ads.e.g:
+    com.google.ads.util.b$a a -> a
+    com.google.ads.util.b$a b -> b
+    com.google.ads.util.b$a c -> c
+    com.google.ads.util.b$a d -> d
+    com.google.ads.util.b$a e -> e
+    int f -> f
+    com.google.ads.util.b$a[] g -> g
+    com.google.ads.util.b$a[] values() -> values
+    com.google.ads.util.b$a valueOf(java.lang.String) -> valueOf
+com.google.ads.util.b$b -> com.google.ads.e.h:
+    void a(com.google.ads.util.b$a,java.lang.String,java.lang.Throwable) -> a
+com.google.ads.util.c -> com.google.ads.e.i:
+    boolean a -> a
+    byte[] a(java.lang.String) -> a
+    byte[] a(byte[],int) -> a
+    byte[] a(byte[],int,int,int) -> a
+    java.lang.String b(byte[],int) -> b
+    byte[] c(byte[],int) -> c
+    byte[] b(byte[],int,int,int) -> b
+com.google.ads.util.c$a -> com.google.ads.e.j:
+    byte[] a -> a
+    int b -> b
+com.google.ads.util.c$b -> com.google.ads.e.k:
+    int[] c -> c
+    int[] d -> d
+    int e -> e
+    int f -> f
+    int[] g -> g
+    boolean a(byte[],int,int,boolean) -> a
+com.google.ads.util.c$c -> com.google.ads.e.l:
+    byte[] h -> h
+    byte[] i -> i
+    byte[] j -> j
+    int c -> c
+    int k -> k
+    boolean d -> d
+    boolean e -> e
+    boolean f -> f
+    byte[] l -> l
+    boolean g -> g
+    boolean a(byte[],int,int,boolean) -> a
+com.google.ads.util.d -> com.google.ads.e.m:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    com.google.ads.util.d d -> d
+    com.google.ads.util.d e -> e
+    boolean equals(java.lang.Object) -> equals
+    boolean a(java.lang.String,java.lang.String) -> a
+    int hashCode() -> hashCode
+com.google.ads.util.e -> com.google.ads.e.n:
+    int a(android.content.Context,android.util.DisplayMetrics) -> a
+    int b(android.content.Context,android.util.DisplayMetrics) -> b
+    int a(android.content.Context,float,int) -> a
+com.google.ads.util.f -> com.google.ads.e.o:
+    java.lang.Object b() -> b
+com.google.ads.util.g -> com.google.ads.e.p:
+    void a(android.webkit.WebSettings,com.google.ads.m) -> a
+    void a(android.view.View) -> a
+    void b(android.view.View) -> b
+    void a(android.view.Window) -> a
+com.google.ads.util.g$1 -> com.google.ads.e.q:
+    int[] a -> a
+com.google.ads.util.g$a -> com.google.ads.e.r:
+    com.google.ads.m a -> a
+    void onCloseWindow(android.webkit.WebView) -> onCloseWindow
+    boolean onConsoleMessage(android.webkit.ConsoleMessage) -> onConsoleMessage
+    void onExceededDatabaseQuota(java.lang.String,java.lang.String,long,long,long,android.webkit.WebStorage$QuotaUpdater) -> onExceededDatabaseQuota
+    boolean onJsAlert(android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.JsResult) -> onJsAlert
+    boolean onJsBeforeUnload(android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.JsResult) -> onJsBeforeUnload
+    boolean onJsConfirm(android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.JsResult) -> onJsConfirm
+    boolean onJsPrompt(android.webkit.WebView,java.lang.String,java.lang.String,java.lang.String,android.webkit.JsPromptResult) -> onJsPrompt
+    void onReachedMaxAppCacheSize(long,long,android.webkit.WebStorage$QuotaUpdater) -> onReachedMaxAppCacheSize
+    void onShowCustomView(android.view.View,android.webkit.WebChromeClient$CustomViewCallback) -> onShowCustomView
+    boolean a(android.webkit.WebView,java.lang.String,java.lang.String,java.lang.String,android.webkit.JsResult,android.webkit.JsPromptResult,boolean) -> a
+    void a(android.app.AlertDialog$Builder,java.lang.String,android.webkit.JsResult) -> a
+    void a(android.app.AlertDialog$Builder,android.content.Context,java.lang.String,java.lang.String,android.webkit.JsPromptResult) -> a
+com.google.ads.util.g$a$1 -> com.google.ads.e.s:
+    android.webkit.JsResult a -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+com.google.ads.util.g$a$2 -> com.google.ads.e.t:
+    android.webkit.JsResult a -> a
     void onClick(android.content.DialogInterface,int) -> onClick
-com.shinymetal.gradereport.DiaryActivity$2 -> com.shinymetal.gradereport.h:
-    com.shinymetal.gradereport.DiaryActivity this$0 -> a
+com.google.ads.util.g$a$3 -> com.google.ads.e.u:
+    android.webkit.JsResult a -> a
     void onClick(android.content.DialogInterface,int) -> onClick
-com.shinymetal.gradereport.DiaryActivity$DatePickerFragment -> com.shinymetal.gradereport.i:
-    android.app.Dialog onCreateDialog(android.os.Bundle) -> c
-    void onDateSet(android.widget.DatePicker,int,int,int) -> onDateSet
-com.shinymetal.gradereport.DiaryActivity$DatePickerFragment$1 -> com.shinymetal.gradereport.j:
-    com.shinymetal.gradereport.DiaryActivity$DatePickerFragment this$1 -> a
-    void run() -> run
-com.shinymetal.gradereport.DiaryActivity$LessonsPagerAdapter -> com.shinymetal.gradereport.k:
-    com.shinymetal.gradereport.DiaryActivity this$0 -> a
-    android.support.v4.app.Fragment getItem(int) -> a
-    int getItemPosition(java.lang.Object) -> a
-    int getCount() -> b
-    java.lang.CharSequence getPageTitle(int) -> c
-com.shinymetal.gradereport.DiaryUpdateService -> com.shinymetal.gradereport.DiaryUpdateService:
-    android.os.IBinder mBinder -> b
-    java.util.ArrayList mClients -> c
-    boolean mServiceBusy -> a
-    android.os.IBinder onBind(android.content.Intent) -> onBind
-    void updateActivityWithStatus(int) -> a
-    void onHandleIntent(android.content.Intent) -> onHandleIntent
-com.shinymetal.gradereport.DiaryUpdateService$1 -> com.shinymetal.gradereport.l:
-    com.shinymetal.gradereport.DiaryUpdateService this$0 -> a
-    void run() -> run
-com.shinymetal.gradereport.DiaryUpdateService$DiaryUpdateBinder -> com.shinymetal.gradereport.m:
-    com.shinymetal.gradereport.DiaryUpdateService this$0 -> a
-    com.shinymetal.gradereport.DiaryUpdateService getService() -> a
-com.shinymetal.gradereport.GradesActivity -> com.shinymetal.gradereport.GradesActivity:
-    com.shinymetal.gradereport.GradesActivity$GradesPagerAdapter mSectionsPagerAdapter -> q
-    android.support.v4.view.ViewPager mViewPager -> r
-    com.shinymetal.gradereport.GradesActivity$DatePickerFragment mDateSetFragment -> s
-    android.widget.Spinner mPupilSpinner -> t
-    java.lang.String mPupilName -> u
-    int mCurPage -> v
-    com.shinymetal.gradereport.GradesActivity instance -> w
-    void onCreate(android.os.Bundle) -> onCreate
-    java.lang.String getPupilName() -> h
-    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
-    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
-    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
-    android.support.v4.view.ViewPager access$0(com.shinymetal.gradereport.GradesActivity) -> a
-    com.shinymetal.gradereport.GradesActivity access$1() -> i
-    android.widget.Spinner access$2(com.shinymetal.gradereport.GradesActivity) -> b
-    void access$3(com.shinymetal.gradereport.GradesActivity,java.lang.String) -> a
-com.shinymetal.gradereport.GradesActivity$1 -> com.shinymetal.gradereport.n:
-    com.shinymetal.gradereport.GradesActivity this$0 -> a
+com.google.ads.util.g$a$4 -> com.google.ads.e.v:
+    android.webkit.JsPromptResult a -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+com.google.ads.util.g$a$5 -> com.google.ads.e.w:
+    android.webkit.JsPromptResult a -> a
     void onClick(android.content.DialogInterface,int) -> onClick
-com.shinymetal.gradereport.GradesActivity$2 -> com.shinymetal.gradereport.o:
-    com.shinymetal.gradereport.GradesActivity this$0 -> a
+com.google.ads.util.g$a$6 -> com.google.ads.e.x:
+    android.webkit.JsPromptResult a -> a
+    android.widget.EditText b -> b
     void onClick(android.content.DialogInterface,int) -> onClick
-com.shinymetal.gradereport.GradesActivity$DatePickerFragment -> com.shinymetal.gradereport.p:
-    android.app.Dialog onCreateDialog(android.os.Bundle) -> c
-    void onDateSet(android.widget.DatePicker,int,int,int) -> onDateSet
-com.shinymetal.gradereport.GradesActivity$DatePickerFragment$1 -> com.shinymetal.gradereport.q:
-    com.shinymetal.gradereport.GradesActivity$DatePickerFragment this$1 -> a
-    void run() -> run
-com.shinymetal.gradereport.GradesActivity$GradesPagerAdapter -> com.shinymetal.gradereport.r:
-    com.shinymetal.gradereport.GradesActivity this$0 -> a
-    android.support.v4.app.Fragment getItem(int) -> a
-    int getItemPosition(java.lang.Object) -> a
-    int getCount() -> b
-    java.lang.CharSequence getPageTitle(int) -> c
-com.shinymetal.gradereport.GradesExpListAdapter -> com.shinymetal.gradereport.s:
-    com.shinymetal.gradereport.GradesActivity mActivity -> a
-    android.database.Cursor mGradesCursor -> b
-    java.util.SortedMap mMarksCursors -> c
-    int mSemester -> d
-    int mSelectedPos -> e
-    int getSelectedPosition() -> a
-    void setSelectedPosition(int) -> a
-    java.lang.Object getChild(int,int) -> getChild
-    long getChildId(int,int) -> getChildId
-    android.view.View getChildView(int,int,boolean,android.view.View,android.view.ViewGroup) -> getChildView
-    int getChildrenCount(int) -> getChildrenCount
-    java.lang.Object getGroup(int) -> getGroup
-    int getGroupCount() -> getGroupCount
-    long getGroupId(int) -> getGroupId
-    android.view.View getGroupView(int,boolean,android.view.View,android.view.ViewGroup) -> getGroupView
-    boolean hasStableIds() -> hasStableIds
-    boolean isChildSelectable(int,int) -> isChildSelectable
-com.shinymetal.gradereport.GradesExpListFragment -> com.shinymetal.gradereport.t:
-    com.shinymetal.gradereport.GradesExpListAdapter mAdapter -> a
-    android.widget.ExpandableListView mExpListView -> b
-    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
-com.shinymetal.gradereport.GradesExpListFragment$1 -> com.shinymetal.gradereport.u:
-    com.shinymetal.gradereport.GradesExpListFragment this$0 -> a
-    void onGroupExpand(int) -> onGroupExpand
-com.shinymetal.gradereport.LessonDetailsFragment -> com.shinymetal.gradereport.v:
-    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
-com.shinymetal.gradereport.LessonsExpListAdapter -> com.shinymetal.gradereport.w:
-    com.shinymetal.gradereport.DiaryActivity mActivity -> a
-    java.util.Date mDay -> b
-    java.text.SimpleDateFormat mFormat -> c
-    android.database.Cursor mCursor -> d
-    int mSelectedPos -> e
-    void setSelectedPosition(int) -> a
-    int getSelectedPosition() -> a
-    int getGroupCount() -> getGroupCount
-    int getChildrenCount(int) -> getChildrenCount
-    java.lang.Object getGroup(int) -> getGroup
-    java.lang.Object getChild(int,int) -> getChild
-    long getGroupId(int) -> getGroupId
-    long getChildId(int,int) -> getChildId
-    boolean hasStableIds() -> hasStableIds
-    android.view.View getGroupView(int,boolean,android.view.View,android.view.ViewGroup) -> getGroupView
-    android.view.View getChildView(int,int,boolean,android.view.View,android.view.ViewGroup) -> getChildView
-    boolean isChildSelectable(int,int) -> isChildSelectable
-com.shinymetal.gradereport.LessonsExpListFragment -> com.shinymetal.gradereport.x:
-    com.shinymetal.gradereport.LessonsExpListAdapter mAdapter -> a
-    android.widget.ExpandableListView mExpListView -> b
-    java.text.SimpleDateFormat mDateFmt -> c
-    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
-com.shinymetal.gradereport.LessonsExpListFragment$1 -> com.shinymetal.gradereport.y:
-    com.shinymetal.gradereport.LessonsExpListFragment this$0 -> a
-    void onGroupExpand(int) -> onGroupExpand
-com.shinymetal.gradereport.LessonsListAdapter -> com.shinymetal.gradereport.z:
-    com.shinymetal.gradereport.DiaryActivity mActivity -> a
-    java.text.SimpleDateFormat mFormat -> b
-    java.util.Date mDay -> c
-    android.database.Cursor mCursor -> d
-    int mSelectedPos -> e
-    void setSelectedPosition(int) -> a
-    int getCount() -> getCount
-    java.lang.Object getItem(int) -> getItem
-    long getItemId(int) -> getItemId
-    boolean hasStableIds() -> hasStableIds
-    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
-com.shinymetal.gradereport.LessonsListFragment -> com.shinymetal.gradereport.aa:
-    com.shinymetal.gradereport.LessonsListAdapter mAdapter -> a
-    com.shinymetal.gradereport.LessonsListFragment instance -> b
-    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
-    com.shinymetal.gradereport.LessonsListFragment access$0(com.shinymetal.gradereport.LessonsListFragment) -> a
-com.shinymetal.gradereport.LessonsListFragment$1 -> com.shinymetal.gradereport.ab:
-    com.shinymetal.gradereport.LessonsListFragment this$0 -> a
-    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
-com.shinymetal.gradereport.LessonsNestedFragment -> com.shinymetal.gradereport.ac:
-    com.shinymetal.gradereport.LessonsListFragment mLessonsFragment -> a
-    com.shinymetal.gradereport.LessonDetailsFragment mLessonsDetailsFragment -> b
-    com.shinymetal.gradereport.LessonDetailsFragment getDetailsFragment() -> a
-    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
-com.shinymetal.gradereport.LicenseValidatorHelper -> com.shinymetal.gradereport.ad:
-    byte[] SALT -> a
-    com.google.android.vending.licensing.LicenseChecker mChecker -> b
-    java.lang.String mDeviceId -> c
-    int mLicState -> d
-    boolean mInProgress -> e
-    com.shinymetal.gradereport.LicenseValidatorHelper instance -> f
-    com.shinymetal.gradereport.LicenseValidatorHelper getInstance(android.content.Context) -> a
-    void retry() -> a
-    int getLicState() -> b
-    boolean isInProgress() -> c
-    void allow(int) -> a
-    void dontAllow(int) -> b
-    void applicationError(int) -> c
-com.shinymetal.gradereport.PreferencesActivity -> com.shinymetal.gradereport.PreferencesActivity:
-    com.shinymetal.gradereport.PreferencesActivity instance -> a
-    boolean mRescheduleService -> b
-    void onCreate(android.os.Bundle) -> onCreate
-    void onPause() -> onPause
-    boolean onPreferenceChange(android.preference.Preference,java.lang.Object) -> onPreferenceChange
-    com.shinymetal.gradereport.PreferencesActivity access$0() -> a
-com.shinymetal.gradereport.PreferencesActivity$MyPreferenceFragment -> com.shinymetal.gradereport.ae:
-    void onCreate(android.os.Bundle) -> onCreate
-com.shinymetal.gradereport.SplashActivity -> com.shinymetal.gradereport.SplashActivity:
-    int SPLASH_TIME_OUT -> a
-    void onCreate(android.os.Bundle) -> onCreate
-com.shinymetal.gradereport.SplashActivity$1 -> com.shinymetal.gradereport.af:
-    com.shinymetal.gradereport.SplashActivity this$0 -> a
-    void run() -> run
-com.shinymetal.gradereport.db.Database -> com.shinymetal.gradereport.a.a:
+com.google.ads.util.g$b -> com.google.ads.e.y:
+    android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,java.lang.String) -> shouldInterceptRequest
+    android.webkit.WebResourceResponse a(java.lang.String,android.content.Context) -> a
+com.google.ads.util.h -> com.google.ads.e.z:
+com.google.ads.util.h$a -> com.google.ads.e.aa:
+    void onShowCustomView(android.view.View,int,android.webkit.WebChromeClient$CustomViewCallback) -> onShowCustomView
+com.google.ads.util.i -> com.google.ads.e.ab:
+    java.lang.Object a -> a
+    int b -> b
+    java.util.HashMap c -> c
+    int o -> o
+    java.util.ArrayList d -> d
+    void finalize() -> finalize
+    java.lang.String toString() -> toString
+    void a(com.google.ads.util.i$a) -> a
+    void a(com.google.ads.util.i,com.google.ads.util.i$a) -> a
+com.google.ads.util.i$1 -> com.google.ads.e.ac:
+com.google.ads.util.i$a -> com.google.ads.e.ad:
+    java.lang.Object a -> a
+    java.lang.String b -> b
+    com.google.ads.util.i c -> c
+    java.lang.String toString() -> toString
+com.google.ads.util.i$b -> com.google.ads.e.ae:
+    com.google.ads.util.i d -> d
+    java.lang.Object a() -> a
+    java.lang.String toString() -> toString
+com.google.ads.util.i$c -> com.google.ads.e.af:
+    boolean e -> e
+    com.google.ads.util.i d -> d
+    java.lang.Object a() -> a
+    void a(java.lang.Object) -> a
+    java.lang.String toString() -> toString
+com.google.ads.util.i$d -> com.google.ads.e.ag:
+    com.google.ads.util.i d -> d
+    java.lang.Object a() -> a
+    java.lang.String toString() -> toString
+com.google.ads.v -> com.google.ads.ba:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.w -> com.google.ads.bb:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.x -> com.google.ads.bc:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+    void a(java.util.HashMap,java.lang.String,com.google.ads.util.i$c) -> a
+    void b(java.util.HashMap,java.lang.String,com.google.ads.util.i$c) -> b
+    void c(java.util.HashMap,java.lang.String,com.google.ads.util.i$c) -> c
+com.google.ads.y -> com.google.ads.bd:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.z -> com.google.ads.be:
+    com.google.ads.AdActivity$StaticMethodWrapper a -> a
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.shinymetal.gradereport.db.Database -> com.shinymetal.a.a.a:
     android.content.Context mContext -> a
     void setContext(android.content.Context) -> a
     android.database.sqlite.SQLiteOpenHelper getHelper() -> a
     android.database.sqlite.SQLiteDatabase getWritable() -> b
     android.database.sqlite.SQLiteDatabase getReadable() -> c
-com.shinymetal.gradereport.db.Database$DatabaseOpenHelper -> com.shinymetal.gradereport.a.b:
+com.shinymetal.gradereport.db.Database$DatabaseOpenHelper -> com.shinymetal.a.a.b:
     android.database.sqlite.SQLiteDatabase mDatabase -> a
     com.shinymetal.gradereport.db.Database$DatabaseOpenHelper instance -> b
     com.shinymetal.gradereport.db.Database$DatabaseOpenHelper getInstance(android.content.Context) -> a
     void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
     void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
-com.shinymetal.gradereport.objects.FormSelectableField -> com.shinymetal.gradereport.b.a:
+com.shinymetal.gradereport.objects.FormSelectableField -> com.shinymetal.a.b.a:
     java.lang.String formId -> a
     java.lang.String formText -> b
     java.lang.String getFormId() -> a
     void setFormId(java.lang.String) -> a
     java.lang.String getFormText() -> b
     void setFormText(java.lang.String) -> b
-com.shinymetal.gradereport.objects.FormTimeInterval -> com.shinymetal.gradereport.b.b:
+com.shinymetal.gradereport.objects.FormTimeInterval -> com.shinymetal.a.b.b:
     java.util.Date start -> a
     java.util.Date stop -> b
     java.util.Date getStart() -> c
     void setStart(java.util.Date) -> a
     java.util.Date getStop() -> d
     void setStop(java.util.Date) -> b
-com.shinymetal.gradereport.objects.GradeRec -> com.shinymetal.gradereport.b.c:
+com.shinymetal.gradereport.objects.GradeRec -> com.shinymetal.a.b.c:
     java.lang.String[] COLUMNS_GET_ALL -> f
     int mAbsent -> a
     int mReleased -> b
@@ -2168,7 +2865,7 @@ com.shinymetal.gradereport.objects.GradeRec -> com.shinymetal.gradereport.b.c:
     android.database.Cursor getCursorMarks() -> k
     com.shinymetal.gradereport.objects.MarkRec getMarkRecByComment(java.lang.String) -> c
     long getRowId() -> l
-com.shinymetal.gradereport.objects.GradeSemester -> com.shinymetal.gradereport.b.d:
+com.shinymetal.gradereport.objects.GradeSemester -> com.shinymetal.a.b.d:
     java.lang.String[] COLUMNS_GET_BY_FORM_ID -> b
     java.lang.String[] COLUMNS_GET_BY_DATE -> c
     java.lang.String[] COLUMNS_GET_SET -> d
@@ -2183,7 +2880,7 @@ com.shinymetal.gradereport.objects.GradeSemester -> com.shinymetal.gradereport.b
     long update() -> g
     java.util.Set getSet(com.shinymetal.gradereport.objects.Schedule) -> b
     com.shinymetal.gradereport.objects.GradeSemester getByNumber(com.shinymetal.gradereport.objects.Schedule,int) -> a
-com.shinymetal.gradereport.objects.Lesson -> com.shinymetal.gradereport.b.e:
+com.shinymetal.gradereport.objects.Lesson -> com.shinymetal.a.b.e:
     java.lang.String[] COLUMNS_GET_BY_START -> a
     java.lang.String[] COLUMNS_GET_ALL_BY_DATE -> b
     java.lang.String[] COLUMNS_GET_BY_NUMBER -> c
@@ -2211,11 +2908,11 @@ com.shinymetal.gradereport.objects.Lesson -> com.shinymetal.gradereport.b.e:
     java.lang.String toString() -> toString
     long insert(com.shinymetal.gradereport.objects.Schedule) -> a
     long update() -> k
-    boolean existsByStart(com.shinymetal.gradereport.objects.Schedule,java.util.Date) -> a
+    com.shinymetal.gradereport.objects.Lesson getByStart(com.shinymetal.gradereport.objects.Schedule,java.util.Date) -> a
     android.database.Cursor getCursorAllByDate(com.shinymetal.gradereport.objects.Schedule,java.util.Date,java.util.Date) -> a
     com.shinymetal.gradereport.objects.Lesson getFromCursor(android.database.Cursor) -> a
     com.shinymetal.gradereport.objects.Lesson getByNumber(com.shinymetal.gradereport.objects.Schedule,java.util.Date,java.util.Date,int) -> a
-com.shinymetal.gradereport.objects.MarkRec -> com.shinymetal.gradereport.b.f:
+com.shinymetal.gradereport.objects.MarkRec -> com.shinymetal.a.b.f:
     java.lang.String[] COLUMNS_GET_ALL -> a
     java.lang.String[] COLUMNS_GET_BY_COMMENT -> b
     java.lang.String mMarks -> c
@@ -2232,7 +2929,7 @@ com.shinymetal.gradereport.objects.MarkRec -> com.shinymetal.gradereport.b.f:
     com.shinymetal.gradereport.objects.MarkRec getFromCursor(android.database.Cursor) -> a
     com.shinymetal.gradereport.objects.MarkRec getByComment(com.shinymetal.gradereport.objects.GradeRec,java.lang.String) -> a
     java.util.Set getSet(com.shinymetal.gradereport.objects.GradeRec) -> c
-com.shinymetal.gradereport.objects.Pupil -> com.shinymetal.gradereport.b.g:
+com.shinymetal.gradereport.objects.Pupil -> com.shinymetal.a.b.g:
     java.lang.String[] COLUMNS_GET_BY_FORM_ID -> a
     java.lang.String[] COLUMNS_GET_BY_FORM_NAME -> b
     java.lang.String[] COLUMNS_GET_SET -> c
@@ -2247,7 +2944,7 @@ com.shinymetal.gradereport.objects.Pupil -> com.shinymetal.gradereport.b.g:
     com.shinymetal.gradereport.objects.Schedule getScheduleByFormId(java.lang.String) -> e
     java.lang.String toString() -> toString
     com.shinymetal.gradereport.objects.Schedule getScheduleByDate(java.util.Date) -> a
-com.shinymetal.gradereport.objects.Schedule -> com.shinymetal.gradereport.b.h:
+com.shinymetal.gradereport.objects.Schedule -> com.shinymetal.a.b.h:
     java.lang.String[] COLUMNS_GET_BY_FORM_ID -> a
     java.lang.String[] COLUMNS_GET_SET -> b
     java.lang.String[] COLUMNS_GET_BY_SCHOOL_YEAR -> c
@@ -2263,7 +2960,7 @@ com.shinymetal.gradereport.objects.Schedule -> com.shinymetal.gradereport.b.h:
     com.shinymetal.gradereport.objects.GradeSemester getSemesterByNumber(int) -> a
     com.shinymetal.gradereport.objects.GradeSemester getSemester(java.lang.String) -> c
     com.shinymetal.gradereport.objects.Schedule addGradeRec(com.shinymetal.gradereport.objects.GradeRec) -> a
-    boolean existsLessonByStart(java.util.Date) -> c
+    com.shinymetal.gradereport.objects.Lesson getLessonByStart(java.util.Date) -> c
     android.database.Cursor getCursorLessonsByDate(java.util.Date) -> d
     android.database.Cursor getCursorGradesByDate(java.util.Date) -> e
     com.shinymetal.gradereport.objects.Lesson getLessonByNumber(java.util.Date,int) -> a
@@ -2272,13 +2969,13 @@ com.shinymetal.gradereport.objects.Schedule -> com.shinymetal.gradereport.b.h:
     java.util.Set getSemesterSet() -> f
     java.util.Set getWeekSet() -> g
     com.shinymetal.gradereport.objects.GradeRec getGradeRecByDateText(java.util.Date,java.lang.String) -> a
-com.shinymetal.gradereport.objects.TS -> com.shinymetal.gradereport.b.i:
+com.shinymetal.gradereport.objects.TS -> com.shinymetal.a.b.i:
     long startDate -> a
     long startNanoseconds -> b
     java.text.SimpleDateFormat dateFormat -> c
     java.lang.String getTimestamp() -> b
     java.lang.String get() -> a
-com.shinymetal.gradereport.objects.Week -> com.shinymetal.gradereport.b.j:
+com.shinymetal.gradereport.objects.Week -> com.shinymetal.a.b.j:
     java.lang.String[] COLUMNS_GET_BY_DATE -> a
     java.lang.String[] COLUMNS_GET_BY_FORM_ID -> b
     java.lang.String[] COLUMNS_GET_SET -> c
@@ -2297,7 +2994,7 @@ com.shinymetal.gradereport.objects.Week -> com.shinymetal.gradereport.b.j:
     long insert(com.shinymetal.gradereport.objects.Schedule) -> a
     com.shinymetal.gradereport.objects.Week getByFormId(com.shinymetal.gradereport.objects.Schedule,java.lang.String) -> a
     java.util.Set getSet(com.shinymetal.gradereport.objects.Schedule) -> b
-com.shinymetal.gradereport.utils.GshisHTMLParser -> com.shinymetal.gradereport.c.a:
+com.shinymetal.gradereport.utils.GshisHTMLParser -> com.shinymetal.a.c.a:
     java.util.regex.Pattern whitespaces_only -> a
     java.util.regex.Pattern subjects_name -> b
     com.shinymetal.gradereport.objects.Pupil getSelectedPupil(org.jsoup.nodes.Document) -> a
@@ -2312,7 +3009,7 @@ com.shinymetal.gradereport.utils.GshisHTMLParser -> com.shinymetal.gradereport.c
     void getGrades(org.jsoup.nodes.Document,com.shinymetal.gradereport.objects.Schedule,com.shinymetal.gradereport.objects.GradeSemester) -> a
     java.lang.String fixDuplicateString(java.lang.String,java.lang.String,int) -> a
     java.lang.String getVIEWSTATE(org.jsoup.nodes.Document) -> b
-com.shinymetal.gradereport.utils.GshisLoader -> com.shinymetal.gradereport.c.b:
+com.shinymetal.gradereport.utils.GshisLoader -> com.shinymetal.a.c.b:
     java.lang.String mCookieARRAffinity -> a
     java.lang.String mCookieASPXAUTH -> b
     java.lang.String mCookieASPNET_SessionId -> c
@@ -2354,6 +3051,215 @@ com.shinymetal.gradereport.utils.GshisLoader -> com.shinymetal.gradereport.c.b:
     boolean isLastNetworkCallFailed() -> h
     java.lang.String getLastNetworkFailureReason() -> i
     java.util.ArrayList getPupilNames() -> j
+com.shinymetal.gradereportlt.AbstractActivity -> com.shinymetal.gradereportlt.a:
+    com.shinymetal.gradereportlt.AbstractActivity instance -> n
+    com.shinymetal.gradereport.utils.GshisLoader mGshisLoader -> o
+    com.shinymetal.gradereportlt.AbstractActivity$IncomingHandler mHandler -> q
+    com.shinymetal.gradereportlt.DiaryUpdateService mUpdateService -> r
+    android.content.ServiceConnection mConnection -> p
+    android.os.Handler getHandler() -> f
+    void doBindService() -> g
+    void showAlertDialog(java.lang.String) -> b
+    void setRecurringAlarm(android.content.Context,boolean) -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void access$0(com.shinymetal.gradereportlt.AbstractActivity,com.shinymetal.gradereportlt.DiaryUpdateService) -> a
+com.shinymetal.gradereportlt.AbstractActivity$1 -> com.shinymetal.gradereportlt.b:
+    com.shinymetal.gradereportlt.AbstractActivity this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.shinymetal.gradereportlt.AbstractActivity$2 -> com.shinymetal.gradereportlt.c:
+    com.shinymetal.gradereportlt.AbstractActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.shinymetal.gradereportlt.AbstractActivity$IncomingHandler -> com.shinymetal.gradereportlt.d:
+    void handleMessage(android.os.Message) -> handleMessage
+com.shinymetal.gradereportlt.AlarmReceiver -> com.shinymetal.gradereportlt.AlarmReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.shinymetal.gradereportlt.BootEventReceiver -> com.shinymetal.gradereportlt.BootEventReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.shinymetal.gradereportlt.DiaryActivity -> com.shinymetal.gradereportlt.DiaryActivity:
+    com.shinymetal.gradereportlt.DiaryActivity$LessonsPagerAdapter mSectionsPagerAdapter -> q
+    android.support.v4.view.ViewPager mViewPager -> r
+    com.shinymetal.gradereportlt.DiaryActivity$DatePickerFragment mDateSetFragment -> s
+    android.widget.Spinner mPupilSpinner -> t
+    java.lang.String mPupilName -> u
+    com.shinymetal.gradereportlt.DiaryActivity instance -> v
+    int mCurPage -> w
+    void onCreate(android.os.Bundle) -> onCreate
+    java.lang.String getPupilName() -> h
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    android.support.v4.view.ViewPager access$0(com.shinymetal.gradereportlt.DiaryActivity) -> a
+    com.shinymetal.gradereportlt.DiaryActivity access$1() -> i
+    android.widget.Spinner access$2(com.shinymetal.gradereportlt.DiaryActivity) -> b
+    void access$3(com.shinymetal.gradereportlt.DiaryActivity,java.lang.String) -> a
+com.shinymetal.gradereportlt.DiaryActivity$1 -> com.shinymetal.gradereportlt.e:
+    com.shinymetal.gradereportlt.DiaryActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.shinymetal.gradereportlt.DiaryActivity$2 -> com.shinymetal.gradereportlt.f:
+    com.shinymetal.gradereportlt.DiaryActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.shinymetal.gradereportlt.DiaryActivity$DatePickerFragment -> com.shinymetal.gradereportlt.g:
+    android.app.Dialog onCreateDialog(android.os.Bundle) -> c
+    void onDateSet(android.widget.DatePicker,int,int,int) -> onDateSet
+com.shinymetal.gradereportlt.DiaryActivity$DatePickerFragment$1 -> com.shinymetal.gradereportlt.h:
+    com.shinymetal.gradereportlt.DiaryActivity$DatePickerFragment this$1 -> a
+    void run() -> run
+com.shinymetal.gradereportlt.DiaryActivity$LessonsPagerAdapter -> com.shinymetal.gradereportlt.i:
+    com.shinymetal.gradereportlt.DiaryActivity this$0 -> a
+    android.support.v4.app.Fragment getItem(int) -> a
+    int getItemPosition(java.lang.Object) -> a
+    int getCount() -> b
+    java.lang.CharSequence getPageTitle(int) -> c
+com.shinymetal.gradereportlt.DiaryUpdateService -> com.shinymetal.gradereportlt.DiaryUpdateService:
+    android.os.IBinder mBinder -> b
+    java.util.ArrayList mClients -> c
+    boolean mServiceBusy -> a
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void updateActivityWithStatus(int) -> a
+    void onHandleIntent(android.content.Intent) -> onHandleIntent
+com.shinymetal.gradereportlt.DiaryUpdateService$1 -> com.shinymetal.gradereportlt.j:
+    com.shinymetal.gradereportlt.DiaryUpdateService this$0 -> a
+    void run() -> run
+com.shinymetal.gradereportlt.DiaryUpdateService$DiaryUpdateBinder -> com.shinymetal.gradereportlt.k:
+    com.shinymetal.gradereportlt.DiaryUpdateService this$0 -> a
+    com.shinymetal.gradereportlt.DiaryUpdateService getService() -> a
+com.shinymetal.gradereportlt.GradesActivity -> com.shinymetal.gradereportlt.GradesActivity:
+    com.shinymetal.gradereportlt.GradesActivity$GradesPagerAdapter mSectionsPagerAdapter -> q
+    android.support.v4.view.ViewPager mViewPager -> r
+    com.shinymetal.gradereportlt.GradesActivity$DatePickerFragment mDateSetFragment -> s
+    android.widget.Spinner mPupilSpinner -> t
+    java.lang.String mPupilName -> u
+    int mCurPage -> v
+    com.shinymetal.gradereportlt.GradesActivity instance -> w
+    void onCreate(android.os.Bundle) -> onCreate
+    java.lang.String getPupilName() -> h
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    android.support.v4.view.ViewPager access$0(com.shinymetal.gradereportlt.GradesActivity) -> a
+    com.shinymetal.gradereportlt.GradesActivity access$1() -> i
+    android.widget.Spinner access$2(com.shinymetal.gradereportlt.GradesActivity) -> b
+    void access$3(com.shinymetal.gradereportlt.GradesActivity,java.lang.String) -> a
+com.shinymetal.gradereportlt.GradesActivity$1 -> com.shinymetal.gradereportlt.l:
+    com.shinymetal.gradereportlt.GradesActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.shinymetal.gradereportlt.GradesActivity$2 -> com.shinymetal.gradereportlt.m:
+    com.shinymetal.gradereportlt.GradesActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.shinymetal.gradereportlt.GradesActivity$DatePickerFragment -> com.shinymetal.gradereportlt.n:
+    android.app.Dialog onCreateDialog(android.os.Bundle) -> c
+    void onDateSet(android.widget.DatePicker,int,int,int) -> onDateSet
+com.shinymetal.gradereportlt.GradesActivity$DatePickerFragment$1 -> com.shinymetal.gradereportlt.o:
+    com.shinymetal.gradereportlt.GradesActivity$DatePickerFragment this$1 -> a
+    void run() -> run
+com.shinymetal.gradereportlt.GradesActivity$GradesPagerAdapter -> com.shinymetal.gradereportlt.p:
+    com.shinymetal.gradereportlt.GradesActivity this$0 -> a
+    android.support.v4.app.Fragment getItem(int) -> a
+    int getItemPosition(java.lang.Object) -> a
+    int getCount() -> b
+    java.lang.CharSequence getPageTitle(int) -> c
+com.shinymetal.gradereportlt.GradesExpListAdapter -> com.shinymetal.gradereportlt.q:
+    com.shinymetal.gradereportlt.GradesActivity mActivity -> a
+    android.database.Cursor mGradesCursor -> b
+    java.util.SortedMap mMarksCursors -> c
+    int mSemester -> d
+    int mSelectedPos -> e
+    int getSelectedPosition() -> a
+    void setSelectedPosition(int) -> a
+    java.lang.Object getChild(int,int) -> getChild
+    long getChildId(int,int) -> getChildId
+    android.view.View getChildView(int,int,boolean,android.view.View,android.view.ViewGroup) -> getChildView
+    int getChildrenCount(int) -> getChildrenCount
+    java.lang.Object getGroup(int) -> getGroup
+    int getGroupCount() -> getGroupCount
+    long getGroupId(int) -> getGroupId
+    android.view.View getGroupView(int,boolean,android.view.View,android.view.ViewGroup) -> getGroupView
+    boolean hasStableIds() -> hasStableIds
+    boolean isChildSelectable(int,int) -> isChildSelectable
+com.shinymetal.gradereportlt.GradesExpListFragment -> com.shinymetal.gradereportlt.r:
+    com.shinymetal.gradereportlt.GradesExpListAdapter mAdapter -> a
+    android.widget.ExpandableListView mExpListView -> b
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+com.shinymetal.gradereportlt.GradesExpListFragment$1 -> com.shinymetal.gradereportlt.s:
+    com.shinymetal.gradereportlt.GradesExpListFragment this$0 -> a
+    void onGroupExpand(int) -> onGroupExpand
+com.shinymetal.gradereportlt.LessonDetailsFragment -> com.shinymetal.gradereportlt.t:
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+com.shinymetal.gradereportlt.LessonsExpListAdapter -> com.shinymetal.gradereportlt.u:
+    com.shinymetal.gradereportlt.DiaryActivity mActivity -> a
+    java.util.Date mDay -> b
+    java.text.SimpleDateFormat mFormat -> c
+    android.database.Cursor mCursor -> d
+    int mSelectedPos -> e
+    void setSelectedPosition(int) -> a
+    int getSelectedPosition() -> a
+    int getGroupCount() -> getGroupCount
+    int getChildrenCount(int) -> getChildrenCount
+    java.lang.Object getGroup(int) -> getGroup
+    java.lang.Object getChild(int,int) -> getChild
+    long getGroupId(int) -> getGroupId
+    long getChildId(int,int) -> getChildId
+    boolean hasStableIds() -> hasStableIds
+    android.view.View getGroupView(int,boolean,android.view.View,android.view.ViewGroup) -> getGroupView
+    android.view.View getChildView(int,int,boolean,android.view.View,android.view.ViewGroup) -> getChildView
+    boolean isChildSelectable(int,int) -> isChildSelectable
+com.shinymetal.gradereportlt.LessonsExpListFragment -> com.shinymetal.gradereportlt.v:
+    com.shinymetal.gradereportlt.LessonsExpListAdapter mAdapter -> a
+    android.widget.ExpandableListView mExpListView -> b
+    java.text.SimpleDateFormat mDateFmt -> c
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+com.shinymetal.gradereportlt.LessonsExpListFragment$1 -> com.shinymetal.gradereportlt.w:
+    com.shinymetal.gradereportlt.LessonsExpListFragment this$0 -> a
+    com.google.ads.AdView val$mAdView -> b
+    android.view.View val$rootView -> c
+    void onLayoutChange(android.view.View,int,int,int,int,int,int,int,int) -> onLayoutChange
+com.shinymetal.gradereportlt.LessonsExpListFragment$2 -> com.shinymetal.gradereportlt.x:
+    com.shinymetal.gradereportlt.LessonsExpListFragment this$0 -> a
+    void onGroupExpand(int) -> onGroupExpand
+com.shinymetal.gradereportlt.LessonsListAdapter -> com.shinymetal.gradereportlt.y:
+    com.shinymetal.gradereportlt.DiaryActivity mActivity -> a
+    java.text.SimpleDateFormat mFormat -> b
+    java.util.Date mDay -> c
+    android.database.Cursor mCursor -> d
+    int mSelectedPos -> e
+    void setSelectedPosition(int) -> a
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    boolean hasStableIds() -> hasStableIds
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.shinymetal.gradereportlt.LessonsListFragment -> com.shinymetal.gradereportlt.z:
+    com.shinymetal.gradereportlt.LessonsListAdapter mAdapter -> a
+    com.shinymetal.gradereportlt.LessonsListFragment instance -> b
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+    com.shinymetal.gradereportlt.LessonsListFragment access$0(com.shinymetal.gradereportlt.LessonsListFragment) -> a
+com.shinymetal.gradereportlt.LessonsListFragment$1 -> com.shinymetal.gradereportlt.aa:
+    com.shinymetal.gradereportlt.LessonsListFragment this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.shinymetal.gradereportlt.LessonsNestedFragment -> com.shinymetal.gradereportlt.ab:
+    com.shinymetal.gradereportlt.LessonsListFragment mLessonsFragment -> a
+    com.shinymetal.gradereportlt.LessonDetailsFragment mLessonsDetailsFragment -> b
+    com.shinymetal.gradereportlt.LessonDetailsFragment getDetailsFragment() -> a
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+com.shinymetal.gradereportlt.PreferencesActivity -> com.shinymetal.gradereportlt.PreferencesActivity:
+    com.shinymetal.gradereportlt.PreferencesActivity instance -> a
+    boolean mRescheduleService -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+    boolean onPreferenceChange(android.preference.Preference,java.lang.Object) -> onPreferenceChange
+    com.shinymetal.gradereportlt.PreferencesActivity access$0() -> a
+com.shinymetal.gradereportlt.PreferencesActivity$MyPreferenceFragment -> com.shinymetal.gradereportlt.ac:
+    void onCreate(android.os.Bundle) -> onCreate
+com.shinymetal.gradereportlt.SplashActivity -> com.shinymetal.gradereportlt.SplashActivity:
+    int SPLASH_TIME_OUT -> a
+    void onCreate(android.os.Bundle) -> onCreate
+com.shinymetal.gradereportlt.SplashActivity$1 -> com.shinymetal.gradereportlt.ad:
+    com.shinymetal.gradereportlt.SplashActivity this$0 -> a
+    void run() -> run
 org.jsoup.Connection -> org.jsoup.Connection:
     org.jsoup.Connection url(java.net.URL) -> url
     org.jsoup.Connection url(java.lang.String) -> url

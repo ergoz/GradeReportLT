@@ -71,130 +71,165 @@ android.support.v4.widget.SlidingPaneLayout: void setShadowDrawable(android.grap
 android.support.v4.widget.SlidingPaneLayout: void setShadowResource(int)
 android.support.v4.widget.SlidingPaneLayout$SavedState
 android.support.v4.widget.SlidingPaneLayout$SavedState: android.os.Parcelable$Creator CREATOR
-com.shinymetal.gradereport.AbstractActivity: AbstractActivity()
-com.shinymetal.gradereport.AlarmReceiver
-com.shinymetal.gradereport.AlarmReceiver: AlarmReceiver()
-com.shinymetal.gradereport.BootEventReceiver
-com.shinymetal.gradereport.BootEventReceiver: BootEventReceiver()
-com.shinymetal.gradereport.DiaryActivity
-com.shinymetal.gradereport.DiaryActivity: DiaryActivity()
-com.shinymetal.gradereport.DiaryActivity: boolean onOptionsItemSelected(android.view.MenuItem)
-com.shinymetal.gradereport.DiaryUpdateService
-com.shinymetal.gradereport.DiaryUpdateService: DiaryUpdateService()
-com.shinymetal.gradereport.GradesActivity
-com.shinymetal.gradereport.GradesActivity: GradesActivity()
-com.shinymetal.gradereport.GradesActivity: boolean onOptionsItemSelected(android.view.MenuItem)
-com.shinymetal.gradereport.PreferencesActivity
-com.shinymetal.gradereport.PreferencesActivity: PreferencesActivity()
-com.shinymetal.gradereport.R$array: int syncArray
-com.shinymetal.gradereport.R$array: int syncValues
-com.shinymetal.gradereport.R$dimen: int activity_horizontal_margin
-com.shinymetal.gradereport.R$dimen: int activity_vertical_margin
-com.shinymetal.gradereport.R$drawable: int ic_4_collections_view_as_list
-com.shinymetal.gradereport.R$drawable: int ic_5_content_event
-com.shinymetal.gradereport.R$drawable: int ic_action_go_to_today
-com.shinymetal.gradereport.R$drawable: int ic_action_next_item
-com.shinymetal.gradereport.R$drawable: int ic_action_person
-com.shinymetal.gradereport.R$drawable: int ic_action_previous_item
-com.shinymetal.gradereport.R$drawable: int ic_action_refresh
-com.shinymetal.gradereport.R$drawable: int ic_action_settings
-com.shinymetal.gradereport.R$drawable: int ic_launcher
-com.shinymetal.gradereport.R$drawable: int splash
-com.shinymetal.gradereport.R$id: int ScrollViewDetail
-com.shinymetal.gradereport.R$id: int action_diary
-com.shinymetal.gradereport.R$id: int action_grades
-com.shinymetal.gradereport.R$id: int action_next_week
-com.shinymetal.gradereport.R$id: int action_previous_week
-com.shinymetal.gradereport.R$id: int action_reload
-com.shinymetal.gradereport.R$id: int action_select_date
-com.shinymetal.gradereport.R$id: int action_select_pupil
-com.shinymetal.gradereport.R$id: int action_settings
-com.shinymetal.gradereport.R$id: int fragment_detail
-com.shinymetal.gradereport.R$id: int fragment_list
-com.shinymetal.gradereport.R$id: int imgLogo
-com.shinymetal.gradereport.R$id: int itemAbsent
-com.shinymetal.gradereport.R$id: int itemAverage
-com.shinymetal.gradereport.R$id: int itemComment
-com.shinymetal.gradereport.R$id: int itemDetail
-com.shinymetal.gradereport.R$id: int itemHeader
-com.shinymetal.gradereport.R$id: int itemHomework
-com.shinymetal.gradereport.R$id: int itemMarks
-com.shinymetal.gradereport.R$id: int itemName
-com.shinymetal.gradereport.R$id: int itemReleased
-com.shinymetal.gradereport.R$id: int itemSick
-com.shinymetal.gradereport.R$id: int itemTheme
-com.shinymetal.gradereport.R$id: int itemTotal
-com.shinymetal.gradereport.R$id: int pager
-com.shinymetal.gradereport.R$id: int pager_title_strip
-com.shinymetal.gradereport.R$id: int pupilSpinner
-com.shinymetal.gradereport.R$id: int section_label
-com.shinymetal.gradereport.R$layout: int activity_diary
-com.shinymetal.gradereport.R$layout: int activity_preferences
-com.shinymetal.gradereport.R$layout: int activity_splash
-com.shinymetal.gradereport.R$layout: int fragment_exp_list
-com.shinymetal.gradereport.R$layout: int fragment_lessons
-com.shinymetal.gradereport.R$layout: int fragment_nested
-com.shinymetal.gradereport.R$layout: int grades_detail
-com.shinymetal.gradereport.R$layout: int grades_list
-com.shinymetal.gradereport.R$layout: int lessons_detail
-com.shinymetal.gradereport.R$layout: int lessons_header
-com.shinymetal.gradereport.R$layout: int lessons_list
-com.shinymetal.gradereport.R$layout: int pupil_dialog
-com.shinymetal.gradereport.R$menu: int grades
-com.shinymetal.gradereport.R$menu: int main
-com.shinymetal.gradereport.R$string: int action_diary
-com.shinymetal.gradereport.R$string: int action_grades
-com.shinymetal.gradereport.R$string: int action_next_week
-com.shinymetal.gradereport.R$string: int action_previous_week
-com.shinymetal.gradereport.R$string: int action_reload
-com.shinymetal.gradereport.R$string: int action_select_date
-com.shinymetal.gradereport.R$string: int action_select_pupil
-com.shinymetal.gradereport.R$string: int action_settings
-com.shinymetal.gradereport.R$string: int app_name
-com.shinymetal.gradereport.R$string: int diary_name
-com.shinymetal.gradereport.R$string: int error_cannot_fetch
-com.shinymetal.gradereport.R$string: int error_cannot_login
-com.shinymetal.gradereport.R$string: int grades_name
-com.shinymetal.gradereport.R$string: int label_absent
-com.shinymetal.gradereport.R$string: int label_average
-com.shinymetal.gradereport.R$string: int label_buy
-com.shinymetal.gradereport.R$string: int label_cancel
-com.shinymetal.gradereport.R$string: int label_comment
-com.shinymetal.gradereport.R$string: int label_homework
-com.shinymetal.gradereport.R$string: int label_loading_data
-com.shinymetal.gradereport.R$string: int label_marks
-com.shinymetal.gradereport.R$string: int label_ok
-com.shinymetal.gradereport.R$string: int label_quit
-com.shinymetal.gradereport.R$string: int label_released
-com.shinymetal.gradereport.R$string: int label_retry
-com.shinymetal.gradereport.R$string: int label_sick
-com.shinymetal.gradereport.R$string: int label_submit
-com.shinymetal.gradereport.R$string: int label_theme
-com.shinymetal.gradereport.R$string: int label_total
-com.shinymetal.gradereport.R$string: int pref_login_key
-com.shinymetal.gradereport.R$string: int pref_name
-com.shinymetal.gradereport.R$string: int pref_password_key
-com.shinymetal.gradereport.R$string: int pref_sync_key
-com.shinymetal.gradereport.R$string: int shiny_metal
-com.shinymetal.gradereport.R$string: int title_error
-com.shinymetal.gradereport.R$string: int title_section1
-com.shinymetal.gradereport.R$string: int title_section2
-com.shinymetal.gradereport.R$string: int title_section3
-com.shinymetal.gradereport.R$string: int title_section4
-com.shinymetal.gradereport.R$string: int title_section5
-com.shinymetal.gradereport.R$string: int title_section6
-com.shinymetal.gradereport.R$string: int title_section_gr1
-com.shinymetal.gradereport.R$string: int title_section_gr2
-com.shinymetal.gradereport.R$string: int title_section_gr3
-com.shinymetal.gradereport.R$string: int title_section_gr4
-com.shinymetal.gradereport.R$string: int unlicensed_dialog_body
-com.shinymetal.gradereport.R$string: int unlicensed_dialog_retry_body
-com.shinymetal.gradereport.R$string: int unlicensed_dialog_title
-com.shinymetal.gradereport.R$style: int AppBaseTheme
-com.shinymetal.gradereport.R$style: int AppTheme
-com.shinymetal.gradereport.R$xml: int preferences
-com.shinymetal.gradereport.SplashActivity
-com.shinymetal.gradereport.SplashActivity: SplashActivity()
+com.google.ads.AdActivity
+com.google.ads.AdActivity: AdActivity()
+com.google.ads.AdActivity: void onClick(android.view.View)
+com.google.ads.AdRequest$ErrorCode: com.google.ads.AdRequest$ErrorCode[] values()
+com.google.ads.AdRequest$ErrorCode: com.google.ads.AdRequest$ErrorCode valueOf(java.lang.String)
+com.google.ads.AdRequest$Gender: com.google.ads.AdRequest$Gender[] values()
+com.google.ads.AdRequest$Gender: com.google.ads.AdRequest$Gender valueOf(java.lang.String)
+com.google.ads.AdView
+com.google.ads.AdView: AdView(android.app.Activity,com.google.ads.AdSize,java.lang.String)
+com.google.ads.AdView: AdView(android.app.Activity,com.google.ads.AdSize[],java.lang.String)
+com.google.ads.AdView: AdView(android.content.Context,android.util.AttributeSet)
+com.google.ads.AdView: AdView(android.content.Context,android.util.AttributeSet,int)
+com.google.ads.AdView: void setAdListener(com.google.ads.AdListener)
+com.google.ads.AdView: void setAppEventListener(com.google.ads.AppEventListener)
+com.google.ads.AdView: void setSupportedAdSizes(com.google.ads.AdSize[])
+com.google.ads.ai$b: com.google.ads.ai$b[] values()
+com.google.ads.ai$b: com.google.ads.ai$b valueOf(java.lang.String)
+com.google.ads.doubleclick.DfpAdView: void setAppEventListener(com.google.ads.AppEventListener)
+com.google.ads.doubleclick.DfpAdView: void setSupportedAdSizes(com.google.ads.AdSize[])
+com.google.ads.g$a: com.google.ads.g$a[] values()
+com.google.ads.g$a: com.google.ads.g$a valueOf(java.lang.String)
+com.google.ads.internal.AdVideoView: void setMediaControllerEnabled(boolean)
+com.google.ads.internal.AdVideoView: void setSrc(java.lang.String)
+com.google.ads.internal.AdWebView: void setAdActivity(com.google.ads.AdActivity)
+com.google.ads.internal.AdWebView: void setAdSize(com.google.ads.AdSize)
+com.google.ads.internal.AdWebView: void setCustomClose(boolean)
+com.google.ads.internal.AdWebView: void setIsExpandedMraid(boolean)
+com.google.ads.internal.c$d: com.google.ads.internal.c$d[] values()
+com.google.ads.internal.c$d: com.google.ads.internal.c$d valueOf(java.lang.String)
+com.google.ads.searchads.SearchAdRequest$BorderType: com.google.ads.searchads.SearchAdRequest$BorderType[] values()
+com.google.ads.searchads.SearchAdRequest$BorderType: com.google.ads.searchads.SearchAdRequest$BorderType valueOf(java.lang.String)
+com.google.ads.util.AdUtil$a: com.google.ads.util.AdUtil$a[] values()
+com.google.ads.util.AdUtil$a: com.google.ads.util.AdUtil$a valueOf(java.lang.String)
+com.google.ads.util.b$a: com.google.ads.util.b$a[] values()
+com.google.ads.util.b$a: com.google.ads.util.b$a valueOf(java.lang.String)
+com.shinymetal.gradereportlt.AbstractActivity: AbstractActivity()
+com.shinymetal.gradereportlt.AlarmReceiver
+com.shinymetal.gradereportlt.AlarmReceiver: AlarmReceiver()
+com.shinymetal.gradereportlt.BootEventReceiver
+com.shinymetal.gradereportlt.BootEventReceiver: BootEventReceiver()
+com.shinymetal.gradereportlt.DiaryActivity
+com.shinymetal.gradereportlt.DiaryActivity: DiaryActivity()
+com.shinymetal.gradereportlt.DiaryActivity: boolean onOptionsItemSelected(android.view.MenuItem)
+com.shinymetal.gradereportlt.DiaryUpdateService
+com.shinymetal.gradereportlt.DiaryUpdateService: DiaryUpdateService()
+com.shinymetal.gradereportlt.GradesActivity
+com.shinymetal.gradereportlt.GradesActivity: GradesActivity()
+com.shinymetal.gradereportlt.GradesActivity: boolean onOptionsItemSelected(android.view.MenuItem)
+com.shinymetal.gradereportlt.PreferencesActivity
+com.shinymetal.gradereportlt.PreferencesActivity: PreferencesActivity()
+com.shinymetal.gradereportlt.R$array: int syncArray
+com.shinymetal.gradereportlt.R$array: int syncValues
+com.shinymetal.gradereportlt.R$dimen: int activity_horizontal_margin
+com.shinymetal.gradereportlt.R$dimen: int activity_vertical_margin
+com.shinymetal.gradereportlt.R$drawable: int ic_4_collections_view_as_list
+com.shinymetal.gradereportlt.R$drawable: int ic_5_content_event
+com.shinymetal.gradereportlt.R$drawable: int ic_action_go_to_today
+com.shinymetal.gradereportlt.R$drawable: int ic_action_next_item
+com.shinymetal.gradereportlt.R$drawable: int ic_action_person
+com.shinymetal.gradereportlt.R$drawable: int ic_action_previous_item
+com.shinymetal.gradereportlt.R$drawable: int ic_action_refresh
+com.shinymetal.gradereportlt.R$drawable: int ic_action_settings
+com.shinymetal.gradereportlt.R$drawable: int ic_launcher
+com.shinymetal.gradereportlt.R$drawable: int splash
+com.shinymetal.gradereportlt.R$id: int ScrollViewDetail
+com.shinymetal.gradereportlt.R$id: int action_diary
+com.shinymetal.gradereportlt.R$id: int action_grades
+com.shinymetal.gradereportlt.R$id: int action_next_week
+com.shinymetal.gradereportlt.R$id: int action_previous_week
+com.shinymetal.gradereportlt.R$id: int action_reload
+com.shinymetal.gradereportlt.R$id: int action_select_date
+com.shinymetal.gradereportlt.R$id: int action_select_pupil
+com.shinymetal.gradereportlt.R$id: int action_settings
+com.shinymetal.gradereportlt.R$id: int ad
+com.shinymetal.gradereportlt.R$id: int fragment_detail
+com.shinymetal.gradereportlt.R$id: int fragment_list
+com.shinymetal.gradereportlt.R$id: int fragments
+com.shinymetal.gradereportlt.R$id: int imgLogo
+com.shinymetal.gradereportlt.R$id: int itemAbsent
+com.shinymetal.gradereportlt.R$id: int itemAverage
+com.shinymetal.gradereportlt.R$id: int itemComment
+com.shinymetal.gradereportlt.R$id: int itemDetail
+com.shinymetal.gradereportlt.R$id: int itemHeader
+com.shinymetal.gradereportlt.R$id: int itemHomework
+com.shinymetal.gradereportlt.R$id: int itemMarks
+com.shinymetal.gradereportlt.R$id: int itemName
+com.shinymetal.gradereportlt.R$id: int itemReleased
+com.shinymetal.gradereportlt.R$id: int itemSick
+com.shinymetal.gradereportlt.R$id: int itemTheme
+com.shinymetal.gradereportlt.R$id: int itemTotal
+com.shinymetal.gradereportlt.R$id: int pager
+com.shinymetal.gradereportlt.R$id: int pager_title_strip
+com.shinymetal.gradereportlt.R$id: int pupilSpinner
+com.shinymetal.gradereportlt.R$id: int section_label
+com.shinymetal.gradereportlt.R$layout: int activity_diary
+com.shinymetal.gradereportlt.R$layout: int activity_preferences
+com.shinymetal.gradereportlt.R$layout: int activity_splash
+com.shinymetal.gradereportlt.R$layout: int fragment_exp_list
+com.shinymetal.gradereportlt.R$layout: int fragment_lessons
+com.shinymetal.gradereportlt.R$layout: int fragment_nested
+com.shinymetal.gradereportlt.R$layout: int grades_detail
+com.shinymetal.gradereportlt.R$layout: int grades_list
+com.shinymetal.gradereportlt.R$layout: int lessons_detail
+com.shinymetal.gradereportlt.R$layout: int lessons_header
+com.shinymetal.gradereportlt.R$layout: int lessons_list
+com.shinymetal.gradereportlt.R$layout: int pupil_dialog
+com.shinymetal.gradereportlt.R$menu: int grades
+com.shinymetal.gradereportlt.R$menu: int main
+com.shinymetal.gradereportlt.R$string: int action_diary
+com.shinymetal.gradereportlt.R$string: int action_grades
+com.shinymetal.gradereportlt.R$string: int action_next_week
+com.shinymetal.gradereportlt.R$string: int action_previous_week
+com.shinymetal.gradereportlt.R$string: int action_reload
+com.shinymetal.gradereportlt.R$string: int action_select_date
+com.shinymetal.gradereportlt.R$string: int action_select_pupil
+com.shinymetal.gradereportlt.R$string: int action_settings
+com.shinymetal.gradereportlt.R$string: int admob_id
+com.shinymetal.gradereportlt.R$string: int app_name
+com.shinymetal.gradereportlt.R$string: int diary_name
+com.shinymetal.gradereportlt.R$string: int error_cannot_fetch
+com.shinymetal.gradereportlt.R$string: int error_cannot_login
+com.shinymetal.gradereportlt.R$string: int grades_name
+com.shinymetal.gradereportlt.R$string: int label_absent
+com.shinymetal.gradereportlt.R$string: int label_average
+com.shinymetal.gradereportlt.R$string: int label_buy
+com.shinymetal.gradereportlt.R$string: int label_cancel
+com.shinymetal.gradereportlt.R$string: int label_comment
+com.shinymetal.gradereportlt.R$string: int label_homework
+com.shinymetal.gradereportlt.R$string: int label_loading_data
+com.shinymetal.gradereportlt.R$string: int label_marks
+com.shinymetal.gradereportlt.R$string: int label_ok
+com.shinymetal.gradereportlt.R$string: int label_quit
+com.shinymetal.gradereportlt.R$string: int label_released
+com.shinymetal.gradereportlt.R$string: int label_retry
+com.shinymetal.gradereportlt.R$string: int label_sick
+com.shinymetal.gradereportlt.R$string: int label_submit
+com.shinymetal.gradereportlt.R$string: int label_theme
+com.shinymetal.gradereportlt.R$string: int label_total
+com.shinymetal.gradereportlt.R$string: int pref_login_key
+com.shinymetal.gradereportlt.R$string: int pref_name
+com.shinymetal.gradereportlt.R$string: int pref_password_key
+com.shinymetal.gradereportlt.R$string: int pref_sync_key
+com.shinymetal.gradereportlt.R$string: int shiny_metal
+com.shinymetal.gradereportlt.R$string: int title_error
+com.shinymetal.gradereportlt.R$string: int title_section1
+com.shinymetal.gradereportlt.R$string: int title_section2
+com.shinymetal.gradereportlt.R$string: int title_section3
+com.shinymetal.gradereportlt.R$string: int title_section4
+com.shinymetal.gradereportlt.R$string: int title_section5
+com.shinymetal.gradereportlt.R$string: int title_section6
+com.shinymetal.gradereportlt.R$string: int title_section_gr1
+com.shinymetal.gradereportlt.R$string: int title_section_gr2
+com.shinymetal.gradereportlt.R$string: int title_section_gr3
+com.shinymetal.gradereportlt.R$string: int title_section_gr4
+com.shinymetal.gradereportlt.R$style: int AppBaseTheme
+com.shinymetal.gradereportlt.R$style: int AppTheme
+com.shinymetal.gradereportlt.R$xml: int preferences
+com.shinymetal.gradereportlt.SplashActivity
+com.shinymetal.gradereportlt.SplashActivity: SplashActivity()
 org.jsoup.Connection
 org.jsoup.Connection: org.jsoup.Connection url(java.net.URL)
 org.jsoup.Connection: org.jsoup.Connection url(java.lang.String)

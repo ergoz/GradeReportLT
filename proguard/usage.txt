@@ -1331,139 +1331,191 @@ android.support.v4.widget.ViewDragHelper:
 android.support.v4.widget.ViewDragHelper$2
 android.support.v4.widget.ViewDragHelper$Callback:
     148:148:public ViewDragHelper$Callback()
-com.google.android.vending.licensing.AESObfuscator:
-    private static final java.lang.String UTF8
-    private static final java.lang.String KEYGEN_ALGORITHM
-    private static final java.lang.String CIPHER_ALGORITHM
-    private static final java.lang.String header
-com.google.android.vending.licensing.APKExpansionPolicy
-com.google.android.vending.licensing.ILicenseResultListener$Stub:
-    private static final java.lang.String DESCRIPTOR
-    static final int TRANSACTION_verifyLicense
-com.google.android.vending.licensing.ILicenseResultListener$Stub$Proxy:
-    75:75:public java.lang.String getInterfaceDescriptor()
-com.google.android.vending.licensing.ILicensingService$Stub:
-    private static final java.lang.String DESCRIPTOR
-    static final int TRANSACTION_checkLicense
-    16:19:public ILicensingService$Stub()
-    37:37:public android.os.IBinder asBinder()
-com.google.android.vending.licensing.ILicensingService$Stub$Proxy:
-    76:76:public java.lang.String getInterfaceDescriptor()
-com.google.android.vending.licensing.LicenseChecker:
-    private static final java.lang.String TAG
-    private static final java.lang.String KEY_FACTORY_ALGORITHM
-    private static final int TIMEOUT_MS
-    private static final boolean DEBUG_LICENSE_ERROR
-    326:328:public synchronized void onDestroy()
-com.google.android.vending.licensing.LicenseChecker$ResultListener:
-    private static final int ERROR_CONTACTING_SERVER
-    private static final int ERROR_INVALID_PACKAGE_NAME
-    private static final int ERROR_NON_MATCHING_UID
-com.google.android.vending.licensing.LicenseCheckerCallback:
-    public static final int ERROR_INVALID_PACKAGE_NAME
-    public static final int ERROR_NON_MATCHING_UID
-    public static final int ERROR_NOT_MARKET_MANAGED
-    public static final int ERROR_CHECK_IN_PROGRESS
-    public static final int ERROR_INVALID_PUBLIC_KEY
-    public static final int ERROR_MISSING_PERMISSION
-com.google.android.vending.licensing.LicenseValidator:
-    private static final java.lang.String TAG
-    private static final int LICENSED
-    private static final int NOT_LICENSED
-    private static final int LICENSED_OLD_KEY
-    private static final int ERROR_NOT_MARKET_MANAGED
-    private static final int ERROR_SERVER_FAILURE
-    private static final int ERROR_OVER_QUOTA
-    private static final int ERROR_CONTACTING_SERVER
-    private static final int ERROR_INVALID_PACKAGE_NAME
-    private static final int ERROR_NON_MATCHING_UID
-    private static final java.lang.String SIGNATURE_ALGORITHM
-com.google.android.vending.licensing.Policy:
-    public static final int LICENSED
-    public static final int NOT_LICENSED
-    public static final int RETRY
-com.google.android.vending.licensing.PreferenceObfuscator:
-    private static final java.lang.String TAG
-com.google.android.vending.licensing.ServerManagedPolicy:
-    private static final java.lang.String TAG
-    private static final java.lang.String PREFS_FILE
-    private static final java.lang.String PREF_LAST_RESPONSE
-    private static final java.lang.String PREF_VALIDITY_TIMESTAMP
-    private static final java.lang.String PREF_RETRY_UNTIL
-    private static final java.lang.String PREF_MAX_RETRIES
-    private static final java.lang.String PREF_RETRY_COUNT
-    private static final java.lang.String DEFAULT_VALIDITY_TIMESTAMP
-    private static final java.lang.String DEFAULT_RETRY_UNTIL
-    private static final java.lang.String DEFAULT_MAX_RETRIES
-    private static final java.lang.String DEFAULT_RETRY_COUNT
-    private static final long MILLIS_PER_MINUTE
-    154:154:public long getRetryCount()
-    180:180:public long getValidityTimestamp()
-    206:206:public long getRetryUntil()
-    232:232:public long getMaxRetries()
-com.google.android.vending.licensing.StrictPolicy
-com.google.android.vending.licensing.ValidationException:
-    private static final long serialVersionUID
-com.google.android.vending.licensing.util.Base64:
-    public static final boolean ENCODE
-    public static final boolean DECODE
-    private static final byte EQUALS_SIGN
-    private static final byte NEW_LINE
-    private static final byte WHITE_SPACE_ENC
-    private static final byte EQUALS_SIGN_ENC
-    258:258:public static java.lang.String encodeWebSafe(byte[],boolean)
-    431:432:public static byte[] decodeWebSafe(java.lang.String)
-    445:445:public static byte[] decode(byte[])
-    458:458:public static byte[] decodeWebSafe(byte[])
-    489:489:public static byte[] decodeWebSafe(byte[],int,int)
-com.google.android.vending.licensing.util.Base64DecoderException:
-    private static final long serialVersionUID
-com.shinymetal.gradereport.BuildConfig
-com.shinymetal.gradereport.DiaryActivity:
-    89:90:public void setPupilName(java.lang.String)
-com.shinymetal.gradereport.DiaryUpdateService:
-    public static final int MSG_TASK_STARTED
-    public static final int MSG_TASK_COMPLETED
-    public static final int MSG_TASK_FAILED
-    public static final int MSG_TASK_IDLE
-    public static final int MSG_SET_INT_VALUE
-com.shinymetal.gradereport.GradesActivity:
-    78:79:public void setPupilName(java.lang.String)
-com.shinymetal.gradereport.GradesExpListAdapter:
-    43:55:public void onUpdateTaskComplete()
-com.shinymetal.gradereport.GradesExpListFragment:
-    protected static final java.lang.String ARG_SECTION_NUMBER
-    29:29:public com.shinymetal.gradereport.UpdateableAdapter getAdapter()
-com.shinymetal.gradereport.GradesPagerAdapter
-com.shinymetal.gradereport.LessonsExpListAdapter:
-    52:57:public void onUpdateTaskComplete()
-com.shinymetal.gradereport.LessonsExpListFragment:
-    protected static final java.lang.String ARG_SECTION_NUMBER
-    39:39:public com.shinymetal.gradereport.UpdateableAdapter getAdapter()
-com.shinymetal.gradereport.LessonsListAdapter:
-    49:49:public int getSelectedPosition()
-    54:59:public void onUpdateTaskComplete()
-com.shinymetal.gradereport.LessonsListFragment:
-    protected static final java.lang.String ARG_SECTION_NUMBER
-    38:38:public com.shinymetal.gradereport.UpdateableAdapter getAdapter()
-com.shinymetal.gradereport.LessonsNestedFragment:
-    19:19:public com.shinymetal.gradereport.UpdateableAdapter getAdapter()
-com.shinymetal.gradereport.LicenseValidatorHelper:
-    private static final java.lang.String BASE64_PUBLIC_KEY
-    69:76:public void onDestroy()
-com.shinymetal.gradereport.R
-com.shinymetal.gradereport.R$array
-com.shinymetal.gradereport.R$attr
-com.shinymetal.gradereport.R$dimen
-com.shinymetal.gradereport.R$drawable
-com.shinymetal.gradereport.R$id
-com.shinymetal.gradereport.R$layout
-com.shinymetal.gradereport.R$menu
-com.shinymetal.gradereport.R$string
-com.shinymetal.gradereport.R$style
-com.shinymetal.gradereport.R$xml
-com.shinymetal.gradereport.UpdateableAdapter
-com.shinymetal.gradereport.UpdateableFragment
+com.google.ads.Ad:
+    public abstract boolean isReady()
+    public abstract void loadAd(com.google.ads.AdRequest)
+    public abstract void setAdListener(com.google.ads.AdListener)
+    public abstract void stopLoading()
+com.google.ads.AdActivity:
+    public static final java.lang.String BASE_URL_PARAM
+    public static final java.lang.String HTML_PARAM
+    public static final java.lang.String URL_PARAM
+    public static final java.lang.String CUSTOM_CLOSE_PARAM
+    public static final java.lang.String INTENT_ACTION_PARAM
+    public static final java.lang.String TYPE_PARAM
+    public static final java.lang.String ORIENTATION_PARAM
+com.google.ads.AdRequest:
+    public static final java.lang.String VERSION
+    public static final java.lang.String LOGTAG
+    228:229:public com.google.ads.AdRequest setGender(com.google.ads.AdRequest$Gender)
+    237:237:public com.google.ads.AdRequest$Gender getGender()
+    250:262:public com.google.ads.AdRequest setBirthday(java.lang.String)
+    271:277:public com.google.ads.AdRequest setBirthday(java.util.Date)
+    287:293:public com.google.ads.AdRequest setBirthday(java.util.Calendar)
+    301:301:public java.util.Date getBirthday()
+    309:310:public com.google.ads.AdRequest clearBirthday()
+    327:328:public com.google.ads.AdRequest setPlusOneOptOut(boolean)
+    341:341:public boolean getPlusOneOptOut()
+    385:390:public com.google.ads.AdRequest addKeywords(java.util.Set)
+    401:405:public java.util.Set getKeywords()
+    415:419:private synchronized com.google.ads.mediation.admob.AdMobAdapterExtras a()
+    434:435:public com.google.ads.AdRequest setExtras(java.util.Map)
+    452:458:public com.google.ads.AdRequest addExtra(java.lang.String,java.lang.Object)
+    485:486:public com.google.ads.AdRequest removeNetworkExtras(java.lang.Class)
+    509:510:public com.google.ads.AdRequest setMediationExtras(java.util.Map)
+    524:529:public com.google.ads.AdRequest addMediationExtra(java.lang.String,java.lang.Object)
+    540:541:public com.google.ads.AdRequest setLocation(android.location.Location)
+    549:549:public android.location.Location getLocation()
+    564:565:public com.google.ads.AdRequest setTesting(boolean)
+com.google.ads.AdSize:
+    public static final int FULL_WIDTH
+    public static final int AUTO_HEIGHT
+    public static final int LANDSCAPE_AD_HEIGHT
+    public static final int PORTRAIT_AD_HEIGHT
+    public static final int LARGE_AD_HEIGHT
+    291:291:public int getWidthInPixels(android.content.Context)
+    301:301:public int getHeightInPixels(android.content.Context)
+    317:317:public boolean isSizeAppropriate(int,int)
+    339:359:public varargs com.google.ads.AdSize findBestSize(com.google.ads.AdSize[])
+com.google.ads.AdView:
+    274:275:public void destroy()
+    574:578:public boolean isReady()
+    684:687:public void stopLoading()
+com.google.ads.InterstitialAd:
+    private com.google.ads.internal.d a
+    82:83:public InterstitialAd(android.app.Activity,java.lang.String)
+    97:99:public InterstitialAd(android.app.Activity,java.lang.String,boolean)
+    108:108:public boolean isReady()
+    120:121:public void loadAd(com.google.ads.AdRequest)
+    130:131:public void show()
+    142:143:public void setAdListener(com.google.ads.AdListener)
+    151:152:protected void setAppEventListener(com.google.ads.AppEventListener)
+    161:162:public void stopLoading()
+com.google.ads.doubleclick.DfpAdView
+com.google.ads.doubleclick.DfpExtras:
+    25:30:public DfpExtras(com.google.ads.doubleclick.DfpExtras)
+    46:47:public com.google.ads.doubleclick.DfpExtras setPublisherProvidedId(java.lang.String)
+    55:56:public com.google.ads.doubleclick.DfpExtras setPlusOneOptOut(boolean)
+    61:62:public com.google.ads.doubleclick.DfpExtras setUseExactAdSize(boolean)
+    67:68:public com.google.ads.doubleclick.DfpExtras setExtras(java.util.Map)
+    79:80:public com.google.ads.doubleclick.DfpExtras addExtra(java.lang.String,java.lang.Object)
+    12:12:public bridge synthetic com.google.ads.mediation.admob.AdMobAdapterExtras addExtra(java.lang.String,java.lang.Object)
+    12:12:public bridge synthetic com.google.ads.mediation.admob.AdMobAdapterExtras setExtras(java.util.Map)
+    12:12:public bridge synthetic com.google.ads.mediation.admob.AdMobAdapterExtras setUseExactAdSize(boolean)
+    12:12:public bridge synthetic com.google.ads.mediation.admob.AdMobAdapterExtras setPlusOneOptOut(boolean)
+com.google.ads.doubleclick.DfpInterstitialAd
+com.google.ads.e:
+    112:122:public void b()
+    199:205:private boolean a(com.google.ads.h,java.lang.String)
+    211:221:public void a(com.google.ads.h,boolean)
+    226:242:public void a(com.google.ads.h,android.view.View)
+    246:255:public void a(com.google.ads.h)
+    259:268:public void b(com.google.ads.h)
+    272:281:public void c(com.google.ads.h)
+    292:301:public boolean c()
+    472:474:private com.google.ads.h e()
+    51:51:static synthetic com.google.ads.h c(com.google.ads.e)
+com.google.ads.e$2
+com.google.ads.e$3
+com.google.ads.e$4
+com.google.ads.e$5
+com.google.ads.e$6
+com.google.ads.f:
+    79:79:public java.util.List e()
+com.google.ads.h:
+    123:123:public com.google.ads.f a()
+    219:245:public synchronized void g()
+    273:273:synchronized com.google.ads.mediation.MediationAdapter i()
+    280:280:com.google.ads.e j()
+    284:285:synchronized void a(android.view.View)
+com.google.ads.h$2
+com.google.ads.internal.c:
+    600:620:protected void a()
+com.google.ads.internal.d:
+    329:338:public synchronized void b()
+    544:544:public synchronized boolean r()
+    722:725:public synchronized void a(com.google.ads.f,boolean)
+    865:882:private void b(com.google.ads.f,java.lang.Boolean)
+    1078:1105:public synchronized void z()
+    1114:1123:public synchronized void A()
+com.google.ads.j:
+    private boolean b
+    34:66:public void onReceivedAd(com.google.ads.mediation.MediationBannerAdapter)
+    72:87:public void onFailedToReceiveAd(com.google.ads.mediation.MediationBannerAdapter,com.google.ads.AdRequest$ErrorCode)
+    92:95:public void onPresentScreen(com.google.ads.mediation.MediationBannerAdapter)
+    99:102:public void onDismissScreen(com.google.ads.mediation.MediationBannerAdapter)
+    106:109:public void onLeaveApplication(com.google.ads.mediation.MediationBannerAdapter)
+    113:117:public void onClick(com.google.ads.mediation.MediationBannerAdapter)
+com.google.ads.k:
+    29:40:public void onReceivedAd(com.google.ads.mediation.MediationInterstitialAdapter)
+    45:61:public void onFailedToReceiveAd(com.google.ads.mediation.MediationInterstitialAdapter,com.google.ads.AdRequest$ErrorCode)
+    66:69:public void onPresentScreen(com.google.ads.mediation.MediationInterstitialAdapter)
+    74:77:public void onDismissScreen(com.google.ads.mediation.MediationInterstitialAdapter)
+    81:84:public void onLeaveApplication(com.google.ads.mediation.MediationInterstitialAdapter)
+com.google.ads.mediation.EmptyNetworkExtras
+com.google.ads.mediation.MediationAdRequest:
+    50:50:public com.google.ads.AdRequest$Gender getGender()
+    57:57:public java.util.Date getBirthday()
+    67:81:public java.lang.Integer getAgeInYears()
+    88:92:public java.util.Set getKeywords()
+    100:104:public android.location.Location getLocation()
+    114:114:public boolean isTesting()
+com.google.ads.mediation.MediationBannerAdapter:
+    public abstract android.view.View getBannerView()
+com.google.ads.mediation.MediationBannerListener:
+    public abstract void onReceivedAd(com.google.ads.mediation.MediationBannerAdapter)
+    public abstract void onFailedToReceiveAd(com.google.ads.mediation.MediationBannerAdapter,com.google.ads.AdRequest$ErrorCode)
+    public abstract void onPresentScreen(com.google.ads.mediation.MediationBannerAdapter)
+    public abstract void onDismissScreen(com.google.ads.mediation.MediationBannerAdapter)
+    public abstract void onLeaveApplication(com.google.ads.mediation.MediationBannerAdapter)
+    public abstract void onClick(com.google.ads.mediation.MediationBannerAdapter)
+com.google.ads.mediation.MediationInterstitialAdapter:
+    public abstract void showInterstitial()
+com.google.ads.mediation.MediationInterstitialListener:
+    public abstract void onReceivedAd(com.google.ads.mediation.MediationInterstitialAdapter)
+    public abstract void onFailedToReceiveAd(com.google.ads.mediation.MediationInterstitialAdapter,com.google.ads.AdRequest$ErrorCode)
+    public abstract void onPresentScreen(com.google.ads.mediation.MediationInterstitialAdapter)
+    public abstract void onDismissScreen(com.google.ads.mediation.MediationInterstitialAdapter)
+    public abstract void onLeaveApplication(com.google.ads.mediation.MediationInterstitialAdapter)
+com.google.ads.mediation.admob.AdMobAdapter
+com.google.ads.mediation.admob.AdMobAdapter$1
+com.google.ads.mediation.admob.AdMobAdapter$a
+com.google.ads.mediation.admob.AdMobAdapter$b
+com.google.ads.mediation.admob.AdMobAdapterExtras:
+    31:38:public AdMobAdapterExtras(com.google.ads.mediation.admob.AdMobAdapterExtras)
+    51:52:public com.google.ads.mediation.admob.AdMobAdapterExtras setPlusOneOptOut(boolean)
+    77:78:public com.google.ads.mediation.admob.AdMobAdapterExtras setUseExactAdSize(boolean)
+    87:87:public boolean getUseExactAdSize()
+    110:114:public com.google.ads.mediation.admob.AdMobAdapterExtras setExtras(java.util.Map)
+    136:137:public com.google.ads.mediation.admob.AdMobAdapterExtras addExtra(java.lang.String,java.lang.Object)
+com.google.ads.mediation.admob.AdMobAdapterServerParameters
+com.google.ads.mediation.customevent.CustomEvent
+com.google.ads.mediation.customevent.CustomEventAdapter
+com.google.ads.mediation.customevent.CustomEventAdapter$a
+com.google.ads.mediation.customevent.CustomEventAdapter$b
+com.google.ads.mediation.customevent.CustomEventBanner
+com.google.ads.mediation.customevent.CustomEventBannerListener
+com.google.ads.mediation.customevent.CustomEventExtras
+com.google.ads.mediation.customevent.CustomEventInterstitial
+com.google.ads.mediation.customevent.CustomEventInterstitialListener
+com.google.ads.mediation.customevent.CustomEventListener
+com.google.ads.mediation.customevent.CustomEventServerParameters
+com.google.ads.searchads.SearchAdRequest:
+    91:92:public void setQuery(java.lang.String)
+    101:108:public void setBackgroundColor(int)
+    120:127:public void setBackgroundGradient(int,int)
+    137:138:public void setHeaderTextColor(int)
+    148:149:public void setDescriptionTextColor(int)
+    159:160:public void setAnchorTextColor(int)
+    168:169:public void setFontFace(java.lang.String)
+    178:179:public void setHeaderTextSize(int)
+    189:190:public void setBorderColor(int)
+    197:198:public void setBorderType(com.google.ads.searchads.SearchAdRequest$BorderType)
+    207:208:public void setBorderThickness(int)
+    215:216:public void setCustomChannels(java.lang.String)
+com.google.ads.util.a:
+    37:38:public static void a(boolean)
+    53:55:public static void a(java.lang.Object)
 com.shinymetal.gradereport.db.Database:
     private static final java.lang.String DATABASE_NAME
     private static final int DB_VERSION_INITIAL
@@ -1523,7 +1575,7 @@ com.shinymetal.gradereport.objects.Lesson:
     public static final java.lang.String SELECTION_GET_ALL_BY_DATE
     public static final java.lang.String SELECTION_GET_BY_NUMBER
     public static final java.lang.String SELECTION_GET_SET
-    190:221:public static com.shinymetal.gradereport.objects.Lesson getByStart(com.shinymetal.gradereport.objects.Schedule,java.util.Date)
+    178:185:public static boolean existsByStart(com.shinymetal.gradereport.objects.Schedule,java.util.Date)
     325:356:public static java.util.Set getSet(com.shinymetal.gradereport.objects.Schedule)
 com.shinymetal.gradereport.objects.MarkRec:
     public static final java.lang.String TABLE_NAME
@@ -1544,8 +1596,8 @@ com.shinymetal.gradereport.objects.Pupil:
     private static final java.lang.String SELECTION_GET_BY_FORM_ID
     private static final java.lang.String SELECTION_GET_BY_FORM_NAME
     private static final java.lang.String SELECTION_GET_SET
-    140:140:public final java.util.Set getScheduleSet()
-    156:156:public com.shinymetal.gradereport.objects.Schedule getScheduleBySchoolYear(java.lang.String)
+    143:143:public final java.util.Set getScheduleSet()
+    159:159:public com.shinymetal.gradereport.objects.Schedule getScheduleBySchoolYear(java.lang.String)
 com.shinymetal.gradereport.objects.Schedule:
     private static final java.lang.String ID_NAME
     private static final java.lang.String FORMID_NAME
@@ -1564,7 +1616,7 @@ com.shinymetal.gradereport.objects.Schedule:
     109:133:public static final java.util.Set getSet(com.shinymetal.gradereport.objects.Pupil)
     138:159:public static com.shinymetal.gradereport.objects.Schedule getBySchoolYear(com.shinymetal.gradereport.objects.Pupil,java.lang.String)
     204:204:public com.shinymetal.gradereport.objects.GradeSemester getSemester(java.util.Date)
-    225:225:public com.shinymetal.gradereport.objects.Lesson getLessonByStart(java.util.Date)
+    230:230:public boolean existsLessonByStart(java.util.Date)
     284:285:public com.shinymetal.gradereport.objects.Week getWeek(java.util.Date)
     305:305:public final java.util.Set getLessonSet()
     310:310:public final java.util.Set getGradeRecSet()
@@ -1596,5 +1648,48 @@ com.shinymetal.gradereport.utils.GshisLoader:
     protected static final java.lang.String GRADES_PAGE
     protected static final java.lang.String ERROR_CANNOT_LOAD_DATA
     protected static final java.lang.String ERROR_INV_CREDENTIALS
-    516:522:public void reset()
-    752:758:public java.lang.String getPupilIdByName(java.lang.String)
+    515:521:public void reset()
+    754:760:public java.lang.String getPupilIdByName(java.lang.String)
+com.shinymetal.gradereportlt.BuildConfig
+com.shinymetal.gradereportlt.DiaryActivity:
+    89:90:public void setPupilName(java.lang.String)
+com.shinymetal.gradereportlt.DiaryUpdateService:
+    public static final int MSG_TASK_STARTED
+    public static final int MSG_TASK_COMPLETED
+    public static final int MSG_TASK_FAILED
+    public static final int MSG_TASK_IDLE
+    public static final int MSG_SET_INT_VALUE
+com.shinymetal.gradereportlt.GradesActivity:
+    78:79:public void setPupilName(java.lang.String)
+com.shinymetal.gradereportlt.GradesExpListAdapter:
+    43:55:public void onUpdateTaskComplete()
+com.shinymetal.gradereportlt.GradesExpListFragment:
+    protected static final java.lang.String ARG_SECTION_NUMBER
+    31:31:public com.shinymetal.gradereportlt.UpdateableAdapter getAdapter()
+com.shinymetal.gradereportlt.GradesPagerAdapter
+com.shinymetal.gradereportlt.LessonsExpListAdapter:
+    52:57:public void onUpdateTaskComplete()
+com.shinymetal.gradereportlt.LessonsExpListFragment:
+    protected static final java.lang.String ARG_SECTION_NUMBER
+    42:42:public com.shinymetal.gradereportlt.UpdateableAdapter getAdapter()
+com.shinymetal.gradereportlt.LessonsListAdapter:
+    49:49:public int getSelectedPosition()
+    54:59:public void onUpdateTaskComplete()
+com.shinymetal.gradereportlt.LessonsListFragment:
+    protected static final java.lang.String ARG_SECTION_NUMBER
+    38:38:public com.shinymetal.gradereportlt.UpdateableAdapter getAdapter()
+com.shinymetal.gradereportlt.LessonsNestedFragment:
+    22:22:public com.shinymetal.gradereportlt.UpdateableAdapter getAdapter()
+com.shinymetal.gradereportlt.R
+com.shinymetal.gradereportlt.R$array
+com.shinymetal.gradereportlt.R$attr
+com.shinymetal.gradereportlt.R$dimen
+com.shinymetal.gradereportlt.R$drawable
+com.shinymetal.gradereportlt.R$id
+com.shinymetal.gradereportlt.R$layout
+com.shinymetal.gradereportlt.R$menu
+com.shinymetal.gradereportlt.R$string
+com.shinymetal.gradereportlt.R$style
+com.shinymetal.gradereportlt.R$xml
+com.shinymetal.gradereportlt.UpdateableAdapter
+com.shinymetal.gradereportlt.UpdateableFragment
