@@ -25,7 +25,7 @@
             android:layout_margin="15dp"
             android:layout_weight="1" />
     </LinearLayout>
-    
+
     <!-- filler -->
 
     <TextView
@@ -39,6 +39,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:layout_weight="1"
         googleads:adSize="BANNER"
         googleads:adUnitId="@string/admob_id" />
 

@@ -67,6 +67,7 @@ public class GradesExpListFragment extends Fragment implements
 		AdRequest adRequest = new AdRequest();
 	    adRequest.addKeyword("education");
 	    adRequest.addKeyword("games");
+	    adRequest.addTestDevice(AdRequest.TEST_EMULATOR); 
 	    mAdView.loadAd(adRequest);
 
 		int wantSem = getArguments().getInt(ARG_SECTION_NUMBER);

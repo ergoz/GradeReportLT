@@ -78,6 +78,7 @@ public class LessonsExpListFragment extends Fragment implements
 		AdRequest adRequest = new AdRequest();
 	    adRequest.addKeyword("education");
 	    adRequest.addKeyword("games");
+	    adRequest.addTestDevice(AdRequest.TEST_EMULATOR); 
 	    mAdView.loadAd(adRequest);
 
 		mAdView.addOnLayoutChangeListener(new OnLayoutChangeListener() {
@@ -88,14 +89,14 @@ public class LessonsExpListFragment extends Fragment implements
 					final int pOldLeft, final int pOldTop, final int pOldRight,
 					final int pOldBottom) {
 				
-				if (BuildConfig.DEBUG)
-					Log.d(this.toString(), TS.get() + "ZZZ1"); 
+//				if (BuildConfig.DEBUG)
+//					Log.d(this.toString(), TS.get() + "ZZZ1"); 
 				
 				final float lAdHeight = mAdView.getHeight();
 				if (lAdHeight != 0) {
 					
-					if (BuildConfig.DEBUG)
-						Log.d(this.toString(), TS.get() + "ZZZ2");
+//					if (BuildConfig.DEBUG)
+//						Log.d(this.toString(), TS.get() + "ZZZ2");
 					rootView.requestLayout();
 				}
 			}

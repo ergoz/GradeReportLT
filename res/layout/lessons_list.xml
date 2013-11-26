@@ -22,6 +22,6 @@
         android:layout_alignLeft="@+id/itemName"
         android:layout_below="@+id/itemName"
         android:maxLines="4"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </RelativeLayout>

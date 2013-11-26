@@ -227,6 +227,9 @@ public class GshisHTMLParser {
 		
 		for (Element lessonCell : lessonCells) {
 
+			Lesson l, lPrev = null;  // lPrev to handle duplicate lesson
+			int sameLesson = 0;      // Also to handle duplicate lesson
+			
 			int number = Integer.parseInt(lessonCell.attr("number"));
 			String time = "";
 
@@ -241,31 +244,88 @@ public class GshisHTMLParser {
 					.getElementsByAttribute("jsdate");
 			for (Element lessonCellDetail : lessonCellDetails) {
 
-				String date = lessonCellDetail.attr("jsdate");
-				Element subject = lessonCellDetail
-						.getElementsByAttributeValue("class", "lesson-subject").first();
+				String date = lessonCellDetail.attr("jsdate");				
+				int index = 0;
+				sameLesson = 0;
+				
+				for (Element subject : lessonCellDetail
+						.getElementsByAttributeValue("class", "lesson-subject")) {
 
-				if (subject == null || subject.text() == null || subject.text().length() <= 0) {
-					// No lesson scheduled
-					continue;
-				}
+					if (subject == null || subject.text() == null
+							|| subject.text().length() <= 0) {
+						// No lesson scheduled
+						continue;
+					}
 
-				Date start = format.parse(date + " " + time.substring(0, time.indexOf("-") - 1));				
-				if (!s.existsLessonByStart(start)) {
+					Date start = format.parse(date + " " + time.substring(0, time.indexOf("-") - 1));
+					if ((l = s.getLessonByStart(start)) == null) {
+						
+						if (BuildConfig.DEBUG)
+							Log.d("GshisHTMLParser", TS.get()
+									+ " getLessons() not found in db, will insert");
 
-					Lesson l = new Lesson();
+						l = new Lesson();
+						sameLesson = 0;
+
+						l.setStart(start);
+						l.setStop(format.parse(date
+								+ " "
+								+ time.substring(time.indexOf("-") + 2,
+										time.length())));
+						l.setFormId(subject.attr("id"));
+						l.setFormText(subject.text());
+						l.setTeacher(lessonCellDetail
+								.getElementsByAttributeValue("class",
+										"lesson-teacher").get(sameLesson).text());
+						l.setNumber(number);
+
+						s.addLesson(l);
+
+					} else {
+						
+						if (BuildConfig.DEBUG)
+							Log.d("GshisHTMLParser", TS.get()
+									+ " getLessons() found in db, will update");
+						
+						l.setFormId(subject.attr("id"));
+						
+						if (lPrev != null
+								&& lPrev.getStart().equals(start)
+								&& lPrev.getNumber() == number) {
+							
+							if (BuildConfig.DEBUG)
+								Log.d("GshisHTMLParser", TS.get()
+										+ " getLessons() dup = " + subject.text() + " index = " + index + " sameLesson = " + sameLesson);
+
+							
+							sameLesson++;
+							
+							if (!lPrev.getFormText().equals(subject.text()))								
+								l.setFormText(fixDuplicateString(
+										subject.text(), lPrev.getFormText(), sameLesson));
+							
+							String teacher = lessonCellDetail
+									.getElementsByAttributeValue("class",
+											"lesson-teacher").get(index).text();
+							
+							if (!lPrev.getTeacher().equals(teacher))								
+								l.setTeacher(fixDuplicateString(
+										teacher, lPrev.getTeacher(), sameLesson));
+
+						} else {
+
+							l.setNumber(number);
+							l.setFormText(subject.text());
+							l.setTeacher(lessonCellDetail
+									.getElementsByAttributeValue("class",
+											"lesson-teacher").get(index).text());
+						}
+						
+						l.update();
+					}
 					
-					l.setStart(start);
-					l.setStop(format.parse(date + " "
-							+ time.substring(time.indexOf("-") + 2,	time.length())));
-					l.setFormId(subject.attr("id"));
-					l.setFormText(subject.text());
-					l.setTeacher(lessonCellDetail
-							.getElementsByAttributeValue("class",
-									"lesson-teacher").first().text());
-					l.setNumber(number);
-
-					s.addLesson(l);
+					lPrev = l;
+					index++;
 				}
 			}
 		}
@@ -283,8 +343,8 @@ public class GshisHTMLParser {
 
 			int tdCount = 0;
 			Date date = null;
-			Lesson l, lPrev = null; // lPrev to handle duplicate lesson bug
-			int sameLesson = 0;      // Also to handle duplicate lesson bug
+			Lesson l, lPrev = null; // lPrev to handle duplicate lesson
+			int sameLesson = 0;      // Also to handle duplicate lesson
 
 			Elements trs = tableCell.getElementsByTag("tr");
 			for (Element tr : trs) {
@@ -367,8 +427,7 @@ public class GshisHTMLParser {
 
 						if (lPrev != null && l != null
 								&& l.getStart().equals(lPrev.getStart())
-								&& l.getNumber() == lPrev.getNumber()
-								&& l.getFormId().equals(lPrev.getFormId())) {
+								&& l.getNumber() == lPrev.getNumber()) {
 
 							// We hit the same lesson bug
 							sameLesson++;
