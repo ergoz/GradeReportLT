@@ -57,7 +57,9 @@ public class AbstractActivity extends FragmentActivity {
 
 				case DiaryUpdateService.MSG_TASK_FAILED:
 					instance.setProgressBarIndeterminateVisibility(false);
-					instance.showAlertDialog(mGshisLoader.getLastNetworkFailureReason());
+					
+					if (!mGshisLoader.isLastNetworkCallRetriable())
+						instance.showAlertDialog(mGshisLoader.getLastNetworkFailureReason());
 					break;
 				}
 

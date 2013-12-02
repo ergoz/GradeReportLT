@@ -61,6 +61,7 @@ public class GshisHTMLParser {
 	/* A \s that actually works for Java’s native character set: Unicode */
 	private final static String WHITESPACE_CHARCLASS = "[" + WHITESCPACE_CHARS + "]";
 	/* A \S that actually works for Java’s native character set: Unicode */
+	@SuppressWarnings("unused")
 	private final static String NOT_WHITESPACE_CHARCLASS = "[^" + WHITESCPACE_CHARS	+ "]";
 	
 	private final static Pattern WHITESPACES_ONLY = Pattern.compile("^" + WHITESPACE_CHARCLASS +"+$");
@@ -269,7 +270,7 @@ public class GshisHTMLParser {
 					}
 
 					Date start = format.parse(date + " " + time.substring(0, time.indexOf("-") - 1));
-					if ((l = s.getLessonByStart(start)) == null) {
+					if ((l = s.getLessonByNumber(start, number)) == null) {
 						
 						if (BuildConfig.DEBUG)
 							Log.d("GshisHTMLParser", TS.get()
