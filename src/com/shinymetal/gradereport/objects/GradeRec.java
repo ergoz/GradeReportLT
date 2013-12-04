@@ -265,6 +265,11 @@ public class GradeRec extends FormTimeInterval {
 		return MarkRec.getCursor(this); 
 	}
 	
+	public long deleteMarks() {
+		
+		return MarkRec.deleteAll(this);
+	}
+	
 	public MarkRec getMarkRecByComment(String comment) {
 		
 		return MarkRec.getByComment(this, comment);

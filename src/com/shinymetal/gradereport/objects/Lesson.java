@@ -233,6 +233,17 @@ public class Lesson extends FormTimeInterval {
 				null, NUMBER_NAME);
 	}
 	
+	public static long deleteAllByDate(Schedule schedule, Date start, Date stop) {
+
+		long date1 = start.getTime();
+		long date2 = stop.getTime();
+		
+        String[] args = new String[] { "" + date1, "" + date2, "" + schedule.getRowId()};
+
+		return Database.getWritable().delete(TABLE_NAME,
+				SELECTION_GET_ALL_BY_DATE, args);
+	}
+	
 	public static Lesson getFromCursor(Cursor c) {
 		
 		int fieldPos;

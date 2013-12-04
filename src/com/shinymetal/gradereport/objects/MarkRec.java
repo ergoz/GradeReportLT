@@ -98,6 +98,14 @@ public class MarkRec {
 				null, ID_NAME);
 	}
 	
+	public static long deleteAll(GradeRec gr) {
+
+        String[] args = new String[] { "" + gr.getRowId()};
+
+		return Database.getWritable().delete(TABLE_NAME,
+				SELECTION_GET_ALL, args);
+	}
+	
 	public static MarkRec getFromCursor(Cursor c) {
 		
 		int fieldPos;

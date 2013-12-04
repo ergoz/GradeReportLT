@@ -629,6 +629,9 @@ public class GshisHTMLParser {
 						exR.setSick(rec.getSick());
 						exR.setTotal(rec.getTotal());
 						
+						// make sure we have only fresh marks
+						exR.deleteMarks();
+						
 						@SuppressWarnings("unused")
 						long u = exR.update();						
 						rec = exR;
