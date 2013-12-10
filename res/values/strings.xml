@@ -6,6 +6,7 @@
     <string name="diary_name">Дневник</string>
     <string name="grades_name">Оценки</string>
     <string name="pref_name">Настройки</string>
+    <string name="log_name">Лог ошибок</string>
     <string name="pref_login_key">login</string>
     <string name="pref_password_key">password</string>
     <string name="pref_sync_key">syncInterval</string>
@@ -18,6 +19,7 @@
     <string name="action_reload">Обновить</string>
     <string name="action_grades">Оценки</string>
     <string name="action_diary">Дневник</string>
+    <string name="action_logs">Лог ошибок</string>
     <string name="label_theme">Тема</string>
     <string name="label_homework">Дом. задание</string>
     <string name="label_marks">Оценки</string>

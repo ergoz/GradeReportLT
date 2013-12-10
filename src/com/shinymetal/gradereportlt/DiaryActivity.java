@@ -109,6 +109,11 @@ public class DiaryActivity extends AbstractActivity{
 	        Intent nextScreen = new Intent(getApplicationContext(), PreferencesActivity.class);
 	        startActivity(nextScreen);
 	        return true;
+		case R.id.action_logs:
+			// Starting a new Intent
+			nextScreen = new Intent(getApplicationContext(), LogActivity.class);
+			startActivity(nextScreen);
+			return true;
 	        
 		case R.id.action_select_pupil:		
 			AlertDialog alertDialog;

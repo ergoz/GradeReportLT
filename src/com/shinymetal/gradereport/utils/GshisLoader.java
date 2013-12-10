@@ -579,6 +579,7 @@ public class GshisLoader {
 		if (BuildConfig.DEBUG)
 			Log.d(this.toString(), TS.get() + "getAllPupilsLessons () : started");
 		
+		NetLogger.add("Update started");		
 		String page;
 		
 		mIsLastNetworkCallFailed = false;
@@ -591,6 +592,8 @@ public class GshisLoader {
 				if (loginSequence()) break;
 				
 			} catch (Exception e) {
+				
+				NetLogger.add(e.toString());
 				
 				mIsLastNetworkCallFailed = true;
 				if ((mLastNetworkFailureReason = e.getMessage()) == null)
@@ -607,6 +610,7 @@ public class GshisLoader {
 		
 		try {
 			
+			NetLogger.add("Get current lessons");
 			if ((page = getPageByURL(LESSONS_PAGE)) == null) {
 				return false;
 			}
@@ -620,12 +624,14 @@ public class GshisLoader {
 				return false;
 			}
 
+			NetLogger.add("Get current diary");
 			parseLessonsDetailsPage(page);
 
 			if (mDiaryVIEWSTATE == null || mDiaryVIEWSTATE.length() <= 0)
 				throw new IllegalStateException(ERROR_CANNOT_LOAD_DATA + ": DiaryVIEWSTATE is NULL");
 			
 
+			NetLogger.add("Get current marks");
 			if ((page = getPageByURL(GRADES_PAGE)) == null) {
 				return false;
 			}
@@ -671,6 +677,7 @@ public class GshisLoader {
 							continue;
 						}
 						
+						NetLogger.add("Get lessons for week " + w.getFormText());
 						page = getLessons(p, s, w);
 						
 						if (BuildConfig.DEBUG)
@@ -681,7 +688,8 @@ public class GshisLoader {
 							throw new IllegalStateException(ERROR_CANNOT_LOAD_DATA + ": getLessons () returned NULL");
 						}
 
-						parseLessonsPage(page);						
+						parseLessonsPage(page);
+						NetLogger.add("Get diary for week " + w.getFormText());
 						page = getLessonDetails(p, s, w);
 						
 						if (BuildConfig.DEBUG)
@@ -719,6 +727,7 @@ public class GshisLoader {
 							continue;							
 						}
 						
+						NetLogger.add("Get marks for semester " + sem.getFormText());
 						page = getGrades(p, s, sem);
 						if (page == null) {
 							throw new IllegalStateException(ERROR_CANNOT_LOAD_DATA + ": getGrades () returned NULL");
@@ -731,6 +740,7 @@ public class GshisLoader {
 
 		} catch (Exception e) {
 
+			NetLogger.add(e.toString());
 			mIsLastNetworkCallFailed = true;
 			mLastNetworkFailureReason = e.toString() + " " + e.getMessage();
 
@@ -741,6 +751,8 @@ public class GshisLoader {
 		if (BuildConfig.DEBUG)
 			Log.d(this.toString(), TS.get()
 					+ "getAllPupilsLessons () : finished");
+		
+		NetLogger.add("Finished");
 		return true;
 	}
 	

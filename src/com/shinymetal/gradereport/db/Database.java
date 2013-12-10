@@ -9,6 +9,7 @@ import com.shinymetal.gradereport.objects.Pupil;
 import com.shinymetal.gradereport.objects.Schedule;
 import com.shinymetal.gradereport.objects.TS;
 import com.shinymetal.gradereport.objects.Week;
+import com.shinymetal.gradereport.utils.NetLogger;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -21,8 +22,9 @@ public class Database {
     
     private static final int DB_VERSION_INITIAL = 6;
     private static final int DB_VERSION_W_GRADES = 7;
+    private static final int DB_VERSION_NETLOGGER = 8;
     
-    private static final int DATABASE_VERSION = DB_VERSION_W_GRADES;
+    private static final int DATABASE_VERSION = DB_VERSION_NETLOGGER;
     
     private static volatile Context mContext = null;
 
@@ -95,6 +97,8 @@ public class Database {
 			mDatabase.execSQL(Lesson.TABLE_CREATE);
 			mDatabase.execSQL(GradeRec.TABLE_CREATE);			 
 			mDatabase.execSQL(MarkRec.TABLE_CREATE);
+			
+			mDatabase.execSQL(NetLogger.TABLE_CREATE);
 		}
 
 		@Override
@@ -111,7 +115,11 @@ public class Database {
     			db.execSQL(MarkRec.TABLE_CREATE);
             }
             
+            if (oldVersion <= DB_VERSION_NETLOGGER)
+            	db.execSQL(NetLogger.TABLE_CREATE);
+            
 			mDatabase = db;
 		}
 	}
 }
+
