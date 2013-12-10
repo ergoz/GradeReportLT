@@ -1520,8 +1520,9 @@ com.shinymetal.gradereport.db.Database:
     private static final java.lang.String DATABASE_NAME
     private static final int DB_VERSION_INITIAL
     private static final int DB_VERSION_W_GRADES
+    private static final int DB_VERSION_NETLOGGER
     private static final int DATABASE_VERSION
-    18:18:public Database()
+    19:19:public Database()
 com.shinymetal.gradereport.objects.GradeRec:
     public static final java.lang.String TABLE_NAME
     private static final java.lang.String ID_NAME
@@ -1576,7 +1577,9 @@ com.shinymetal.gradereport.objects.Lesson:
     public static final java.lang.String SELECTION_GET_BY_NUMBER
     public static final java.lang.String SELECTION_GET_SET
     178:185:public static boolean existsByStart(com.shinymetal.gradereport.objects.Schedule,java.util.Date)
-    325:356:public static java.util.Set getSet(com.shinymetal.gradereport.objects.Schedule)
+    190:221:public static com.shinymetal.gradereport.objects.Lesson getByStart(com.shinymetal.gradereport.objects.Schedule,java.util.Date)
+    238:243:public static long deleteAllByDate(com.shinymetal.gradereport.objects.Schedule,java.util.Date,java.util.Date)
+    336:367:public static java.util.Set getSet(com.shinymetal.gradereport.objects.Schedule)
 com.shinymetal.gradereport.objects.MarkRec:
     public static final java.lang.String TABLE_NAME
     private static final java.lang.String ID_NAME
@@ -1616,6 +1619,7 @@ com.shinymetal.gradereport.objects.Schedule:
     109:133:public static final java.util.Set getSet(com.shinymetal.gradereport.objects.Pupil)
     138:159:public static com.shinymetal.gradereport.objects.Schedule getBySchoolYear(com.shinymetal.gradereport.objects.Pupil,java.lang.String)
     204:204:public com.shinymetal.gradereport.objects.GradeSemester getSemester(java.util.Date)
+    225:225:public com.shinymetal.gradereport.objects.Lesson getLessonByStart(java.util.Date)
     230:230:public boolean existsLessonByStart(java.util.Date)
     284:285:public com.shinymetal.gradereport.objects.Week getWeek(java.util.Date)
     305:305:public final java.util.Set getLessonSet()
@@ -1635,10 +1639,11 @@ com.shinymetal.gradereport.objects.Week:
     private static final java.lang.String SELECTION_GET_SET
     151:188:public static synchronized com.shinymetal.gradereport.objects.Week getByDate(com.shinymetal.gradereport.objects.Schedule,java.util.Date)
 com.shinymetal.gradereport.utils.GshisHTMLParser:
-    public static final java.lang.String whitespace_chars
-    public static final java.lang.String whitespace_charclass
-    public static final java.lang.String not_whitespace_charclass
-    26:26:public GshisHTMLParser()
+    private static final java.lang.String WHITESCPACE_CHARS
+    private static final java.lang.String WHITESPACE_CHARCLASS
+    private static final java.lang.String NOT_WHITESPACE_CHARCLASS
+    28:28:public GshisHTMLParser()
+    73:73:public static final java.util.ArrayList getNewMarks()
 com.shinymetal.gradereport.utils.GshisLoader:
     protected static final java.lang.String SITE_NAME
     protected static final java.lang.String LOGIN_STEP_1
@@ -1648,8 +1653,16 @@ com.shinymetal.gradereport.utils.GshisLoader:
     protected static final java.lang.String GRADES_PAGE
     protected static final java.lang.String ERROR_CANNOT_LOAD_DATA
     protected static final java.lang.String ERROR_INV_CREDENTIALS
-    515:521:public void reset()
-    754:760:public java.lang.String getPupilIdByName(java.lang.String)
+    516:522:public void reset()
+    773:779:public java.lang.String getPupilIdByName(java.lang.String)
+com.shinymetal.gradereport.utils.NetLogger:
+    public static final java.lang.String ID_NAME
+    public static final java.lang.String EVENTTIME_NAME
+    public static final java.lang.String EVENTTEXT_NAME
+    public static final java.lang.String TABLE_NAME
+    public static final java.lang.String TABLE_CREATE
+    public static final java.lang.String SELECTION_OLDER_THAN
+    10:10:public NetLogger()
 com.shinymetal.gradereportlt.BuildConfig
 com.shinymetal.gradereportlt.DiaryActivity:
     89:90:public void setPupilName(java.lang.String)
