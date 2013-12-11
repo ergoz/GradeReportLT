@@ -2,6 +2,7 @@ package com.shinymetal.gradereportlt;
 
 import java.util.Date;
 
+import com.bugsense.trace.BugSenseHandler;
 import com.shinymetal.gradereport.db.Database;
 import com.shinymetal.gradereport.objects.TS;
 import com.shinymetal.gradereport.utils.GshisLoader;
@@ -150,6 +151,7 @@ public class AbstractActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
+		BugSenseHandler.initAndStartSession(AbstractActivity.this, getString(R.string.bugsense_id));
 		requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
 		instance = this;
 

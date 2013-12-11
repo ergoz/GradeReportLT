@@ -3,6 +3,7 @@
 
     <string name="app_name">Дневник ГШИС FREE</string>
     <string name="admob_id">a152769931c83f5</string>
+    <string name="bugsense_id">9c5d5390</string>
     <string name="diary_name">Дневник</string>
     <string name="grades_name">Оценки</string>
     <string name="pref_name">Настройки</string>

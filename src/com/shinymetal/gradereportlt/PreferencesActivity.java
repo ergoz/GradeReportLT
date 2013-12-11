@@ -2,6 +2,7 @@ package com.shinymetal.gradereportlt;
 
 import java.util.Date;
 
+import com.bugsense.trace.BugSenseHandler;
 import com.shinymetal.gradereportlt.R;
 import com.shinymetal.gradereport.objects.TS;
 
@@ -27,7 +28,7 @@ public class PreferencesActivity extends PreferenceActivity implements OnPrefere
 		@Override
 		public void onCreate(final Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
-			
+
 			addPreferencesFromResource(R.xml.preferences);
 
 			Preference pref = findPreference(getString(R.string.pref_sync_key));
@@ -38,6 +39,7 @@ public class PreferencesActivity extends PreferenceActivity implements OnPrefere
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		BugSenseHandler.initAndStartSession(PreferencesActivity.this, getString(R.string.bugsense_id));
 		setContentView(R.layout.activity_preferences);
 		
 		getFragmentManager().beginTransaction()

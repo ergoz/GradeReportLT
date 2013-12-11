@@ -2,6 +2,7 @@ package com.shinymetal.gradereportlt;
 
 import java.util.ArrayList;
 
+import com.bugsense.trace.BugSenseHandler;
 import com.shinymetal.gradereport.db.Database;
 import com.shinymetal.gradereport.objects.TS;
 import com.shinymetal.gradereport.utils.GshisLoader;
@@ -88,6 +89,7 @@ public class DiaryUpdateService extends IntentService {
 	@Override
 	protected void onHandleIntent(Intent arg0) {
 		
+		BugSenseHandler.initAndStartSession(DiaryUpdateService.this, getString(R.string.bugsense_id));
 		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
 		GshisLoader.getInstance().setLogin(prefs.getString(getString(R.string.pref_login_key), ""));
