@@ -4,16 +4,23 @@ android.support.v4.app.BackStackState: android.os.Parcelable$Creator CREATOR
 android.support.v4.app.Fragment: boolean onOptionsItemSelected(android.view.MenuItem)
 android.support.v4.app.Fragment$SavedState
 android.support.v4.app.Fragment$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentActivity
 android.support.v4.app.FragmentActivity: FragmentActivity()
 android.support.v4.app.FragmentManagerState
 android.support.v4.app.FragmentManagerState: android.os.Parcelable$Creator CREATOR
 android.support.v4.app.FragmentState
 android.support.v4.app.FragmentState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentTabHost
+android.support.v4.app.FragmentTabHost: FragmentTabHost(android.content.Context,android.util.AttributeSet)
 android.support.v4.app.FragmentTabHost: void setOnTabChangedListener(android.widget.TabHost$OnTabChangeListener)
 android.support.v4.app.FragmentTabHost$SavedState
 android.support.v4.app.FragmentTabHost$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.content.FileProvider
 android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status[] values()
 android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status valueOf(java.lang.String)
+android.support.v4.content.WakefulBroadcastReceiver
+android.support.v4.view.PagerTabStrip
+android.support.v4.view.PagerTabStrip: PagerTabStrip(android.content.Context,android.util.AttributeSet)
 android.support.v4.view.PagerTabStrip: void setTabIndicatorColor(int)
 android.support.v4.view.PagerTabStrip: void setTabIndicatorColorResource(int)
 android.support.v4.view.PagerTabStrip: int getTabIndicatorColor()
@@ -53,13 +60,23 @@ android.support.v4.view.ViewPager: int getPageMargin()
 android.support.v4.view.ViewPager: void setPageMarginDrawable(android.graphics.drawable.Drawable)
 android.support.v4.view.ViewPager: void setPageMarginDrawable(int)
 android.support.v4.view.ViewPager: void setScrollingCacheEnabled(boolean)
+android.support.v4.view.ViewPager$LayoutParams
+android.support.v4.view.ViewPager$LayoutParams: ViewPager$LayoutParams(android.content.Context,android.util.AttributeSet)
 android.support.v4.view.ViewPager$SavedState
 android.support.v4.view.ViewPager$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.widget.DrawerLayout
+android.support.v4.widget.DrawerLayout: DrawerLayout(android.content.Context,android.util.AttributeSet)
+android.support.v4.widget.DrawerLayout: DrawerLayout(android.content.Context,android.util.AttributeSet,int)
 android.support.v4.widget.DrawerLayout: void setScrimColor(int)
 android.support.v4.widget.DrawerLayout: void setDrawerListener(android.support.v4.widget.DrawerLayout$DrawerListener)
 android.support.v4.widget.DrawerLayout: void setDrawerLockMode(int)
+android.support.v4.widget.DrawerLayout$LayoutParams
+android.support.v4.widget.DrawerLayout$LayoutParams: DrawerLayout$LayoutParams(android.content.Context,android.util.AttributeSet)
 android.support.v4.widget.DrawerLayout$SavedState
 android.support.v4.widget.DrawerLayout$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.widget.SlidingPaneLayout
+android.support.v4.widget.SlidingPaneLayout: SlidingPaneLayout(android.content.Context,android.util.AttributeSet)
+android.support.v4.widget.SlidingPaneLayout: SlidingPaneLayout(android.content.Context,android.util.AttributeSet,int)
 android.support.v4.widget.SlidingPaneLayout: void setParallaxDistance(int)
 android.support.v4.widget.SlidingPaneLayout: int getParallaxDistance()
 android.support.v4.widget.SlidingPaneLayout: void setSliderFadeColor(int)
@@ -69,8 +86,307 @@ android.support.v4.widget.SlidingPaneLayout: int getCoveredFadeColor()
 android.support.v4.widget.SlidingPaneLayout: void setPanelSlideListener(android.support.v4.widget.SlidingPaneLayout$PanelSlideListener)
 android.support.v4.widget.SlidingPaneLayout: void setShadowDrawable(android.graphics.drawable.Drawable)
 android.support.v4.widget.SlidingPaneLayout: void setShadowResource(int)
+android.support.v4.widget.SlidingPaneLayout$LayoutParams
+android.support.v4.widget.SlidingPaneLayout$LayoutParams: SlidingPaneLayout$LayoutParams(android.content.Context,android.util.AttributeSet)
 android.support.v4.widget.SlidingPaneLayout$SavedState
 android.support.v4.widget.SlidingPaneLayout$SavedState: android.os.Parcelable$Creator CREATOR
+com.bugsense.trace.BugProfiler
+com.bugsense.trace.BugProfiler: com.bugsense.trace.BugProfiler instance
+com.bugsense.trace.BugProfiler: int MAX_LIFETIME
+com.bugsense.trace.BugProfiler: java.lang.StringBuilder trackCpu
+com.bugsense.trace.BugProfiler: java.lang.StringBuilder trackMem
+com.bugsense.trace.BugProfiler: java.lang.String currentTag
+com.bugsense.trace.BugProfiler: int currentStep
+com.bugsense.trace.BugProfiler: int runningFor
+com.bugsense.trace.BugProfiler: boolean running
+com.bugsense.trace.BugProfiler: BugProfiler()
+com.bugsense.trace.BugProfiler: com.bugsense.trace.BugProfiler getProfiler()
+com.bugsense.trace.BugProfiler: void startProfiling(java.lang.String,int)
+com.bugsense.trace.BugProfiler: void stopProfiling(java.lang.String)
+com.bugsense.trace.BugProfiler: void startThread()
+com.bugsense.trace.BugProfiler: boolean access$000()
+com.bugsense.trace.BugProfiler: java.lang.StringBuilder access$100(com.bugsense.trace.BugProfiler)
+com.bugsense.trace.BugProfiler: java.lang.StringBuilder access$200(com.bugsense.trace.BugProfiler)
+com.bugsense.trace.BugProfiler: int access$300()
+com.bugsense.trace.BugProfiler: int access$412(int)
+com.bugsense.trace.BugProfiler: int access$400()
+com.bugsense.trace.BugProfiler: java.lang.String access$500()
+com.bugsense.trace.BugProfiler: void <clinit>()
+com.bugsense.trace.BugProfiler$1
+com.bugsense.trace.BugProfiler$1: com.bugsense.trace.BugProfiler this$0
+com.bugsense.trace.BugProfiler$1: BugProfiler$1(com.bugsense.trace.BugProfiler)
+com.bugsense.trace.BugProfiler$1: void run()
+com.bugsense.trace.BugSense
+com.bugsense.trace.BugSense: java.util.concurrent.ExecutorService executor
+com.bugsense.trace.BugSense: BugSense()
+com.bugsense.trace.BugSense: java.util.concurrent.ExecutorService getExecutor()
+com.bugsense.trace.BugSense: void showUpgradeNotification(android.content.Context,java.lang.String)
+com.bugsense.trace.BugSense: void <clinit>()
+com.bugsense.trace.BugSenseHandler
+com.bugsense.trace.BugSenseHandler: boolean I_WANT_TO_DEBUG
+com.bugsense.trace.BugSenseHandler: android.content.SharedPreferences preferences
+com.bugsense.trace.BugSenseHandler: android.content.SharedPreferences$Editor editor
+com.bugsense.trace.BugSenseHandler: com.bugsense.trace.ExceptionCallback exceptionCallback
+com.bugsense.trace.BugSenseHandler: boolean isSessionActive
+com.bugsense.trace.BugSenseHandler: java.lang.String locTicker
+com.bugsense.trace.BugSenseHandler: java.lang.String locTitle
+com.bugsense.trace.BugSenseHandler: java.lang.String locText
+com.bugsense.trace.BugSenseHandler: java.util.HashMap crashExtraData
+com.bugsense.trace.BugSenseHandler: BugSenseHandler()
+com.bugsense.trace.BugSenseHandler: void initAndStartSession(android.content.Context,java.lang.String)
+com.bugsense.trace.BugSenseHandler: void sendDataOverWiFiOnly()
+com.bugsense.trace.BugSenseHandler: int getTotalCrashesNum()
+com.bugsense.trace.BugSenseHandler: void clearTotalCrashesNum()
+com.bugsense.trace.BugSenseHandler: java.lang.String getLastCrashID()
+com.bugsense.trace.BugSenseHandler: void setExceptionCallback(com.bugsense.trace.ExceptionCallback)
+com.bugsense.trace.BugSenseHandler: com.bugsense.trace.ExceptionCallback getCallback()
+com.bugsense.trace.BugSenseHandler: void startSession(android.content.Context)
+com.bugsense.trace.BugSenseHandler: void leaveBreadcrumb(java.lang.String)
+com.bugsense.trace.BugSenseHandler: void closeSession(android.content.Context)
+com.bugsense.trace.BugSenseHandler: void sendEvent(java.lang.String)
+com.bugsense.trace.BugSenseHandler: void setUserIdentifier(java.lang.String)
+com.bugsense.trace.BugSenseHandler: void flush(android.content.Context)
+com.bugsense.trace.BugSenseHandler: void sendExceptionMap(java.util.HashMap,java.lang.Exception)
+com.bugsense.trace.BugSenseHandler: void sendException(java.lang.Exception)
+com.bugsense.trace.BugSenseHandler: void sendExceptionMessage(java.lang.String,java.lang.String,java.lang.Exception)
+com.bugsense.trace.BugSenseHandler: void setLogging(boolean)
+com.bugsense.trace.BugSenseHandler: void setLogging(int)
+com.bugsense.trace.BugSenseHandler: void setLogging(java.lang.String)
+com.bugsense.trace.BugSenseHandler: void setLogging(int,java.lang.String)
+com.bugsense.trace.BugSenseHandler: void installHandler()
+com.bugsense.trace.BugSenseHandler: void setLocalizedNotification(java.lang.String,java.lang.String,java.lang.String)
+com.bugsense.trace.BugSenseHandler: java.util.HashMap getCrashExtraData()
+com.bugsense.trace.BugSenseHandler: void addCrashExtraData(java.lang.String,java.lang.String)
+com.bugsense.trace.BugSenseHandler: void addCrashExtraMap(java.util.HashMap)
+com.bugsense.trace.BugSenseHandler: void removeCrashExtraData(java.lang.String)
+com.bugsense.trace.BugSenseHandler: void clearCrashExtraData()
+com.bugsense.trace.BugSenseHandler: void useProxy(boolean)
+com.bugsense.trace.BugSenseHandler: android.content.SharedPreferences access$002(android.content.SharedPreferences)
+com.bugsense.trace.BugSenseHandler: android.content.SharedPreferences$Editor access$102(android.content.SharedPreferences$Editor)
+com.bugsense.trace.BugSenseHandler: android.content.SharedPreferences access$000()
+com.bugsense.trace.BugSenseHandler: android.content.SharedPreferences$Editor access$100()
+com.bugsense.trace.BugSenseHandler: void <clinit>()
+com.bugsense.trace.BugSenseHandler$1
+com.bugsense.trace.BugSenseHandler$1: android.content.Context val$context
+com.bugsense.trace.BugSenseHandler$1: BugSenseHandler$1(android.content.Context)
+com.bugsense.trace.BugSenseHandler$1: void run()
+com.bugsense.trace.CrashMechanism
+com.bugsense.trace.CrashMechanism: int MAX_CRASHES
+com.bugsense.trace.CrashMechanism: int MAX_EXCEPTIONS
+com.bugsense.trace.CrashMechanism: int HANDLEDEXCEPTION
+com.bugsense.trace.CrashMechanism: int CRASH
+com.bugsense.trace.CrashMechanism: java.lang.String fixfilename
+com.bugsense.trace.CrashMechanism: com.bugsense.trace.CrashMechanism instance
+com.bugsense.trace.CrashMechanism: CrashMechanism()
+com.bugsense.trace.CrashMechanism: com.bugsense.trace.CrashMechanism getInstance()
+com.bugsense.trace.CrashMechanism: void sendSavedCrashes()
+com.bugsense.trace.CrashMechanism: java.lang.String createJSONFromCrash(java.lang.String,int,int,int,java.lang.String[],java.lang.String,java.util.Map,java.util.Map,int,long,java.util.Map)
+com.bugsense.trace.CrashMechanism: void transmitCrashASync(java.lang.String,int)
+com.bugsense.trace.CrashMechanism: boolean transmitCrashSync(java.lang.String,int)
+com.bugsense.trace.CrashMechanism: void saveFixNotification(java.lang.String)
+com.bugsense.trace.CrashMechanism: void saveCrash(java.lang.String,int)
+com.bugsense.trace.CrashMechanism: java.lang.String getBreadcrumbsLine(java.util.ArrayList)
+com.bugsense.trace.CrashMechanism: java.lang.String getClass(java.lang.String)
+com.bugsense.trace.CrashMechanism: boolean access$000(java.lang.String,int)
+com.bugsense.trace.CrashMechanism$1
+com.bugsense.trace.CrashMechanism$1: com.bugsense.trace.CrashMechanism this$0
+com.bugsense.trace.CrashMechanism$1: CrashMechanism$1(com.bugsense.trace.CrashMechanism)
+com.bugsense.trace.CrashMechanism$1: void run()
+com.bugsense.trace.CrashMechanism$1$1
+com.bugsense.trace.CrashMechanism$1$1: com.bugsense.trace.CrashMechanism$1 this$1
+com.bugsense.trace.CrashMechanism$1$1: CrashMechanism$1$1(com.bugsense.trace.CrashMechanism$1)
+com.bugsense.trace.CrashMechanism$1$1: boolean accept(java.io.File,java.lang.String)
+com.bugsense.trace.CrashMechanism$1$2
+com.bugsense.trace.CrashMechanism$1$2: com.bugsense.trace.CrashMechanism$1 this$1
+com.bugsense.trace.CrashMechanism$1$2: CrashMechanism$1$2(com.bugsense.trace.CrashMechanism$1)
+com.bugsense.trace.CrashMechanism$1$2: boolean accept(java.io.File,java.lang.String)
+com.bugsense.trace.CrashMechanism$2
+com.bugsense.trace.CrashMechanism$2: java.lang.String val$jsonCrashData
+com.bugsense.trace.CrashMechanism$2: int val$type
+com.bugsense.trace.CrashMechanism$2: CrashMechanism$2(java.lang.String,int)
+com.bugsense.trace.CrashMechanism$2: void run()
+com.bugsense.trace.CrashMechanism$3
+com.bugsense.trace.CrashMechanism$3: java.lang.String val$line
+com.bugsense.trace.CrashMechanism$3: CrashMechanism$3(java.lang.String)
+com.bugsense.trace.CrashMechanism$3: void run()
+com.bugsense.trace.CrashMechanism$4
+com.bugsense.trace.CrashMechanism$4: int val$type
+com.bugsense.trace.CrashMechanism$4: java.lang.String val$jsonCrashData
+com.bugsense.trace.CrashMechanism$4: CrashMechanism$4(int,java.lang.String)
+com.bugsense.trace.CrashMechanism$4: void run()
+com.bugsense.trace.CryptoHttpClient
+com.bugsense.trace.CryptoHttpClient: int KEY
+com.bugsense.trace.CryptoHttpClient: java.lang.String BASE64KEYANALYTICS
+com.bugsense.trace.CryptoHttpClient: java.lang.String BASE64KEYERRORS
+com.bugsense.trace.CryptoHttpClient: int ANALYTICS
+com.bugsense.trace.CryptoHttpClient: int ERRORS
+com.bugsense.trace.CryptoHttpClient: CryptoHttpClient(int)
+com.bugsense.trace.CryptoHttpClient: org.apache.http.conn.ClientConnectionManager createClientConnectionManager()
+com.bugsense.trace.CryptoHttpClient: org.apache.http.conn.ssl.SSLSocketFactory newSslSocketFactory()
+com.bugsense.trace.DefaultExceptionHandler
+com.bugsense.trace.DefaultExceptionHandler: java.lang.Thread$UncaughtExceptionHandler defaultExceptionHandler
+com.bugsense.trace.DefaultExceptionHandler: DefaultExceptionHandler(java.lang.Thread$UncaughtExceptionHandler)
+com.bugsense.trace.DefaultExceptionHandler: void uncaughtException(java.lang.Thread,java.lang.Throwable)
+com.bugsense.trace.EventsMechanism
+com.bugsense.trace.EventsMechanism: int MAX_EVENTS_SIZE
+com.bugsense.trace.EventsMechanism: int MAX_BYTES
+com.bugsense.trace.EventsMechanism: com.bugsense.trace.EventsMechanism instance
+com.bugsense.trace.EventsMechanism: EventsMechanism()
+com.bugsense.trace.EventsMechanism: com.bugsense.trace.EventsMechanism getInstance()
+com.bugsense.trace.EventsMechanism: void sendSavedEvents()
+com.bugsense.trace.EventsMechanism: java.lang.String getFlatLine(java.lang.String)
+com.bugsense.trace.EventsMechanism: boolean transmitEventSync(java.lang.String)
+com.bugsense.trace.EventsMechanism: void saveEvent(java.lang.String)
+com.bugsense.trace.EventsMechanism$1
+com.bugsense.trace.EventsMechanism$1: com.bugsense.trace.EventsMechanism this$0
+com.bugsense.trace.EventsMechanism$1: EventsMechanism$1(com.bugsense.trace.EventsMechanism)
+com.bugsense.trace.EventsMechanism$1: void run()
+com.bugsense.trace.EventsMechanism$1$1
+com.bugsense.trace.EventsMechanism$1$1: com.bugsense.trace.EventsMechanism$1 this$1
+com.bugsense.trace.EventsMechanism$1$1: EventsMechanism$1$1(com.bugsense.trace.EventsMechanism$1)
+com.bugsense.trace.EventsMechanism$1$1: boolean accept(java.io.File,java.lang.String)
+com.bugsense.trace.EventsMechanism$2
+com.bugsense.trace.EventsMechanism$2: java.lang.String val$tag
+com.bugsense.trace.EventsMechanism$2: EventsMechanism$2(java.lang.String)
+com.bugsense.trace.EventsMechanism$2: void run()
+com.bugsense.trace.ExceptionCallback
+com.bugsense.trace.ExceptionCallback: void lastBreath(java.lang.Exception)
+com.bugsense.trace.G
+com.bugsense.trace.G: java.lang.String BUGSENSE_VERSION
+com.bugsense.trace.G: java.lang.String FILES_PATH
+com.bugsense.trace.G: java.lang.String APP_VERSION
+com.bugsense.trace.G: java.lang.String APP_VERSIONCODE
+com.bugsense.trace.G: java.lang.String APP_PACKAGE
+com.bugsense.trace.G: java.lang.String URL
+com.bugsense.trace.G: java.lang.String ANALYTICS_URL
+com.bugsense.trace.G: java.lang.String TAG
+com.bugsense.trace.G: java.lang.String ANDROID_VERSION
+com.bugsense.trace.G: java.lang.String PHONE_MODEL
+com.bugsense.trace.G: java.lang.String PHONE_BRAND
+com.bugsense.trace.G: java.lang.String API_KEY
+com.bugsense.trace.G: boolean HAS_ROOT
+com.bugsense.trace.G: java.lang.String LOCALE
+com.bugsense.trace.G: java.lang.String UID
+com.bugsense.trace.G: int MAX_BREADCRUMBS
+com.bugsense.trace.G: java.util.ArrayList breadcrumbs
+com.bugsense.trace.G: boolean SEND_LOG
+com.bugsense.trace.G: java.lang.String LOG_FILTER
+com.bugsense.trace.G: int LOG_LINES
+com.bugsense.trace.G: long TIMESTAMP
+com.bugsense.trace.G: boolean proxyEnabled
+com.bugsense.trace.G: int IS_WIFI_ON
+com.bugsense.trace.G: int IS_MOBILENET_ON
+com.bugsense.trace.G: int IS_GPS_ON
+com.bugsense.trace.G: java.lang.String[] SCREEN_PROPS
+com.bugsense.trace.G: boolean sendOnlyWiFi
+com.bugsense.trace.G: java.lang.String userIdentifier
+com.bugsense.trace.G: java.lang.String APPS_RUNNING
+com.bugsense.trace.G: G()
+com.bugsense.trace.G: void <clinit>()
+com.bugsense.trace.PingsMechanism
+com.bugsense.trace.PingsMechanism: int MAX_PINGS_SIZE
+com.bugsense.trace.PingsMechanism: int MAX_GNIPS_SIZE
+com.bugsense.trace.PingsMechanism: int MAX_PERFS_SIZE
+com.bugsense.trace.PingsMechanism: int PING
+com.bugsense.trace.PingsMechanism: int GNIP
+com.bugsense.trace.PingsMechanism: int TRANS_START
+com.bugsense.trace.PingsMechanism: int TRANS_END
+com.bugsense.trace.PingsMechanism: com.bugsense.trace.PingsMechanism instance
+com.bugsense.trace.PingsMechanism: PingsMechanism()
+com.bugsense.trace.PingsMechanism: com.bugsense.trace.PingsMechanism getInstance()
+com.bugsense.trace.PingsMechanism: void sendSavedPings()
+com.bugsense.trace.PingsMechanism: java.lang.String getFlatLine(int,java.lang.String,java.lang.String,java.lang.String)
+com.bugsense.trace.PingsMechanism: void transmitPingASync(int)
+com.bugsense.trace.PingsMechanism: void transmitPingASync(java.lang.String,int)
+com.bugsense.trace.PingsMechanism: boolean transmitPingSync(java.lang.String)
+com.bugsense.trace.PingsMechanism: void savePing(int,java.lang.String)
+com.bugsense.trace.PingsMechanism: void savePing(int,java.lang.String,java.lang.String,java.lang.String)
+com.bugsense.trace.PingsMechanism$1
+com.bugsense.trace.PingsMechanism$1: com.bugsense.trace.PingsMechanism this$0
+com.bugsense.trace.PingsMechanism$1: PingsMechanism$1(com.bugsense.trace.PingsMechanism)
+com.bugsense.trace.PingsMechanism$1: void run()
+com.bugsense.trace.PingsMechanism$1$1
+com.bugsense.trace.PingsMechanism$1$1: com.bugsense.trace.PingsMechanism$1 this$1
+com.bugsense.trace.PingsMechanism$1$1: PingsMechanism$1$1(com.bugsense.trace.PingsMechanism$1)
+com.bugsense.trace.PingsMechanism$1$1: boolean accept(java.io.File,java.lang.String)
+com.bugsense.trace.PingsMechanism$1$2
+com.bugsense.trace.PingsMechanism$1$2: com.bugsense.trace.PingsMechanism$1 this$1
+com.bugsense.trace.PingsMechanism$1$2: PingsMechanism$1$2(com.bugsense.trace.PingsMechanism$1)
+com.bugsense.trace.PingsMechanism$1$2: boolean accept(java.io.File,java.lang.String)
+com.bugsense.trace.PingsMechanism$1$3
+com.bugsense.trace.PingsMechanism$1$3: com.bugsense.trace.PingsMechanism$1 this$1
+com.bugsense.trace.PingsMechanism$1$3: PingsMechanism$1$3(com.bugsense.trace.PingsMechanism$1)
+com.bugsense.trace.PingsMechanism$1$3: boolean accept(java.io.File,java.lang.String)
+com.bugsense.trace.PingsMechanism$2
+com.bugsense.trace.PingsMechanism$2: java.lang.String val$jsonCrashData
+com.bugsense.trace.PingsMechanism$2: int val$type
+com.bugsense.trace.PingsMechanism$2: PingsMechanism$2(java.lang.String,int)
+com.bugsense.trace.PingsMechanism$2: void run()
+com.bugsense.trace.PingsMechanism$3
+com.bugsense.trace.PingsMechanism$3: int val$type
+com.bugsense.trace.PingsMechanism$3: java.lang.String val$tag
+com.bugsense.trace.PingsMechanism$3: PingsMechanism$3(int,java.lang.String)
+com.bugsense.trace.PingsMechanism$3: void run()
+com.bugsense.trace.PingsMechanism$4
+com.bugsense.trace.PingsMechanism$4: int val$type
+com.bugsense.trace.PingsMechanism$4: java.lang.String val$tag
+com.bugsense.trace.PingsMechanism$4: java.lang.String val$cpu
+com.bugsense.trace.PingsMechanism$4: java.lang.String val$mem
+com.bugsense.trace.PingsMechanism$4: PingsMechanism$4(int,java.lang.String,java.lang.String,java.lang.String)
+com.bugsense.trace.PingsMechanism$4: void run()
+com.bugsense.trace.UidManager
+com.bugsense.trace.UidManager: java.lang.String UID_PREFERENCES
+com.bugsense.trace.UidManager: java.lang.String UID_FIELD
+com.bugsense.trace.UidManager: java.lang.String UID_ERROR_ID
+com.bugsense.trace.UidManager: java.lang.String UID_NOSAVED
+com.bugsense.trace.UidManager: int UID_CORRECT_LENTH
+com.bugsense.trace.UidManager: char[] DIGITS
+com.bugsense.trace.UidManager: UidManager()
+com.bugsense.trace.UidManager: java.lang.String getUid(android.content.Context)
+com.bugsense.trace.UidManager: boolean saveUid(android.content.Context,java.lang.String)
+com.bugsense.trace.UidManager: java.lang.String generateUid()
+com.bugsense.trace.UidManager: char[] encodeHex(byte[])
+com.bugsense.trace.UidManager: void <clinit>()
+com.bugsense.trace.Utils
+com.bugsense.trace.Utils: int STATE_OFF
+com.bugsense.trace.Utils: int STATE_ON
+com.bugsense.trace.Utils: int STATE_DONT_KNOW
+com.bugsense.trace.Utils: java.lang.Runtime rt
+com.bugsense.trace.Utils: java.lang.String crashCounterFile
+com.bugsense.trace.Utils: java.lang.String lastCrashIDFile
+com.bugsense.trace.Utils: Utils()
+com.bugsense.trace.Utils: boolean checkForRoot()
+com.bugsense.trace.Utils: java.lang.String getTime()
+com.bugsense.trace.Utils: java.lang.String exceedLimitString(java.lang.String)
+com.bugsense.trace.Utils: java.lang.String readLogs()
+com.bugsense.trace.Utils: java.lang.String readFile(java.lang.String)
+com.bugsense.trace.Utils: java.lang.String MD5(java.lang.String)
+com.bugsense.trace.Utils: int CheckNetworkConnection(android.content.Context,java.lang.String)
+com.bugsense.trace.Utils: int isWifiOn(android.content.Context)
+com.bugsense.trace.Utils: boolean isOnWifi(android.content.Context)
+com.bugsense.trace.Utils: int isMobileNetworkOn(android.content.Context)
+com.bugsense.trace.Utils: int isGPSOn(android.content.Context)
+com.bugsense.trace.Utils: java.lang.String[] ScreenProperties(android.content.Context)
+com.bugsense.trace.Utils: void setProperties(android.content.Context)
+com.bugsense.trace.Utils: java.lang.String getMem()
+com.bugsense.trace.Utils: java.lang.String getCPU()
+com.bugsense.trace.Utils: java.lang.String getAppsRunning(android.content.Context)
+com.bugsense.trace.Utils: int getCrashCounter()
+com.bugsense.trace.Utils: void clearCrashCounter()
+com.bugsense.trace.Utils: void saveCrashCounter()
+com.bugsense.trace.Utils: void saveLastCrashID(java.lang.String)
+com.bugsense.trace.Utils: java.lang.String getLastCrashID()
+com.bugsense.trace.Utils: void <clinit>()
+com.bugsense.trace.Utils$1
+com.bugsense.trace.Utils$1: Utils$1()
+com.bugsense.trace.Utils$1: void run()
+com.bugsense.trace.Utils$2
+com.bugsense.trace.Utils$2: Utils$2()
+com.bugsense.trace.Utils$2: void run()
+com.bugsense.trace.Utils$3
+com.bugsense.trace.Utils$3: java.lang.String val$lastID
+com.bugsense.trace.Utils$3: Utils$3(java.lang.String)
+com.bugsense.trace.Utils$3: void run()
 com.google.ads.AdActivity
 com.google.ads.AdActivity: AdActivity()
 com.google.ads.AdActivity: void onClick(android.view.View)
@@ -88,6 +404,9 @@ com.google.ads.AdView: void setAppEventListener(com.google.ads.AppEventListener)
 com.google.ads.AdView: void setSupportedAdSizes(com.google.ads.AdSize[])
 com.google.ads.ai$b: com.google.ads.ai$b[] values()
 com.google.ads.ai$b: com.google.ads.ai$b valueOf(java.lang.String)
+com.google.ads.doubleclick.DfpAdView
+com.google.ads.doubleclick.DfpAdView: DfpAdView(android.content.Context,android.util.AttributeSet)
+com.google.ads.doubleclick.DfpAdView: DfpAdView(android.content.Context,android.util.AttributeSet,int)
 com.google.ads.doubleclick.DfpAdView: void setAppEventListener(com.google.ads.AppEventListener)
 com.google.ads.doubleclick.DfpAdView: void setSupportedAdSizes(com.google.ads.AdSize[])
 com.google.ads.g$a: com.google.ads.g$a[] values()
@@ -102,10 +421,12 @@ com.google.ads.internal.c$d: com.google.ads.internal.c$d[] values()
 com.google.ads.internal.c$d: com.google.ads.internal.c$d valueOf(java.lang.String)
 com.google.ads.searchads.SearchAdRequest$BorderType: com.google.ads.searchads.SearchAdRequest$BorderType[] values()
 com.google.ads.searchads.SearchAdRequest$BorderType: com.google.ads.searchads.SearchAdRequest$BorderType valueOf(java.lang.String)
+com.google.ads.util.AdUtil$UserActivityReceiver
 com.google.ads.util.AdUtil$a: com.google.ads.util.AdUtil$a[] values()
 com.google.ads.util.AdUtil$a: com.google.ads.util.AdUtil$a valueOf(java.lang.String)
 com.google.ads.util.b$a: com.google.ads.util.b$a[] values()
 com.google.ads.util.b$a: com.google.ads.util.b$a valueOf(java.lang.String)
+com.shinymetal.gradereportlt.AbstractActivity
 com.shinymetal.gradereportlt.AbstractActivity: AbstractActivity()
 com.shinymetal.gradereportlt.AlarmReceiver
 com.shinymetal.gradereportlt.AlarmReceiver: AlarmReceiver()
@@ -199,6 +520,7 @@ com.shinymetal.gradereportlt.R$string: int action_select_pupil
 com.shinymetal.gradereportlt.R$string: int action_settings
 com.shinymetal.gradereportlt.R$string: int admob_id
 com.shinymetal.gradereportlt.R$string: int app_name
+com.shinymetal.gradereportlt.R$string: int bugsense_id
 com.shinymetal.gradereportlt.R$string: int diary_name
 com.shinymetal.gradereportlt.R$string: int error_cannot_fetch
 com.shinymetal.gradereportlt.R$string: int error_cannot_login
