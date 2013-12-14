@@ -139,7 +139,8 @@ public class DiaryActivity extends AbstractActivity{
 						public void onClick(final DialogInterface dialog,
 								final int which) {
 					
-							mPupilName = mPupilSpinner.getSelectedItem().toString();
+							if (mPupilSpinner != null && mPupilSpinner.getSelectedItem() != null)
+								mPupilName = mPupilSpinner.getSelectedItem().toString();
 						}
 					});
 		    alertDialog.setButton(DialogInterface.BUTTON_NEGATIVE, getString(R.string.label_cancel),
