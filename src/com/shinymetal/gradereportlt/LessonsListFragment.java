@@ -111,7 +111,7 @@ public class LessonsListFragment extends Fragment implements UpdateableFragment 
 				
 				mAdapter.setSelectedPosition(position - 1);
 
-				if (f != null && f instanceof LessonsNestedFragment) {
+				if (f != null && l != null & f instanceof LessonsNestedFragment) {
 
 					View convertView = ((LessonsNestedFragment) f)
 							.getDetailsFragment().getView();
