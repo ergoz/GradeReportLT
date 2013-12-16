@@ -100,6 +100,11 @@ public class AbstractActivity extends FragmentActivity {
 	}
 	
 	public void showAlertDialog (String text) {
+		
+    	if (isFinishing()) {
+    		// Don't update UI if Activity is finishing.
+    		return;
+    	}
     	
     	AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(getString(R.string.title_error)); 
